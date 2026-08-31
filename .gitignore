@@ -1,7 +1,7 @@
 # Manuscript source — keep locally, do not upload to the replication repo
 main.tex
 main.bbl
-main.pdf
+*.pdf
 references.bib
 README_BEFORE_SUBMISSION.md
 PDF_PREFLIGHT.txt

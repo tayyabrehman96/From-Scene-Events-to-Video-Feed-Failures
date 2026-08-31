@@ -22,7 +22,7 @@ A structured, citable deposit of the review’s *methods and evidence objects*, 
 | --- | --- |
 | Executable database search strings and freeze log (S1) | Manuscript `main.tex`, `.bib`, figure PNGs, or compiled PDF |
 | Eligibility (inclusion/exclusion) rules and PRISMA-stage counts (S1) | Raw RIS/CSV exports of the ~16k identification set (drop zone provided) |
-| Bibliographic inventory of 176 cited items (S2) | Third-party surveillance video, images, or pretrained weights |
+| Bibliographic inventory of 177 cited items (S2) | Third-party surveillance video, images, or pretrained weights |
 | Core extraction table for studies in the comparison tables (S3) | Independent screener decision sheets (schema provided; files not yet deposited) |
 | Numerical provenance for every transcribed performance cell (S4) | Per-study D1–D5 appraisal ratings (template provided; ratings not invented) |
 | Dataset audit: 21 corpora, splits, access, composition, caveats | Retraining scripts for detection models |
@@ -130,7 +130,7 @@ Folder: [`S2_citation_inventory/`](S2_citation_inventory/)
 
 | File | Description |
 | --- | --- |
-| [`citation_inventory.csv`](S2_citation_inventory/citation_inventory.csv) | **176** cited items: key, type, year, authors, title, venue, DOI, and a heuristic `role_in_review` (primary study, dataset, positioning review, reporting standard, background) |
+| [`citation_inventory.csv`](S2_citation_inventory/citation_inventory.csv) | **177** cited items: key, type, year, authors, title, venue, DOI, and a heuristic `role_in_review` (primary study, dataset, review software, positioning review, reporting standard, background) |
 
 The inventory is the machine-readable bibliography. It is **not** the list of 616 included studies (N5). The article bibliography is the smaller set of items cited in support of specific claims; N5 is every record that passed full-text eligibility. Those two quantities must not be conflated.
 
@@ -204,6 +204,8 @@ Folder: [`S5_validation/`](S5_validation/)
 | [`scripts/build_dataset_audit.py`](S5_validation/scripts/build_dataset_audit.py) | Regenerates `datasets/` |
 | [`scripts/validate_package.py`](S5_validation/scripts/validate_package.py) | Required-file check, PRISMA arithmetic, duplicate keys, Figure 2a vs N5, dataset-catalogue integrity |
 | [`scripts/generate_checksums.py`](S5_validation/scripts/generate_checksums.py) | SHA-256 over package files (excludes local manuscript source) |
+| [`scripts/litstudy_metadata_audit.py`](S5_validation/scripts/litstudy_metadata_audit.py) | Optional CSV/RIS/BibTeX ingestion, identifier-aware union, and year/venue/deduplication summaries using LitStudy |
+| [`LITSTUDY_INTEROPERABILITY.md`](S5_validation/LITSTUDY_INTEROPERABILITY.md) | Exact scope, limitations, installation, and citation for the optional interoperability layer |
 | [`data_dictionary.csv`](S5_validation/data_dictionary.csv) | Cross-supplement column definitions |
 | [`checksums.sha256`](S5_validation/checksums.sha256) | Integrity manifest |
 | [`AMENDMENT_LOG.md`](S5_validation/AMENDMENT_LOG.md) | Dated changes |
@@ -219,6 +221,24 @@ python S5_validation/scripts/generate_checksums.py
 ```
 
 Expected result at this deposit: **PASS**, with warnings that S3 has 52 table-extracted rows rather than 132 independently coded studies, and that D1–D5 ratings are still templates.
+
+### Optional LitStudy interoperability
+
+The package can import deposited CSV, RIS, and BibTeX exports through
+[LitStudy](https://github.com/NLeSC/litstudy), combine collections with its
+identifier-aware `DocumentSet` union, and generate descriptive year, venue,
+and duplicate-collapse summaries:
+
+```bash
+python -m pip install -r S5_validation/requirements-litstudy.txt
+python S5_validation/scripts/litstudy_metadata_audit.py
+```
+
+This adapter is a **post hoc reproducibility aid**. It does not infer
+eligibility, replace the declared DOI/title-author-year deduplication ledger,
+or establish the reported PRISMA counts. Topic models and bibliographic
+networks are also treated as exploratory because their completeness depends
+on abstract and reference-list coverage.
 
 ---
 

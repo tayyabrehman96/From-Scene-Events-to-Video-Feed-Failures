@@ -1,0 +1,2 @@
+# Optional metadata-interoperability layer; core validation remains standard-library only.
+litstudy==1.0.6

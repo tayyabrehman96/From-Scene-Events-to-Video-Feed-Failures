@@ -41,7 +41,24 @@ CHECKSUM_SKIP_NAMES = {
     "checksums.sha256",
     "audit_report.md",
 }
-CHECKSUM_SKIP_SUFFIXES = {".png"}
+CHECKSUM_SKIP_SUFFIXES = {
+    ".aux",
+    ".bcf",
+    ".blg",
+    ".fdb_latexmk",
+    ".fls",
+    ".lof",
+    ".log",
+    ".lot",
+    ".nav",
+    ".out",
+    ".pdf",
+    ".png",
+    ".snm",
+    ".toc",
+    ".vrb",
+    ".xml",
+}
 
 
 def write_csv(path: Path, fieldnames: list[str], rows: list[dict]) -> None:
@@ -100,6 +117,8 @@ def parse_bib(path: Path) -> list[dict]:
 
 
 def classify_role(etype: str, title_l: str, fields: dict) -> str:
+    if "litstudy" in title_l:
+        return "review_software"
     if any(
         w in title_l
         for w in (

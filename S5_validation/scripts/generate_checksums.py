@@ -17,8 +17,26 @@ SKIP_NAMES = {
     "PDF_PREFLIGHT.txt",
     "PRISMA_PROVISIONAL_NUMBERS_FOR_REVIEW.csv",
     "checksums.sha256",
+    "audit_report.md",
 }
-SKIP_SUFFIXES = {".png"}
+SKIP_SUFFIXES = {
+    ".aux",
+    ".bcf",
+    ".blg",
+    ".fdb_latexmk",
+    ".fls",
+    ".lof",
+    ".log",
+    ".lot",
+    ".nav",
+    ".out",
+    ".pdf",
+    ".png",
+    ".run.xml",
+    ".snm",
+    ".toc",
+    ".vrb",
+}
 
 
 def sha256_file(path: Path) -> str:
