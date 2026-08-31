@@ -8,6 +8,14 @@ authors:
 repository-code: https://github.com/tayyabrehman96/From-Scene-Events-to-Video-Feed-Failures
 license: CC-BY-4.0
 date-released: "2026-08-31"
+abstract: >-
+  Versioned replication package (Supplementary S1–S5) for the systematic review
+  of visual anomaly detection in surveillance. Contains database search
+  specifications and evidence-freeze log; bibliographic inventory; core
+  extraction and appraisal instrument; numerical performance provenance and
+  figure source data; a 21-corpus dataset audit with split, access, and
+  composition fields; and validation scripts with checksums. Does not
+  redistribute video datasets or manuscript LaTeX.
 keywords:
   - systematic review
   - video anomaly detection
