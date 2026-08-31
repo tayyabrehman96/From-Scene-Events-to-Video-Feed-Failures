@@ -1,0 +1,4 @@
+subset,coordinate_set,coordinates,n_result_cells,n_possible_pairs,n_comparable_pairs,comparability_density,comparability_density_pct,n_classes,largest_class
+normal,C3,benchmark + metric + supervision regime + input modality,25,300,32,0.106667,10.7,10,5
+weak,C3,benchmark + metric + supervision regime + input modality,18,153,22,0.143791,14.4,9,6
+combined,C3,benchmark + metric + supervision regime + input modality,43,903,54,0.059801,6.0,19,6

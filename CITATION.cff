@@ -12,9 +12,10 @@ abstract: >-
   Versioned replication package (Supplementary S1–S5) for the systematic review
   of visual anomaly detection in surveillance. Contains database search
   specifications and evidence-freeze log; bibliographic inventory; core
-  extraction and appraisal instrument; numerical performance provenance and
-  figure source data; a 21-corpus dataset audit with split, access, and
-  composition fields; and validation scripts with checksums. Does not
+  consolidated performance evidence and aggregate appraisal results; numerical
+  provenance; a complete 43-cell/903-pair protocol-comparability audit; a
+  21-corpus dataset audit with split, access, and composition fields; and
+  validation scripts with checksums. Does not
   redistribute video datasets or manuscript LaTeX.
 keywords:
   - systematic review

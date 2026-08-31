@@ -1,11 +1,17 @@
 supplement,file,column,type,definition
 S1,07_prisma_flow.csv,n,integer,Count at a PRISMA slot
-S1,07_prisma_flow.csv,verification_status,enum,working_author_review | transcribed_from_manuscript | author_verification_required
+S1,07_prisma_flow.csv,verification_status,enum,reported_review_result_not_independently_recomputable | transcribed_from_manuscript | author_verification_required
 S1,06_eligibility_inclusion_exclusion.csv,criterion_id,string,IC1–IC5 or EC1–EC5
 S2,citation_inventory.csv,citation_key,string,BibTeX key used in main.tex
 S2,citation_inventory.csv,role_in_review,enum,Heuristic role label from title/type; not a substitute for S3 coding
 S3,core_primary_evidence.csv,primary_tier,enum,"1 behavioural, 2 hazard, 3 feed integrity"
 S3,core_primary_evidence.csv,appraisal_D1,enum,L | S | H | author_verification_required
+S3,consolidated_performance_evidence.csv,result_id,string,Stable ID for one principal-table result cell
+S3,appraisal_aggregate.csv,recomputable_from_package,enum,Whether the statistic can be recalculated from deposited row-level data
 S4,performance_provenance.csv,canonical_table,enum,yes = use this value as the manuscript canonical number
+S4,principal_table_provenance.csv,result_id,string,Links the 43 principal result cells to the comparability audit
 S4,performance_provenance.csv,page_confirmation,enum,author must confirm the value against the cited PDF page
 S4,figure_source_data/fig2a_anomaly_tier_counts.csv,n_included_primary,integer,Primary-tier count; must sum to N5
+S5,comparability/pairwise_comparability.csv,comparable_C3,boolean,"Agreement on benchmark, metric, supervision regime, and modality"
+S5,comparability/comparability_summary.csv,comparability_density,number,Direct edges divided by all unordered pairs
+S5,comparability/descriptive_regression_checks.csv,ols_slope_points_per_year,number,Descriptive OLS slope; not a methodological effect

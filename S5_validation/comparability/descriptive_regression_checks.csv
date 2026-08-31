@@ -1,0 +1,4 @@
+benchmark,metric,year_min,year_max,n,minimum,maximum,spread,headroom_to_100,ols_slope_points_per_year,r_squared,interpretation
+UCSD Ped2,frame-level micro-AUC (%),2020,2023,3,97.0,98.1,1.1,1.9,0.34,0.81,Descriptive fit to heterogeneous literature-reported values; not a methodological effect and not suitable for extrapolation.
+UCF-Crime,frame-level AUC (%),2021,2024,7,84.3,88.0,3.7,12.0,0.70,0.49,Descriptive fit to heterogeneous literature-reported values; not a methodological effect and not suitable for extrapolation.
+XD-Violence,average precision (%),2021,2024,7,75.9,85.6,9.7,14.4,2.63,0.91,Descriptive fit to heterogeneous literature-reported values; not a methodological effect and not suitable for extrapolation.

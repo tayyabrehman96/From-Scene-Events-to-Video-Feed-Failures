@@ -1,6 +1,8 @@
 # S4 — Numerical performance provenance and figure source data
 
-`performance_provenance.csv` is one row per manuscript numerical cell (method × dataset × metric). `canonical_table = yes` marks the consolidated tables that the manuscript treats as the source of truth when the same number is repeated locally for reading convenience.
+`principal_table_provenance.csv` contains exactly the 43 result cells in Tables `tab:consolidated_performance` and `tab:weak_foundation_performance`, the numerical evidence used by the formal comparability and descriptive trend analyses.
+
+`performance_provenance.csv` is the extended 137-row record for numerical cells across the manuscript's principal and repeated local tables. `canonical_table = yes` marks the consolidated tables that the manuscript treats as the source of truth when the same number is repeated for local reading convenience.
 
 `page_confirmation = author_verification_required` until each value is checked against the cited PDF page.
 

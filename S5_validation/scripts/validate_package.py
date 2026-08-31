@@ -24,13 +24,21 @@ REQUIRED = [
     S1 / "screening" / "inclusion_exclusion_counts.csv",
     S2 / "citation_inventory.csv",
     S3 / "core_primary_evidence.csv",
+    S3 / "consolidated_performance_evidence.csv",
     S3 / "appraisal_instrument.csv",
+    S3 / "appraisal_aggregate.csv",
     S4 / "performance_provenance.csv",
+    S4 / "principal_table_provenance.csv",
     S4 / "figure_source_data" / "fig2a_anomaly_tier_counts.csv",
     S4 / "figure_source_data" / "fig_prisma_flow.csv",
     ROOT / "datasets" / "dataset_catalogue.csv",
     ROOT / "datasets" / "dataset_distribution.csv",
     S5 / "data_dictionary.csv",
+    S5 / "comparability" / "result_cells.csv",
+    S5 / "comparability" / "pairwise_comparability.csv",
+    S5 / "comparability" / "comparability_summary.csv",
+    S5 / "comparability" / "comparability_sensitivity.csv",
+    S5 / "comparability" / "descriptive_regression_checks.csv",
     S5 / "checksums.sha256",
     S5 / "AMENDMENT_LOG.md",
 ]
@@ -118,6 +126,33 @@ def main() -> int:
     if missing_s4:
         warnings.append(f"S4 keys not in S2 bibliography: {missing_s4}")
 
+    cells = read_csv(S5 / "comparability" / "result_cells.csv")
+    pairs = read_csv(S5 / "comparability" / "pairwise_comparability.csv")
+    expected_pairs = len(cells) * (len(cells) - 1) // 2
+    direct_edges = sum(r["comparable_C3"] == "true" for r in pairs)
+    if len(cells) != 43:
+        errors.append(f"comparability audit has {len(cells)} cells; expected 43")
+    if len(pairs) != expected_pairs or expected_pairs != 903:
+        errors.append(
+            f"pairwise audit has {len(pairs)} rows; expected {expected_pairs} and manuscript total 903"
+        )
+    if direct_edges != 54:
+        errors.append(f"comparability audit has {direct_edges} C3 edges; expected 54")
+
+    summary = read_csv(S5 / "comparability" / "comparability_summary.csv")
+    combined = next(
+        (r for r in summary if r["subset"] == "combined"),
+        None,
+    )
+    if not combined:
+        errors.append("comparability summary lacks combined row")
+    elif (
+        combined["n_classes"] != "19"
+        or combined["largest_class"] != "6"
+        or combined["comparability_density_pct"] != "6.0"
+    ):
+        errors.append("combined comparability summary does not match 19 classes / largest 6 / 6.0%")
+
     datasets = read_csv(ROOT / "datasets" / "dataset_catalogue.csv")
     ds_ids = [r["dataset_id"] for r in datasets]
     if len(ds_ids) != len(set(ds_ids)):
@@ -135,8 +170,8 @@ def main() -> int:
 
     if len(s3) != int(p["core_studies_S3"]):
         warnings.append(
-            f"S3 extracted rows={len(s3)} but working core_studies_S3={p['core_studies_S3']}. "
-            "Deposit the remaining extraction rows before claiming 132 core studies."
+            f"extended S3 extraction rows={len(s3)} while the article reports "
+            f"{p['core_studies_S3']} core studies; the complete source extraction is not deposited"
         )
 
     pending = sum(
@@ -145,11 +180,15 @@ def main() -> int:
         if r.get("appraisal_D1") == "author_verification_required"
     )
     if pending:
-        warnings.append(f"{pending} S3 rows still lack D1–D5 ratings")
+        warnings.append(
+            f"{pending} extended S3 rows have no row-level D1-D5 ratings; "
+            "only the article's aggregate appraisal statistics are deposited"
+        )
 
     print("S2 rows:", len(s2))
     print("S3 rows:", len(s3))
     print("S4 rows:", len(s4))
+    print("Comparability cells / pairs / C3 edges:", len(cells), len(pairs), direct_edges)
     print("N1 / N5 / tiers:", p["N1_total_identified"], p["N5_studies_included"], tier_sum)
     if warnings:
         print("WARNINGS")

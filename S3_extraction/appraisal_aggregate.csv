@@ -1,0 +1,7 @@
+statistic,value,basis,recomputable_from_package
+core_primary_studies,132,reported review result,no
+rated_items,660,132 studies x 5 dimensions,no
+observed_agreement_pct,91.2,reported aggregate,no
+unweighted_cohen_kappa,0.867,reported aggregate,no
+kappa_95ci,"[0.832, 0.898]",reported aggregate,no
+rating_scale,L | S | H,D1-D5 appraisal instrument,instrument only

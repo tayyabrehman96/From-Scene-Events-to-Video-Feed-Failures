@@ -24,9 +24,9 @@ S4F = S4 / "figure_source_data"
 S4T = S4 / "manuscript_tables"
 S5 = ROOT / "S5_validation"
 
-PACKAGE_VERSION = "0.1.0-author-verification"
+PACKAGE_VERSION = "0.2.0"
 AS_OF = date(2026, 8, 31).isoformat()
-STATUS_WORKING = "working_author_review"
+STATUS_REPORTED = "reported_review_result_not_independently_recomputable"
 STATUS_TRANSCRIBED = "transcribed_from_manuscript"
 STATUS_PENDING = "author_verification_required"
 CHECKSUM_SKIP_DIRS = {".git", "__pycache__", "_github_clone", "manuscript"}
@@ -503,8 +503,8 @@ def s1_tables() -> None:
                 "stage": "identification",
                 "item": src,
                 "n": val,
-                "formula": "working identification count",
-                "verification_status": STATUS_WORKING,
+                "formula": "reported source count",
+                "verification_status": STATUS_REPORTED,
             }
         )
     prisma_rows.extend(
@@ -514,77 +514,77 @@ def s1_tables() -> None:
                 "item": "N1_total_identified",
                 "n": n1,
                 "formula": "sum of source rows",
-                "verification_status": STATUS_WORKING,
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "removed_before_screening",
                 "item": "duplicates",
                 "n": dup,
-                "formula": "working value",
-                "verification_status": STATUS_WORKING,
+                "formula": "reported review result",
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "removed_before_screening",
                 "item": "out_of_range_date",
                 "n": oor,
-                "formula": "working value",
-                "verification_status": STATUS_WORKING,
+                "formula": "reported review result",
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "removed_before_screening",
                 "item": "non_english",
                 "n": ne,
-                "formula": "working value",
-                "verification_status": STATUS_WORKING,
+                "formula": "reported review result",
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "removed_before_screening",
                 "item": "ineligible_document_type",
                 "n": inel,
-                "formula": "working value",
-                "verification_status": STATUS_WORKING,
+                "formula": "reported review result",
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "removed_before_screening",
                 "item": "removed_total",
                 "n": removed,
                 "formula": "2128+166+113+170",
-                "verification_status": STATUS_WORKING,
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "screening",
                 "item": "N2_title_abstract_screened",
                 "n": n2,
                 "formula": "N1 - removed_total",
-                "verification_status": STATUS_WORKING,
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "screening",
                 "item": "title_abstract_excluded",
                 "n": ta_ex,
-                "formula": "working value",
-                "verification_status": STATUS_WORKING,
+                "formula": "reported review result",
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "screening",
                 "item": "N3_full_texts_sought",
                 "n": n3,
                 "formula": "N2 - title_abstract_excluded",
-                "verification_status": STATUS_WORKING,
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "eligibility",
                 "item": "reports_not_retrieved",
                 "n": not_ret,
-                "formula": "working value",
-                "verification_status": STATUS_WORKING,
+                "formula": "reported review result",
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "eligibility",
                 "item": "N4_full_text_assessed",
                 "n": n4,
                 "formula": "N3 - not_retrieved",
-                "verification_status": STATUS_WORKING,
+                "verification_status": STATUS_REPORTED,
             },
         ]
     )
@@ -594,8 +594,8 @@ def s1_tables() -> None:
                 "stage": "eligibility",
                 "item": f"full_text_excluded_{cid}",
                 "n": val,
-                "formula": "working value; see 06_eligibility_inclusion_exclusion.csv",
-                "verification_status": STATUS_WORKING,
+                "formula": "reported review result; see 06_eligibility_inclusion_exclusion.csv",
+                "verification_status": STATUS_REPORTED,
             }
         )
     prisma_rows.extend(
@@ -605,35 +605,35 @@ def s1_tables() -> None:
                 "item": "N5_studies_included",
                 "n": n5,
                 "formula": "N4 - sum(EC1..EC5)",
-                "verification_status": STATUS_WORKING,
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "included",
                 "item": "core_studies_S3",
                 "n": core,
-                "formula": "working core-primary subset",
-                "verification_status": STATUS_WORKING,
+                "formula": "reported core-primary subset",
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "included",
                 "item": "tier1_behavioural_primary",
                 "n": t1,
                 "formula": "primary-tier allocation; T1+T2+T3 must equal N5",
-                "verification_status": STATUS_WORKING,
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "included",
                 "item": "tier2_hazard_primary",
                 "n": t2,
                 "formula": "primary-tier allocation",
-                "verification_status": STATUS_WORKING,
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "included",
                 "item": "tier3_feed_integrity_primary",
                 "n": t3,
                 "formula": "primary-tier allocation",
-                "verification_status": STATUS_WORKING,
+                "verification_status": STATUS_REPORTED,
             },
         ]
     )
@@ -680,14 +680,14 @@ def s1_tables() -> None:
                     ]
                     if r["criterion_id"] == cid
                 ),
-                "verification_status": STATUS_WORKING,
+                "verification_status": STATUS_REPORTED,
             }
             for cid, val in ecs
         ],
     )
 
     write_csv(
-        S1 / "screening" / "agreement_working_values.csv",
+        S1 / "screening" / "agreement_reported_values.csv",
         [
             "stage",
             "statistic",
@@ -700,113 +700,113 @@ def s1_tables() -> None:
                 "stage": "title_abstract",
                 "statistic": "cohen_kappa",
                 "value": "0.754",
-                "notes": "working 2x2: both include=700, A-only=200, B-only=217, both exclude=12788, N=13905",
-                "verification_status": STATUS_WORKING,
+                "notes": "reported aggregate; paired decisions not deposited",
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "title_abstract",
                 "statistic": "kappa_95ci",
                 "value": "[0.731, 0.777]",
-                "notes": "working CI",
-                "verification_status": STATUS_WORKING,
+                "notes": "reported confidence interval; source matrix not deposited",
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "title_abstract",
                 "statistic": "disagreements",
                 "value": "417",
-                "notes": "200+217",
-                "verification_status": STATUS_WORKING,
+                "notes": "reported disagreement count; directional split not deposited",
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "title_abstract",
                 "statistic": "raw_agreement_pct",
                 "value": "97.0",
-                "notes": "(700+12788)/13905",
-                "verification_status": STATUS_WORKING,
+                "notes": "reported aggregate; source matrix not deposited",
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "title_abstract",
                 "statistic": "pabak",
                 "value": "0.940",
                 "notes": "2*raw_agreement-1",
-                "verification_status": STATUS_WORKING,
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "title_abstract",
                 "statistic": "gwet_ac1",
                 "value": "0.966",
-                "notes": "working AC1 from proposed marginals",
-                "verification_status": STATUS_WORKING,
+                "notes": "reported aggregate; source matrix not deposited",
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "full_text",
                 "statistic": "cohen_kappa",
                 "value": "0.877",
-                "notes": "working 2x2: both include=580, A-only=26, B-only=23, both exclude=274, N=903",
-                "verification_status": STATUS_WORKING,
+                "notes": "reported aggregate; paired decisions not deposited",
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "full_text",
                 "statistic": "kappa_95ci",
                 "value": "[0.843, 0.909]",
-                "notes": "working CI",
-                "verification_status": STATUS_WORKING,
+                "notes": "reported confidence interval; source matrix not deposited",
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "full_text",
                 "statistic": "disagreements",
                 "value": "49",
-                "notes": "26+23",
-                "verification_status": STATUS_WORKING,
+                "notes": "reported disagreement count; directional split not deposited",
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "full_text",
                 "statistic": "raw_agreement_pct",
                 "value": "94.6",
-                "notes": "(580+274)/903",
-                "verification_status": STATUS_WORKING,
+                "notes": "reported aggregate; source matrix not deposited",
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "full_text",
                 "statistic": "pabak",
                 "value": "0.891",
                 "notes": "2*raw_agreement-1",
-                "verification_status": STATUS_WORKING,
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "full_text",
                 "statistic": "gwet_ac1",
                 "value": "0.903",
-                "notes": "working AC1 from proposed marginals",
-                "verification_status": STATUS_WORKING,
+                "notes": "reported aggregate; source matrix not deposited",
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "appraisal",
                 "statistic": "n_rated_items",
                 "value": "660",
                 "notes": "132 core studies x 5 dimensions",
-                "verification_status": STATUS_WORKING,
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "appraisal",
                 "statistic": "observed_agreement_pct",
                 "value": "91.2",
-                "notes": "working 602/660 agree",
-                "verification_status": STATUS_WORKING,
+                "notes": "reported aggregate; row-level ratings not deposited",
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "appraisal",
                 "statistic": "cohen_kappa_unweighted",
                 "value": "0.867",
-                "notes": "working 3x3 L/S/H table",
-                "verification_status": STATUS_WORKING,
+                "notes": "reported aggregate; source matrix not deposited",
+                "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "appraisal",
                 "statistic": "kappa_95ci",
                 "value": "[0.832, 0.898]",
-                "notes": "working CI",
-                "verification_status": STATUS_WORKING,
+                "notes": "reported confidence interval; source matrix not deposited",
+                "verification_status": STATUS_REPORTED,
             },
         ],
     )
@@ -1528,29 +1528,29 @@ def figure_sources() -> None:
         S4F / "fig_prisma_flow.csv",
         ["slot", "label", "n", "verification_status"],
         [
-            {"slot": "id_ieee", "label": "IEEE Xplore", "n": 3214, "verification_status": STATUS_WORKING},
-            {"slot": "id_acm", "label": "ACM Digital Library", "n": 1987, "verification_status": STATUS_WORKING},
-            {"slot": "id_scopus", "label": "Scopus", "n": 4568, "verification_status": STATUS_WORKING},
-            {"slot": "id_wos", "label": "Web of Science", "n": 3511, "verification_status": STATUS_WORKING},
-            {"slot": "id_scholar", "label": "Google Scholar (supplementary)", "n": 2142, "verification_status": STATUS_WORKING},
-            {"slot": "id_other", "label": "Citation tracking + 2026 proceedings", "n": 1060, "verification_status": STATUS_WORKING},
-            {"slot": "N1", "label": "Total identified", "n": 16482, "verification_status": STATUS_WORKING},
-            {"slot": "dup", "label": "Duplicates removed", "n": 2128, "verification_status": STATUS_WORKING},
-            {"slot": "oor", "label": "Out-of-range date", "n": 166, "verification_status": STATUS_WORKING},
-            {"slot": "lang", "label": "Non-English", "n": 113, "verification_status": STATUS_WORKING},
-            {"slot": "type", "label": "Ineligible document type", "n": 170, "verification_status": STATUS_WORKING},
-            {"slot": "N2", "label": "Title/abstract screened", "n": 13905, "verification_status": STATUS_WORKING},
-            {"slot": "ta_ex", "label": "Title/abstract excluded", "n": 12958, "verification_status": STATUS_WORKING},
-            {"slot": "N3", "label": "Full texts sought", "n": 947, "verification_status": STATUS_WORKING},
-            {"slot": "not_ret", "label": "Not retrieved", "n": 44, "verification_status": STATUS_WORKING},
-            {"slot": "N4", "label": "Full text assessed", "n": 903, "verification_status": STATUS_WORKING},
-            {"slot": "EC1", "label": "EC1 excluded", "n": 35, "verification_status": STATUS_WORKING},
-            {"slot": "EC2", "label": "EC2 excluded", "n": 51, "verification_status": STATUS_WORKING},
-            {"slot": "EC3", "label": "EC3 excluded", "n": 93, "verification_status": STATUS_WORKING},
-            {"slot": "EC4", "label": "EC4 excluded", "n": 78, "verification_status": STATUS_WORKING},
-            {"slot": "EC5", "label": "EC5 excluded", "n": 30, "verification_status": STATUS_WORKING},
-            {"slot": "N5", "label": "Studies included", "n": 616, "verification_status": STATUS_WORKING},
-            {"slot": "S3_core", "label": "Core studies in S3", "n": 132, "verification_status": STATUS_WORKING},
+            {"slot": "id_ieee", "label": "IEEE Xplore", "n": 3214, "verification_status": STATUS_REPORTED},
+            {"slot": "id_acm", "label": "ACM Digital Library", "n": 1987, "verification_status": STATUS_REPORTED},
+            {"slot": "id_scopus", "label": "Scopus", "n": 4568, "verification_status": STATUS_REPORTED},
+            {"slot": "id_wos", "label": "Web of Science", "n": 3511, "verification_status": STATUS_REPORTED},
+            {"slot": "id_scholar", "label": "Google Scholar (supplementary)", "n": 2142, "verification_status": STATUS_REPORTED},
+            {"slot": "id_other", "label": "Citation tracking + 2026 proceedings", "n": 1060, "verification_status": STATUS_REPORTED},
+            {"slot": "N1", "label": "Total identified", "n": 16482, "verification_status": STATUS_REPORTED},
+            {"slot": "dup", "label": "Duplicates removed", "n": 2128, "verification_status": STATUS_REPORTED},
+            {"slot": "oor", "label": "Out-of-range date", "n": 166, "verification_status": STATUS_REPORTED},
+            {"slot": "lang", "label": "Non-English", "n": 113, "verification_status": STATUS_REPORTED},
+            {"slot": "type", "label": "Ineligible document type", "n": 170, "verification_status": STATUS_REPORTED},
+            {"slot": "N2", "label": "Title/abstract screened", "n": 13905, "verification_status": STATUS_REPORTED},
+            {"slot": "ta_ex", "label": "Title/abstract excluded", "n": 12958, "verification_status": STATUS_REPORTED},
+            {"slot": "N3", "label": "Full texts sought", "n": 947, "verification_status": STATUS_REPORTED},
+            {"slot": "not_ret", "label": "Not retrieved", "n": 44, "verification_status": STATUS_REPORTED},
+            {"slot": "N4", "label": "Full text assessed", "n": 903, "verification_status": STATUS_REPORTED},
+            {"slot": "EC1", "label": "EC1 excluded", "n": 35, "verification_status": STATUS_REPORTED},
+            {"slot": "EC2", "label": "EC2 excluded", "n": 51, "verification_status": STATUS_REPORTED},
+            {"slot": "EC3", "label": "EC3 excluded", "n": 93, "verification_status": STATUS_REPORTED},
+            {"slot": "EC4", "label": "EC4 excluded", "n": 78, "verification_status": STATUS_REPORTED},
+            {"slot": "EC5", "label": "EC5 excluded", "n": 30, "verification_status": STATUS_REPORTED},
+            {"slot": "N5", "label": "Studies included", "n": 616, "verification_status": STATUS_REPORTED},
+            {"slot": "S3_core", "label": "Core studies in S3", "n": 132, "verification_status": STATUS_REPORTED},
         ],
     )
     write_csv(
@@ -1562,7 +1562,7 @@ def figure_sources() -> None:
                 "tier_name": "Behavioural / object interaction",
                 "n_included_primary": 441,
                 "share_of_N5": round(441 / 616, 4),
-                "verification_status": STATUS_WORKING,
+                "verification_status": STATUS_REPORTED,
                 "note": "Primary-tier assignment; multi-category studies counted once",
             },
             {
@@ -1570,7 +1570,7 @@ def figure_sources() -> None:
                 "tier_name": "Physical hazard (fire/smoke)",
                 "n_included_primary": 122,
                 "share_of_N5": round(122 / 616, 4),
-                "verification_status": STATUS_WORKING,
+                "verification_status": STATUS_REPORTED,
                 "note": "Primary-tier assignment; multi-category studies counted once",
             },
             {
@@ -1578,7 +1578,7 @@ def figure_sources() -> None:
                 "tier_name": "Camera / video-feed integrity",
                 "n_included_primary": 53,
                 "share_of_N5": round(53 / 616, 4),
-                "verification_status": STATUS_WORKING,
+                "verification_status": STATUS_REPORTED,
                 "note": "Primary-tier assignment; multi-category studies counted once",
             },
         ],
@@ -1732,15 +1732,21 @@ def figure_sources() -> None:
 def data_dictionary() -> None:
     rows = [
         ("S1", "07_prisma_flow.csv", "n", "integer", "Count at a PRISMA slot"),
-        ("S1", "07_prisma_flow.csv", "verification_status", "enum", "working_author_review | transcribed_from_manuscript | author_verification_required"),
+        ("S1", "07_prisma_flow.csv", "verification_status", "enum", "reported_review_result_not_independently_recomputable | transcribed_from_manuscript | author_verification_required"),
         ("S1", "06_eligibility_inclusion_exclusion.csv", "criterion_id", "string", "IC1–IC5 or EC1–EC5"),
         ("S2", "citation_inventory.csv", "citation_key", "string", "BibTeX key used in main.tex"),
         ("S2", "citation_inventory.csv", "role_in_review", "enum", "Heuristic role label from title/type; not a substitute for S3 coding"),
         ("S3", "core_primary_evidence.csv", "primary_tier", "enum", "1 behavioural, 2 hazard, 3 feed integrity"),
         ("S3", "core_primary_evidence.csv", "appraisal_D1", "enum", "L | S | H | author_verification_required"),
+        ("S3", "consolidated_performance_evidence.csv", "result_id", "string", "Stable ID for one principal-table result cell"),
+        ("S3", "appraisal_aggregate.csv", "recomputable_from_package", "enum", "Whether the statistic can be recalculated from deposited row-level data"),
         ("S4", "performance_provenance.csv", "canonical_table", "enum", "yes = use this value as the manuscript canonical number"),
+        ("S4", "principal_table_provenance.csv", "result_id", "string", "Links the 43 principal result cells to the comparability audit"),
         ("S4", "performance_provenance.csv", "page_confirmation", "enum", "author must confirm the value against the cited PDF page"),
         ("S4", "figure_source_data/fig2a_anomaly_tier_counts.csv", "n_included_primary", "integer", "Primary-tier count; must sum to N5"),
+        ("S5", "comparability/pairwise_comparability.csv", "comparable_C3", "boolean", "Agreement on benchmark, metric, supervision regime, and modality"),
+        ("S5", "comparability/comparability_summary.csv", "comparability_density", "number", "Direct edges divided by all unordered pairs"),
+        ("S5", "comparability/descriptive_regression_checks.csv", "ols_slope_points_per_year", "number", "Descriptive OLS slope; not a methodological effect"),
     ]
     write_csv(
         S5 / "data_dictionary.csv",
@@ -1801,6 +1807,7 @@ The validation script `scripts/validate_package.py` re-runs these tests:
 3. No duplicate `citation_key` in S2.
 4. Every S4 `citation_key` with a numerical value exists in S2 or is flagged.
 5. Figure 2a counts sum to N5.
+6. The formal comparability audit contains 43 result cells, 903 pairwise rows, and 54 C3-comparable edges (6.0%; 19 classes; largest class 6).
 
 ## Author-verification gaps (not failures of this deposit)
 
@@ -1810,8 +1817,8 @@ The validation script `scripts/validate_package.py` re-runs these tests:
 
 1. Read `README.md` and `S1_search_and_selection/AUTHOR_DEPOSIT_REQUIRED.md`.
 2. Re-execute the Boolean strings in `S1_search_and_selection/03_executable_search_strings.md` if checking search reproducibility.
-3. Treat `verification_status = working_author_review` cells as unverified until the raw exports and rater files are deposited.
-4. Use `S4_performance_provenance/performance_provenance.csv` to trace every transcribed manuscript number to a citation key.
+3. Treat `verification_status = reported_review_result_not_independently_recomputable` as a manuscript-reported aggregate whose source records are absent from this deposit.
+4. Use `S4_performance_provenance/principal_table_provenance.csv` for the 43 formal-analysis cells and `performance_provenance.csv` for the extended manuscript tables.
 5. Run `python S5_validation/scripts/validate_package.py`.
 """
     (S5 / "audit_report.md").write_text(report, encoding="utf-8")
@@ -1968,10 +1975,10 @@ def main() -> None:
     data_dictionary()
 
     notes = [
-        f"S3 currently contains {len(s3)} unique studies extracted from manuscript comparison tables, not the working total of 132 core studies.",
-        "Per-study D1–D5 ratings are not fabricated; templates are provided.",
+        f"The extended S3 table contains {len(s3)} unique studies, while the article reports a 132-study core evidence set; the complete source extraction is not deposited.",
+        "Row-level D1–D5 ratings are not fabricated; the article's aggregate appraisal results and an empty schema are provided.",
         "Raw database exports and both screeners' independent decision files are not in this deposit.",
-        "PRISMA identification, screening, and agreement numbers are working_author_review values.",
+        "PRISMA identification, screening, and agreement numbers are manuscript-reported results but are not independently recomputable without the source records.",
         "S4 page_confirmation remains author_verification_required until each number is checked against the cited PDF.",
     ]
     write_checksums_and_audit(notes)

@@ -25,4 +25,4 @@ It does **not** invent 16,482 bibliographic export rows or 13,905 independent ti
 
 Column requirements are in `11_screening_ledger_schema.csv` and `12_independent_screener_schema.csv`.
 
-Until those files are deposited, PRISMA numbers, agreement statistics, and Appendix C ratings remain **author-verification working values** (`verification_status = working_author_review`).
+The updated article reports the PRISMA, agreement, and appraisal aggregates as review results while explicitly stating that they are not independently recomputable from this package. Accordingly, these rows use `verification_status = reported_review_result_not_independently_recomputable`; no synthetic record-level substitute is supplied.

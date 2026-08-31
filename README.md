@@ -5,7 +5,7 @@
 | | |
 | --- | --- |
 | **Repository** | https://github.com/tayyabrehman96/From-Scene-Events-to-Video-Feed-Failures |
-| **Package version** | 0.1.0-author-verification (2026-08-31) |
+| **Package version** | 0.2.0 (2026-08-31) |
 | **Evidence window** | January 2010 – 30 June 2026 (seminal pre-2010 exceptions under IC5) |
 | **Initial search / update / freeze** | April 2025 / June 2026 / **30 June 2026** |
 | **Licence** | Data and documentation: [CC BY 4.0](LICENSE). Scripts: MIT (same file). |
@@ -22,9 +22,9 @@ A structured, citable deposit of the review’s *methods and evidence objects*, 
 | --- | --- |
 | Executable database search strings and freeze log (S1) | Manuscript `main.tex`, `.bib`, figure PNGs, or compiled PDF |
 | Eligibility (inclusion/exclusion) rules and PRISMA-stage counts (S1) | Raw RIS/CSV exports of the ~16k identification set (drop zone provided) |
-| Bibliographic inventory of 177 cited items (S2) | Third-party surveillance video, images, or pretrained weights |
-| Core extraction table for studies in the comparison tables (S3) | Independent screener decision sheets (schema provided; files not yet deposited) |
-| Numerical provenance for every transcribed performance cell (S4) | Per-study D1–D5 appraisal ratings (template provided; ratings not invented) |
+| Bibliographic inventory of 176 cited items (S2) | Third-party surveillance video, images, or pretrained weights |
+| A 43-cell consolidated evidence table and aggregate appraisal results (S3) | Independent screener decision sheets (schema provided; files not deposited) |
+| Principal-table and extended numerical provenance (S4) | Row-level D1–D5 appraisal ratings (aggregate results only) |
 | Dataset audit: 21 corpora, splits, access, composition, caveats | Retraining scripts for detection models |
 | Validation scripts, data dictionary, SHA-256 checksums (S5) | A claimed meta-analysis (the review is a structured / SWiM synthesis) |
 
@@ -106,7 +106,7 @@ Sources: IEEE Xplore, ACM Digital Library, Scopus, Web of Science Core Collectio
 | [`screening/`](S1_search_and_selection/screening/) | Stage counts, working agreement statistics, IC3 include/exclude examples |
 | [`raw_exports/`](S1_search_and_selection/raw_exports/) | Empty drop zone for publisher metadata exports (no PDFs) |
 
-**Working PRISMA arithmetic** (internally consistent; `verification_status = working_author_review` until the original ledger is deposited):
+**Reported PRISMA arithmetic** (all identities pass; values are not independently recomputable until the original ledger is deposited):
 
 | Slot | *n* | Formula |
 | --- | --- | --- |
@@ -120,7 +120,7 @@ Sources: IEEE Xplore, ACM Digital Library, Scopus, Web of Science Core Collectio
 | Full-text excluded | 287 | EC1 35 + EC2 51 + EC3 93 + EC4 78 + EC5 30 |
 | **N5 included** | **616** | N4 − 287 |
 | Primary-tier allocation | 441 / 122 / 53 | Must sum to N5 (multi-category studies counted once) |
-| Core extraction (S3, working total) | 132 | Not yet equal to the 52 table-extracted rows in this deposit |
+| Core appraisal set | 132 | Aggregate appraisal results are reported; the row-level matrix is not distributed |
 
 Deduplication is two automated passes plus manual residual review. Incremental eligible studies are not dropped merely because the contribution is small; conference/journal pairs are collapsed only when they report the same experiment.
 
@@ -130,7 +130,7 @@ Folder: [`S2_citation_inventory/`](S2_citation_inventory/)
 
 | File | Description |
 | --- | --- |
-| [`citation_inventory.csv`](S2_citation_inventory/citation_inventory.csv) | **177** cited items: key, type, year, authors, title, venue, DOI, and a heuristic `role_in_review` (primary study, dataset, review software, positioning review, reporting standard, background) |
+| [`citation_inventory.csv`](S2_citation_inventory/citation_inventory.csv) | **176** cited items: key, type, year, authors, title, venue, DOI, and a heuristic `role_in_review` (primary study, dataset, positioning review, reporting standard, background) |
 
 The inventory is the machine-readable bibliography. It is **not** the list of 616 included studies (N5). The article bibliography is the smaller set of items cited in support of specific claims; N5 is every record that passed full-text eligibility. Those two quantities must not be conflated.
 
@@ -142,11 +142,13 @@ Folder: [`S3_extraction/`](S3_extraction/)
 
 | File | Description |
 | --- | --- |
-| [`core_primary_evidence.csv`](S3_extraction/core_primary_evidence.csv) | **52** unique studies appearing in the manuscript comparison / SOTA tables, with tier, training regime, scoring mechanism, representation, modality, datasets, metrics, result summary, manuscript table IDs, and text-derived appraisal *flags* (for example backbone/pretraining confound on VadCLIP) |
+| [`consolidated_performance_evidence.csv`](S3_extraction/consolidated_performance_evidence.csv) | The **43 result cells** in the two principal numerical tables, with benchmark, metric, value, supervision, modality, representation, scoring mechanism, and unavailable protocol coordinates marked `NR` |
+| [`core_primary_evidence.csv`](S3_extraction/core_primary_evidence.csv) | Extended **52-study** extraction of the manuscript's comparison and SOTA tables |
 | [`appraisal_instrument.csv`](S3_extraction/appraisal_instrument.csv) | Five diagnostic dimensions **D1–D5** (transparency, split integrity, metric validity, comparison fairness, external validity), with low- and high-concern anchors |
+| [`appraisal_aggregate.csv`](S3_extraction/appraisal_aggregate.csv) | Reported aggregate: 132 studies, 660 ratings, 91.2% agreement, κ = 0.867 (95% CI [0.832, 0.898]); explicitly marked not independently recomputable |
 | [`appraisal_ratings_template.csv`](S3_extraction/appraisal_ratings_template.csv) | Empty L / S / H grid for consensus ratings — **not filled with invented scores** |
 
-Ratings are **L** (low concern), **S** (some concerns), **H** (high concern). No composite quality score is computed. No study is excluded on the basis of a rating. The working manuscript total of 132 core studies is larger than the 52 table-extracted rows; remaining rows must be added from the original extraction sheet.
+Ratings are **L** (low concern), **S** (some concerns), **H** (high concern). No composite quality score is computed. No study is excluded on the basis of a rating. The aggregate appraisal result is a review result; without the row-level matrix it cannot be independently recomputed from this repository.
 
 ### S4 — Numerical provenance and figure source data
 
@@ -154,7 +156,8 @@ Folder: [`S4_performance_provenance/`](S4_performance_provenance/)
 
 | File | Description |
 | --- | --- |
-| [`performance_provenance.csv`](S4_performance_provenance/performance_provenance.csv) | **137** rows: one per transcribed numerical cell (method × dataset × metric), with citation key, training regime, representation, scoring mechanism, immediate source, and `canonical_table` (yes = consolidated table; no = repeated local table for reading convenience) |
+| [`principal_table_provenance.csv`](S4_performance_provenance/principal_table_provenance.csv) | **43** rows covering every result cell in the two principal consolidated tables |
+| [`performance_provenance.csv`](S4_performance_provenance/performance_provenance.csv) | Extended **137-row** provenance table covering principal and repeated local manuscript tables |
 | [`figure_source_data/`](S4_performance_provenance/figure_source_data/) | Machine-readable values behind data-bearing figures |
 | [`manuscript_tables/`](S4_performance_provenance/manuscript_tables/) | Per-table CSV dumps (reconstruction, prediction, weakly supervised, datasets, …) |
 | [`figure_manifest.csv`](S4_performance_provenance/figure_manifest.csv) | Which figures are data vs schematic |
@@ -202,7 +205,8 @@ Folder: [`S5_validation/`](S5_validation/)
 | --- | --- |
 | [`scripts/build_replication_tables.py`](S5_validation/scripts/build_replication_tables.py) | Regenerates S1–S4 CSVs from the deposited table specifications |
 | [`scripts/build_dataset_audit.py`](S5_validation/scripts/build_dataset_audit.py) | Regenerates `datasets/` |
-| [`scripts/validate_package.py`](S5_validation/scripts/validate_package.py) | Required-file check, PRISMA arithmetic, duplicate keys, Figure 2a vs N5, dataset-catalogue integrity |
+| [`scripts/build_comparability_audit.py`](S5_validation/scripts/build_comparability_audit.py) | Regenerates the 43-cell, 903-pair comparability audit, sensitivity analysis, and descriptive regression checks |
+| [`scripts/validate_package.py`](S5_validation/scripts/validate_package.py) | Required-file check, six PRISMA identities, duplicate keys, Figure 2a vs N5, dataset integrity, and 43/903/54 comparability assertions |
 | [`scripts/generate_checksums.py`](S5_validation/scripts/generate_checksums.py) | SHA-256 over package files (excludes local manuscript source) |
 | [`scripts/litstudy_metadata_audit.py`](S5_validation/scripts/litstudy_metadata_audit.py) | Optional CSV/RIS/BibTeX ingestion, identifier-aware union, and year/venue/deduplication summaries using LitStudy |
 | [`LITSTUDY_INTEROPERABILITY.md`](S5_validation/LITSTUDY_INTEROPERABILITY.md) | Exact scope, limitations, installation, and citation for the optional interoperability layer |
@@ -216,13 +220,14 @@ Python 3.10 or later; **standard library only**.
 ```bash
 python S5_validation/scripts/build_replication_tables.py
 python S5_validation/scripts/build_dataset_audit.py
+python S5_validation/scripts/build_comparability_audit.py
 python S5_validation/scripts/validate_package.py
 python S5_validation/scripts/generate_checksums.py
 ```
 
-Expected result at this deposit: **PASS**, with warnings that S3 has 52 table-extracted rows rather than 132 independently coded studies, and that D1–D5 ratings are still templates.
+The generated S5 audit contains **43 result cells**, all **903 unordered pairs**, and **54 directly comparable pairs** under the recorded C3 coordinates (6.0%; 19 classes; largest class 6). It also reproduces the manuscript's Ped2, UCF-Crime, and XD-Violence descriptive trend statistics.
 
-### Optional LitStudy interoperability
+### Optional repository-only LitStudy interoperability
 
 The package can import deposited CSV, RIS, and BibTeX exports through
 [LitStudy](https://github.com/NLeSC/litstudy), combine collections with its
@@ -234,7 +239,7 @@ python -m pip install -r S5_validation/requirements-litstudy.txt
 python S5_validation/scripts/litstudy_metadata_audit.py
 ```
 
-This adapter is a **post hoc reproducibility aid**. It does not infer
+This adapter is a **post hoc repository aid and is not cited as part of the updated manuscript methodology**. It does not infer
 eligibility, replace the declared DOI/title-author-year deduplication ledger,
 or establish the reported PRISMA counts. Topic models and bibliographic
 networks are also treated as exploratory because their completeness depends
@@ -249,10 +254,10 @@ Every quantitative table uses one of:
 | Status | Meaning |
 | --- | --- |
 | `transcribed_from_manuscript` | Copied from the article’s tables, dataset section, or bibliography |
-| `working_author_review` | Internally consistent PRISMA / agreement / tier-allocation working values. Replace from the original search ledger and rater files before treating the manuscript as a finished systematic review |
+| `reported_review_result_not_independently_recomputable` | Reported in the updated article, but the raw export, paired decision, or row-level rating matrix required for independent recomputation is not deposited |
 | `author_verification_required` | D1–D5 consensus ratings; PDF page confirmation of transcribed numbers |
 
-This matches the manuscript switch `\provisionalnumberstrue`.
+This vocabulary matches the updated article's explicit boundary between distributed numerical analyses and review results whose record-level source files are not included.
 
 ---
 

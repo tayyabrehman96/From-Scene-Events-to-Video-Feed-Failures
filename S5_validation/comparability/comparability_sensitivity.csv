@@ -1,0 +1,10 @@
+subset,coordinate_set,coordinates,n_result_cells,n_possible_pairs,n_comparable_pairs,comparability_density,comparability_density_pct,n_classes,largest_class
+normal,C1,benchmark + metric,25,300,96,0.320000,32.0,3,10
+weak,C1,benchmark + metric,18,153,52,0.339869,34.0,3,8
+combined,C1,benchmark + metric,43,903,178,0.197121,19.7,5,13
+normal,C2,benchmark + metric + supervision regime,25,300,32,0.106667,10.7,10,5
+weak,C2,benchmark + metric + supervision regime,18,153,26,0.169935,17.0,8,6
+combined,C2,benchmark + metric + supervision regime,43,903,58,0.064230,6.4,18,6
+normal,C3,benchmark + metric + supervision regime + input modality,25,300,32,0.106667,10.7,10,5
+weak,C3,benchmark + metric + supervision regime + input modality,18,153,22,0.143791,14.4,9,6
+combined,C3,benchmark + metric + supervision regime + input modality,43,903,54,0.059801,6.0,19,6
