@@ -1,0 +1,21 @@
+axis,level,n_corpora,share_of_catalogue,note
+catalogue,unique_corpora,21,1.0,ADOC counted once (multi-tier)
+primary_tier,1_behavioral,11,0.5238,Principal evaluation tier; ADOC assigned to tier 3
+primary_tier,2_fire_smoke,7,0.3333,
+primary_tier,3_feed_integrity,3,0.1429,Includes ADOC and UHCTD and Ribnick
+multi_tier_flag,yes,1,0.0476,ADOC only in this catalogue
+multi_tier_flag,no,20,0.9524,
+public_access,yes,20,0.9524,
+public_access,partial,1,0.0476,
+composition,mixed,5,0.2381,
+composition,real,14,0.6667,
+composition,synthetic,1,0.0476,
+composition,synthetic faults on real feeds,1,0.0476,
+annotation_family,frame_and_or_box,5,0.2381,Coarse grouping of the annotation_granularity field
+annotation_family,frame_and_or_pixel,5,0.2381,Coarse grouping of the annotation_granularity field
+annotation_family,image_or_video_classification,2,0.0952,Coarse grouping of the annotation_granularity field
+annotation_family,other_or_study_specific,5,0.2381,Coarse grouping of the annotation_granularity field
+annotation_family,segmentation_or_region,2,0.0952,Coarse grouping of the annotation_granularity field
+annotation_family,video_level,2,0.0952,Coarse grouping of the annotation_granularity field
+vad_split_volume,sum_n_train_where_numeric,9,6579,Sum of numeric train counts among tier-1 corpora excluding UMN; CHAD train is NR. Column share_of_catalogue holds the summed video/clip count (6579).
+vad_split_volume,sum_n_test_where_numeric,9,1660,Sum of numeric test counts among tier-1 corpora excluding UMN. Column share_of_catalogue holds the summed video/clip count (1660).

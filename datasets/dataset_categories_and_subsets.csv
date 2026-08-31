@@ -1,0 +1,17 @@
+dataset_name,citation_key,category_index,category_name,tier_relevance,source
+UCF-Crime,sultani2018real,1,abuse,"1 (behavioral); arson and explosion are labels inside a weakly supervised crime corpus, not a fire-monitoring benchmark",manuscript UCF-Crime paragraph
+UCF-Crime,sultani2018real,2,arrest,"1 (behavioral); arson and explosion are labels inside a weakly supervised crime corpus, not a fire-monitoring benchmark",manuscript UCF-Crime paragraph
+UCF-Crime,sultani2018real,3,arson,"1 (behavioral); arson and explosion are labels inside a weakly supervised crime corpus, not a fire-monitoring benchmark",manuscript UCF-Crime paragraph
+UCF-Crime,sultani2018real,4,assault,"1 (behavioral); arson and explosion are labels inside a weakly supervised crime corpus, not a fire-monitoring benchmark",manuscript UCF-Crime paragraph
+UCF-Crime,sultani2018real,5,burglary,"1 (behavioral); arson and explosion are labels inside a weakly supervised crime corpus, not a fire-monitoring benchmark",manuscript UCF-Crime paragraph
+UCF-Crime,sultani2018real,6,explosion,"1 (behavioral); arson and explosion are labels inside a weakly supervised crime corpus, not a fire-monitoring benchmark",manuscript UCF-Crime paragraph
+UCF-Crime,sultani2018real,7,fighting,"1 (behavioral); arson and explosion are labels inside a weakly supervised crime corpus, not a fire-monitoring benchmark",manuscript UCF-Crime paragraph
+UCF-Crime,sultani2018real,8,road accidents,"1 (behavioral); arson and explosion are labels inside a weakly supervised crime corpus, not a fire-monitoring benchmark",manuscript UCF-Crime paragraph
+UCF-Crime,sultani2018real,9,robbery,"1 (behavioral); arson and explosion are labels inside a weakly supervised crime corpus, not a fire-monitoring benchmark",manuscript UCF-Crime paragraph
+UCF-Crime,sultani2018real,10,shooting,"1 (behavioral); arson and explosion are labels inside a weakly supervised crime corpus, not a fire-monitoring benchmark",manuscript UCF-Crime paragraph
+UCF-Crime,sultani2018real,11,shoplifting,"1 (behavioral); arson and explosion are labels inside a weakly supervised crime corpus, not a fire-monitoring benchmark",manuscript UCF-Crime paragraph
+UCF-Crime,sultani2018real,12,stealing,"1 (behavioral); arson and explosion are labels inside a weakly supervised crime corpus, not a fire-monitoring benchmark",manuscript UCF-Crime paragraph
+UCF-Crime,sultani2018real,13,vandalism,"1 (behavioral); arson and explosion are labels inside a weakly supervised crime corpus, not a fire-monitoring benchmark",manuscript UCF-Crime paragraph
+FiSmo,cazzolato2017fismo,,sub-collection:Flickr-Fire,2 (fire); 2000 images,manuscript FiSmo paragraph
+FiSmo,cazzolato2017fismo,,sub-collection:BoWFire,2 (fire); 226 images,manuscript FiSmo paragraph
+FiSmo,cazzolato2017fismo,,sub-collection:SmokeBlock,2 (smoke); 1666 images,manuscript FiSmo paragraph

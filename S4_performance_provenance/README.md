@@ -4,4 +4,4 @@
 
 `page_confirmation = author_verification_required` until each value is checked against the cited PDF page.
 
-Figure source CSVs are in `figure_source_data/`. Per-table dumps are in `manuscript_tables/`. See `figure_manifest.csv` for the mapping from PNG / TikZ figures to those CSVs.
+Figure source CSVs are in `figure_source_data/`. Per-table dumps of the manuscript comparison tables are in `manuscript_tables/`. The **dataset audit** (catalogue, distribution by tier/access/composition, protocol caveats, named categories) is in [`../datasets/`](../datasets/). See `figure_manifest.csv` for the mapping from PNG / TikZ figures to source CSVs.

@@ -3,7 +3,8 @@
 | File | Purpose |
 | --- | --- |
 | `scripts/build_replication_tables.py` | Regenerates S1–S4 CSVs from the manuscript-derived tables |
-| `scripts/validate_package.py` | Structural + PRISMA-arithmetic audit |
+| `scripts/build_dataset_audit.py` | Regenerates `datasets/` catalogue, distribution, caveats, and category lists |
+| `scripts/validate_package.py` | Structural + PRISMA-arithmetic + dataset-catalogue audit |
 | `scripts/generate_checksums.py` | Rewrites `checksums.sha256` |
 | `data_dictionary.csv` | Column definitions |
 | `package_manifest.csv` | Version and row counts |
@@ -13,6 +14,7 @@
 
 ```bash
 python S5_validation/scripts/build_replication_tables.py
+python S5_validation/scripts/build_dataset_audit.py
 python S5_validation/scripts/validate_package.py
 python S5_validation/scripts/generate_checksums.py
 ```

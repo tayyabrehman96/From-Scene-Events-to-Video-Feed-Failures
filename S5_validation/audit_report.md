@@ -2,10 +2,11 @@
 
 - Package version: 0.1.0-author-verification
 - Audit date: 2026-08-31
-- Files checksummed: 56
+- Files checksummed: 63
 - S2 citation inventory rows: 176
 - S3 core-evidence rows extracted from manuscript tables: 52
 - S4 provenance rows: 137
+- Dataset catalogue rows: 21
 
 ## Automatic checks
 

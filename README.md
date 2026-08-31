@@ -13,10 +13,24 @@ It is written for **researchers** who want to reuse the search specification, ta
 | **S1** | Database query families, executable Boolean strings, evidence-freeze log, eligibility (inclusion/exclusion) criteria, PRISMA flow CSV, full-text exclusion counts, screening schemas, Google Scholar and deduplication protocols | [`S1_search_and_selection/`](S1_search_and_selection/) |
 | **S2** | Bibliographic citation inventory (machine-readable CSV + BibTeX) | [`S2_citation_inventory/`](S2_citation_inventory/) |
 | **S3** | Core primary-evidence extraction table transcribed from manuscript comparison tables, plus the five-dimension appraisal instrument and a ratings template | [`S3_extraction/`](S3_extraction/) |
-| **S4** | Performance-provenance table linking every reproduced numerical cell to its citation key; figure source CSVs; per-table CSV dumps | [`S4_performance_provenance/`](S4_performance_provenance/) |
+| **S4** | Performance-provenance table; figure source CSVs; **dataset audit** (catalogue, distribution, protocol caveats) | [`S4_performance_provenance/`](S4_performance_provenance/), [`datasets/`](datasets/) |
 | **S5** | Validation and table-generation scripts, data dictionary, checksums, amendment log, audit report | [`S5_validation/`](S5_validation/) |
 
 This repository is the replication package only. Manuscript LaTeX, the `.bib` file, and figure PNGs are not included.
+
+## Dataset audit (catalogue and distribution)
+
+The review’s dataset tables are deposited in academic audit form under [`datasets/`](datasets/):
+
+| File | What a reviewer can check |
+| --- | --- |
+| [`datasets/dataset_catalogue.csv`](datasets/dataset_catalogue.csv) | 21 corpora with split, public access, composition, scenes/cameras, annotation, metric family, and notes |
+| [`datasets/dataset_distribution.csv`](datasets/dataset_distribution.csv) | Counts by tier, access, composition, and annotation; summed VAD train/test volume |
+| [`datasets/dataset_protocol_caveats.csv`](datasets/dataset_protocol_caveats.csv) | Why each corpus cannot be treated as a global leaderboard |
+| [`datasets/dataset_categories_and_subsets.csv`](datasets/dataset_categories_and_subsets.csv) | UCF-Crime’s 13 categories; FiSmo sub-collections |
+
+Cells that the manuscript does not state are **NR**, not guessed. Video files are not redistributed.
+
 
 ## Inclusion / exclusion CSVs
 
@@ -56,6 +70,7 @@ Python 3.10+; standard library only.
 
 ```bash
 python S5_validation/scripts/build_replication_tables.py
+python S5_validation/scripts/build_dataset_audit.py
 python S5_validation/scripts/validate_package.py
 ```
 

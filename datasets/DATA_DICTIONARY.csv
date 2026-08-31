@@ -1,0 +1,11 @@
+column,definition
+dataset_id,Stable identifier. T1/T2/T3 encodes the principal operational tier.
+primary_tier,1 = behavioral/object interaction; 2 = fire/smoke hazard; 3 = camera/video-feed integrity. Multi-tier corpora receive one primary tier plus multi_tier_flag=yes.
+composition,real | synthetic | mixed | synthetic faults on real feeds. Not inferred beyond the review text.
+public_access,yes | partial | no. Partial means the originating study used a collection that is not fully redistributable.
+n_train / n_test,Official split sizes in split_unit. NR if the review table does not state a number.
+official_split_named,Whether a reusable named train/test partition is identified in the review.
+n_anomaly_events,"Count of anomalous events, distinct from n_anomaly_categories (see ShanghaiTech)."
+annotation_granularity,"What is labelled: video, frame, box, pixel, superpixel, or a combination."
+typical_evaluation_metric,Metric family used on this corpus in the review. Not a licence to compare across families.
+NR,Not reported in the manuscript tables or dataset-section prose. Not imputed.

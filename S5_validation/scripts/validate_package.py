@@ -28,6 +28,8 @@ REQUIRED = [
     S4 / "performance_provenance.csv",
     S4 / "figure_source_data" / "fig2a_anomaly_tier_counts.csv",
     S4 / "figure_source_data" / "fig_prisma_flow.csv",
+    ROOT / "datasets" / "dataset_catalogue.csv",
+    ROOT / "datasets" / "dataset_distribution.csv",
     S5 / "data_dictionary.csv",
     S5 / "checksums.sha256",
     S5 / "AMENDMENT_LOG.md",
@@ -115,6 +117,21 @@ def main() -> int:
     missing_s4 = sorted({r["citation_key"] for r in s4} - set(keys))
     if missing_s4:
         warnings.append(f"S4 keys not in S2 bibliography: {missing_s4}")
+
+    datasets = read_csv(ROOT / "datasets" / "dataset_catalogue.csv")
+    ds_ids = [r["dataset_id"] for r in datasets]
+    if len(ds_ids) != len(set(ds_ids)):
+        errors.append("duplicate dataset_id in datasets/dataset_catalogue.csv")
+    if len(datasets) < 21:
+        errors.append(f"dataset catalogue has {len(datasets)} rows; expected at least 21 tabulated corpora")
+    ds_keys = {r["citation_key"] for r in datasets}
+    missing_ds = sorted(ds_keys - set(keys))
+    if missing_ds:
+        warnings.append(f"dataset catalogue citation keys not in S2: {missing_ds}")
+    n_multi = sum(r.get("multi_tier_flag") == "yes" for r in datasets)
+    if n_multi != 1:
+        warnings.append(f"expected exactly one multi-tier corpus (ADOC); found {n_multi}")
+    print("Dataset catalogue rows:", len(datasets))
 
     if len(s3) != int(p["core_studies_S3"]):
         warnings.append(
