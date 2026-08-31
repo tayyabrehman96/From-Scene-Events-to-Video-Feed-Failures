@@ -1,0 +1,10 @@
+method,year,citation_key,training_regime,ped2_auc,avenue_auc,shtech_auc,ucf_crime_auc,xd_violence_ap,representation,scoring_mechanism,manuscript_table,canonical_for_s4
+MIL-Rank,2018,sultani2018real,Video-level weak supervision,,,,75.4,,C3D / I3D,MIL ranking,tab:weakly_methods,no
+GCN-Anomaly,2019,zhong2019graph,Video-level weak supervision,,,84.4,82.1,,TSN + GCN,Graph MIL,tab:weakly_methods,no
+Wu et al. (XD-Violence),2020,wu2020not,Video-level weak supervision,,,,82.4,78.6,I3D + VGGish,HL-Net,tab:weakly_methods,no
+RTFM,2021,tian2021weakly,Video-level weak supervision,,,97.2,84.3,77.8,I3D,Feature magnitude,tab:weakly_methods,no
+MIST,2021,feng2021mist,Video-level weak supervision,,,94.8,82.3,,I3D,Multi-instance self-training,tab:weakly_methods,no
+MGFN,2023,chen2023mgfn,Video-level weak supervision,,,,86.7,80.1,I3D,Multi-granularity MIL,tab:weakly_methods,no
+UR-DMU (RGB),2023,zhou2023dmu,Video-level weak supervision,,,,87.0,81.7,I3D,Uncertainty-regulated dual memory,tab:weakly_methods,no
+UR-DMU (RGB+audio),2023,zhou2023dmu,Video-level weak supervision,,,,,81.8,I3D + VGGish,Modality ablation,tab:weakly_methods,no
+PEL4VAD,2024,zhang2024pel4vad,Video labels + CLIP prompt features,,,98.1,86.8,85.6,I3D + CLIP prompt features,Prompt-enhanced context learning,tab:weakly_methods,no

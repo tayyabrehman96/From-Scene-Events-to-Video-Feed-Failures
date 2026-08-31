@@ -1,0 +1,5 @@
+query_family_id,query_family,core_concepts,representative_terms,source
+QF1,Behavioral VAD,anomaly task + surveillance context + learning method,video anomaly detection; abnormal event; violence; loitering; fall; crowd; traffic; abandoned object; CNN; RNN; autoencoder; MIL; self-supervised; transformer,tab:query_families
+QF2,Physical hazards,fire/smoke phenomenon + visual monitoring + learning method,fire; flame; smoke; haze; early warning; wildfire; CCTV; video surveillance; classification; detection; segmentation; transformer,tab:query_families
+QF3,Feed integrity,camera/feed failure + surveillance context,camera tampering; blocked lens; occlusion; blur; defocus; displacement; frozen stream; frame loss; signal corruption; no-reference image quality,tab:query_families
+QF4,Cross-cutting update,recent representation/evaluation/deployment terms,foundation model; vision-language model; multimodal LLM; CLIP; open-vocabulary; state-space model; Mamba; event-centric evaluation; edge deployment,tab:query_families

@@ -1,0 +1,11 @@
+supplement,file,column,type,definition
+S1,07_prisma_flow.csv,n,integer,Count at a PRISMA slot
+S1,07_prisma_flow.csv,verification_status,enum,working_author_review | transcribed_from_manuscript | author_verification_required
+S1,06_eligibility_inclusion_exclusion.csv,criterion_id,string,IC1–IC5 or EC1–EC5
+S2,citation_inventory.csv,citation_key,string,BibTeX key used in main.tex
+S2,citation_inventory.csv,role_in_review,enum,Heuristic role label from title/type; not a substitute for S3 coding
+S3,core_primary_evidence.csv,primary_tier,enum,"1 behavioural, 2 hazard, 3 feed integrity"
+S3,core_primary_evidence.csv,appraisal_D1,enum,L | S | H | author_verification_required
+S4,performance_provenance.csv,canonical_table,enum,yes = use this value as the manuscript canonical number
+S4,performance_provenance.csv,page_confirmation,enum,author must confirm the value against the cited PDF page
+S4,figure_source_data/fig2a_anomaly_tier_counts.csv,n_included_primary,integer,Primary-tier count; must sum to N5

@@ -1,0 +1,10 @@
+method,year,citation_key,training_regime,ped2_auc,avenue_auc,shtech_auc,ucf_crime_auc,xd_violence_ap,representation,scoring_mechanism,manuscript_table,canonical_for_s4
+LAVAD,2024,zanella2024harnessing,Training-free,,,,78.1,,CLIP ViT-L/14,Prompt similarity,tab:foundation_methods,no
+VadCLIP,2024,wu2024vadclip,Video labels + frozen CLIP,,,,88.0,84.5,CLIP ViT-B/16,Vision-language alignment,tab:foundation_methods,no
+PEL4VAD,2024,zhang2024pel4vad,Video labels + CLIP prompt features,,,98.1,86.8,85.6,I3D + CLIP prompt features,Prompt-enhanced context learning,tab:foundation_methods,no
+HAWK,2024,tang2024hawk,Instruction tuning,,,,NR,NR,VideoLLaMA,Open-world description,tab:foundation_methods,no
+Follow the Rules,2024,yang2024follow,Rule induction / verification,,,,80.3,,LLM/VLM rule pipeline,Rule violation,tab:foundation_methods,no
+AnyAnomaly,2026,ahn2026anyanomaly,Training-free customizable VQA,,,,NR,NR,LVLM,User-defined concepts,tab:foundation_methods,no
+ASK-HINT,2026,zou2026askhint,Training-free action-centric prompting,,,,NR,NR,Frozen VLM,Prompt similarity,tab:foundation_methods,no
+LAVIDA,2026,dai2026lavida,Pseudo-anomaly; no real VAD training data,,,,NR,NR,MLLM,Zero-shot frame/pixel,tab:foundation_methods,no
+Alert-CLIP,2026,zhu2026alertclip,Representation tuning,,,,NR,NR,CLIP,Multi-level alignment,tab:foundation_methods,no

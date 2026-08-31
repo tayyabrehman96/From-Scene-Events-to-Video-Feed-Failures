@@ -1,0 +1,7 @@
+method,year,citation_key,training_regime,ped2_auc,avenue_auc,shtech_auc,ucf_crime_auc,xd_violence_ap,representation,scoring_mechanism,manuscript_table,canonical_for_s4
+Georgescu et al.,2021,georgescu2021anomaly,Self-supervised,97.8,89.3,82.7,,,Multi-task CNN,Pretext discrepancy,tab:self_supervised_methods,no
+Jigsaw,2022,wang2022video_jigsaw,Self-supervised,96.8,87.5,75.2,,,Spatiotemporal jigsaw,Pretext discrepancy,tab:self_supervised_methods,no
+Cho et al.,2023,cho2023look,Self-supervised,97.6,89.8,79.3,,,Contrastive temporal neighbors,Contrastive,tab:self_supervised_methods,no
+SSMTL++v1,2023,barbalau2023ssmtl,Self-supervised,,93.7,82.9,,,Multi-task + CvT,Pretext discrepancy,tab:self_supervised_methods,no
+SSMTL++v2,2023,barbalau2023ssmtl,Self-supervised,,91.6,83.8,,,Alternative configuration,Pretext discrepancy,tab:self_supervised_methods,no
+HSC,2023,sun2023hierarchical,Normal-only semantic contrast,98.1,93.7,83.4,,,Semantic parsing + AE/memory,Reconstruction + contrastive,tab:self_supervised_methods,no

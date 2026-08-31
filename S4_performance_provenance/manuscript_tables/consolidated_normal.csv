@@ -1,0 +1,11 @@
+method,year,citation_key,training_regime,ped2_auc,avenue_auc,shtech_auc,ucf_crime_auc,xd_violence_ap,representation,scoring_mechanism,manuscript_table,canonical_for_s4
+Conv-AE,2016,hasan2016learning,Normal-only,85.0,80.0,60.9,,,ConvAE,Reconstruction,tab:consolidated_performance,yes
+Frame-Pred,2018,liu2018future,Normal-only,95.4,85.1,72.8,,,U-Net + GAN,Prediction,tab:consolidated_performance,yes
+MemAE,2019,gong2019memorizing,Normal-only,94.1,83.3,71.2,,,AE + memory,Reconstruction,tab:consolidated_performance,yes
+MNAD,2020,park2020learning,Normal-only,97.0,88.5,70.5,,,AE + memory,Recon. + prediction,tab:consolidated_performance,yes
+Georgescu et al.,2021,georgescu2021anomaly,Self-supervised,97.8,89.3,82.7,,,Multi-task CNN,Pretext discrepancy,tab:consolidated_performance,yes
+SSMTL++v1,2023,barbalau2023ssmtl,Self-supervised,,93.7,82.9,,,Multi-task + CvT/pretexts,Pretext discrepancy,tab:consolidated_performance,yes
+SSMTL++v2,2023,barbalau2023ssmtl,Self-supervised,,91.6,83.8,,,Alternative multi-task configuration,Pretext discrepancy,tab:consolidated_performance,yes
+STG-NF,2023,hirschorn2023normalizing,Normal-only / pose,,,85.9,,,Pose + normalizing flow,Density,tab:consolidated_performance,yes
+FPDM,2023,yan2023feature,Normal-only,,90.1,78.6,,,Feature diffusion,Prediction/reconstruction,tab:consolidated_performance,yes
+HSC,2023,sun2023hierarchical,Normal-only semantic contrast,98.1,93.7,83.4,,,Semantic parsing + AE/memory,Reconstruction + contrastive,tab:consolidated_performance,yes

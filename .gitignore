@@ -1,0 +1,31 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.blg
+*.nav
+*.snm
+*.vrb
+*.bcf
+*.run.xml
+*.bbl-SAVE-ERROR
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local clone helper
+_github_clone/

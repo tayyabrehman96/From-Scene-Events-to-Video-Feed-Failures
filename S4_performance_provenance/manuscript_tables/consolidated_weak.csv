@@ -1,0 +1,10 @@
+method,year,citation_key,training_regime,ped2_auc,avenue_auc,shtech_auc,ucf_crime_auc,xd_violence_ap,representation,scoring_mechanism,manuscript_table,canonical_for_s4
+MIL-Rank,2018,sultani2018real,Video-level weak supervision,,,,75.4,,C3D,MIL ranking,tab:weak_foundation_performance,yes
+RTFM,2021,tian2021weakly,Video-level weak supervision,,,97.2,84.3,77.8,I3D,Feature magnitude,tab:weak_foundation_performance,yes
+Wu & Liu,2021,wu2021causal,Video-level weak supervision,,,,84.9,75.9,I3D,Causal temporal relation,tab:weak_foundation_performance,yes
+MGFN,2023,chen2023mgfn,Video-level weak supervision,,,,86.7,80.1,I3D,Multi-granularity MIL,tab:weak_foundation_performance,yes
+UR-DMU (RGB),2023,zhou2023dmu,Video-level weak supervision,,,,87.0,81.7,I3D,Uncertainty-regulated dual memory,tab:weak_foundation_performance,yes
+UR-DMU (RGB+audio),2023,zhou2023dmu,Video-level weak supervision,,,,,81.8,I3D + VGGish,Modality ablation,tab:weak_foundation_performance,yes
+SGTTD,2024,wu2022self,Video-level weak supervision,,,97.3,85.1,,Temporal transformer,Weak temporal discrimination,tab:weak_foundation_performance,yes
+VadCLIP,2024,wu2024vadclip,Video labels + frozen CLIP,,,,88.0,84.5,CLIP ViT-B/16,Vision-language alignment,tab:weak_foundation_performance,yes
+PEL4VAD,2024,zhang2024pel4vad,Video labels + CLIP prompt features,,,98.1,86.8,85.6,I3D + CLIP prompts,Prompt-enhanced context learning,tab:weak_foundation_performance,yes

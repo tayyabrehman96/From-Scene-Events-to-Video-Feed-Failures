@@ -1,0 +1,11 @@
+criterion_id,polarity,criterion_text,prisma_stage_applied,source
+IC1,inclusion,"Peer-reviewed journal or conference paper; accepted 2025--2026 main-conference, findings, and workshop papers were eligible but their publication category was recorded separately.",title_abstract_and_full_text,tab:eligibility
+IC2,inclusion,"Proposes, evaluates, or critically benchmarks a computational method for scene anomaly detection, visual hazard recognition, or camera/video-feed integrity.",title_abstract_and_full_text,tab:eligibility
+IC3,inclusion,"Targets surveillance, traffic monitoring, public-space monitoring, industrial monitoring, or a fixed-camera setting whose sensing conditions, anomaly definition, and evaluation outputs transfer directly to surveillance feed monitoring.",title_abstract_and_full_text,tab:eligibility
+IC4,inclusion,Reports quantitative evaluation on a public benchmark or a sufficiently described study-specific evaluation corpus.,full_text,tab:eligibility
+IC5,inclusion,"Falls within January 2010--June 2026, except seminal pre-2010 datasets or methods required for technical context.",pre_screening_and_full_text,tab:eligibility
+EC1,exclusion,Non-English publication or inaccessible full text.,pre_screening_or_eligibility,tab:eligibility
+EC2,exclusion,"Duplicate report, extended abstract, or a conference version superseded by a substantially overlapping journal extension.",eligibility,tab:eligibility
+EC3,exclusion,"Non-visual-only work, medical/industrial inspection without a surveillance transfer argument, or generic anomaly detection without relevant evaluation.",eligibility,tab:eligibility
+EC4,exclusion,"No quantitative evaluation, inadequate description of data/splits, or results that cannot be associated with a defined task and metric.",eligibility,tab:eligibility
+EC5,exclusion,"Review papers used only for positioning, not as primary experimental evidence.",eligibility,tab:eligibility

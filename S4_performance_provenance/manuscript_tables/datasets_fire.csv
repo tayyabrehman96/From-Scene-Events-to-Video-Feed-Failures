@@ -1,0 +1,8 @@
+dataset,citation_key,year,size,fire,smoke,type,source,feature,primary_tier
+Foggia,foggia2015fire,2015,62 videos,yes,yes,Cls,Surveillance,Early real-world surveillance fire dataset,2
+BoWFire,chino2015bowfire,2015,226 images,yes,no,Cls + Seg,Web,Superpixel-level fire annotation,2
+FireNet,jadon2019firenet,2019,~2500 images,yes,no,Cls,Mixed,Balanced binary fire/non-fire,2
+FiSmo,cazzolato2017fismo,2017,6 sub-collections,yes,yes,Cls + Seg,Mixed / web,Compilation of emergency-situation fire and smoke sets,2
+FLAME,shamsoshoara2021aerial,2021,2003 img + 39 vid,yes,yes,Cls + Seg,UAV aerial,Aerial perspective with instance masks,2
+D-Fire,de2022dfire,2022,21527 images,yes,yes,Det,Mixed,Multi-environment bounding boxes,2
+FASDD,wang2024fasdd,2024,120000+ images,yes,yes,Det,Remote sensing + ground,Largest heterogeneous fire/smoke set,2

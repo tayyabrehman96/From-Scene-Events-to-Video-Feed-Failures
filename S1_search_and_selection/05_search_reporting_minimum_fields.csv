@@ -1,0 +1,7 @@
+source,interface_fields,search_families,date_handling,archived_reproducibility_record
+IEEE Xplore,Command Search; metadata/abstract terms,"Behavioral, hazard, feed-integrity, cross-cutting",2010--30 June 2026,"Exact Boolean syntax, filters, execution window, export-format specification"
+ACM Digital Library,Advanced Search; title/abstract/keywords,Same four families,2010--30 June 2026,Exact syntax and interface notes
+Scopus,TITLE-ABS-KEY,Same four families,2010--30 June 2026,"Fielded syntax, source-type and language filters"
+Web of Science Core Collection,Topic field (TS),Same four families,2010--30 June 2026,"Fielded syntax, index coverage and filters"
+Google Scholar,Phrase/keyword discovery queries,Gap filling and citation discovery,Search dates recorded separately,"Query, maximum screened rank, inclusion rule, deduplication rule"
+Official proceedings,WACV/CVPR open-access repositories,2025--2026 update vocabulary,Evidence freeze: 30 June 2026,"Proceedings pages checked, study status, main/findings/workshop designation"

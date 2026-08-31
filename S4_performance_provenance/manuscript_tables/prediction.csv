@@ -1,0 +1,8 @@
+method,year,citation_key,training_regime,ped2_auc,avenue_auc,shtech_auc,ucf_crime_auc,xd_violence_ap,representation,scoring_mechanism,manuscript_table,canonical_for_s4
+Frame-Pred,2018,liu2018future,Normal-only,95.4,85.1,72.8,,,U-Net + GAN,Prediction,tab:prediction_methods,no
+Morais et al.,2019,morais2019learning,Normal-only / pose,,88.3,75.4,,,MPED-RNN,Prediction,tab:prediction_methods,no
+BMAN,2020,lee2019bman,Normal-only,96.6,90.0,76.2,,,BiDirectional,Prediction,tab:prediction_methods,no
+CT-D2GAN,2021,feng2021ct,Normal-only,97.2,85.9,77.7,,,Conv-Transf + D2GAN,Prediction,tab:prediction_methods,no
+Hybrid Flow,2021,liu2021hybrid,Normal-only,96.3,85.8,73.2,,,MemAE + flow pred.,Prediction,tab:prediction_methods,no
+CR-BPN,2022,chen2022comprehensive,Normal-only,98.3,90.3,78.1,,,Bi-prediction net,Prediction,tab:prediction_methods,no
+STENet,2024,wang2024stenet,Normal-only,98.1,89.7,76.8,,,Spatiotemporal enhance,Prediction,tab:prediction_methods,no

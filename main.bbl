@@ -1,0 +1,1377 @@
+\begin{thebibliography}{176}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Acharya et~al.(2026)Acharya, Sapkota, Yu, and Liu]{acharya2026road}
+A.~Acharya, H.~Sapkota, Q.~Yu, and X.~Liu.
+\newblock The road less seen: Segment exploration for weakly supervised video
+  anomaly detection.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pages 14147--14156, 2026.
+
+\bibitem[Acsintoae et~al.(2022)Acsintoae, Florescu, Georgescu, Mare, Sumedrea,
+  Ionescu, Khan, and Shah]{acsintoae2022ubnormal}
+A.~Acsintoae, A.~Florescu, M.-I. Georgescu, T.~Mare, P.~Sumedrea, R.~T.
+  Ionescu, F.~S. Khan, and M.~Shah.
+\newblock Ubnormal: New benchmark for supervised open-set video anomaly
+  detection.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pages 20143--20153, 2022.
+\newblock \doi{10.1109/CVPR52688.2022.01951}.
+
+\bibitem[Ahn et~al.(2026)Ahn, Jo, Lee, Kwon, Hong, and Park]{ahn2026anyanomaly}
+S.~Ahn, Y.~Jo, K.~Lee, S.~Kwon, I.~Hong, and S.~Park.
+\newblock Anyanomaly: Zero-shot customizable video anomaly detection with
+  {LVLM}.
+\newblock In \emph{IEEE/CVF Winter Conference on Applications of Computer
+  Vision}, pages 3026--3035, 2026.
+
+\bibitem[{Alinezhad Noghre} et~al.(2025){Alinezhad Noghre}, {Danesh Pazho}, and
+  Tabkhi]{noghre2025survey_human_vehicle}
+G.~{Alinezhad Noghre}, A.~{Danesh Pazho}, and H.~Tabkhi.
+\newblock A survey on video anomaly detection via deep learning: Human,
+  vehicle, and environment.
+\newblock \emph{arXiv preprint arXiv:2508.14203}, 2025.
+\newblock \doi{10.48550/arXiv.2508.14203}.
+
+\bibitem[Arjovsky et~al.(2017)Arjovsky, Chintala, and
+  Bottou]{arjovsky2017wasserstein}
+M.~Arjovsky, S.~Chintala, and L.~Bottou.
+\newblock Wasserstein generative adversarial networks.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  214--223, 2017.
+
+\bibitem[Arnab et~al.(2021)Arnab, Dehghani, Heigold, Sun, Lucic, and
+  Schmid]{arnab2021vivit}
+A.~Arnab, M.~Dehghani, G.~Heigold, C.~Sun, M.~Lucic, and C.~Schmid.
+\newblock Vivit: A video vision transformer.
+\newblock In \emph{IEEE/CVF International Conference on Computer Vision}, pages
+  6836--6846, 2021.
+\newblock \doi{10.1109/ICCV48922.2021.00676}.
+
+\bibitem[Barbalau et~al.(2023)Barbalau, Ionescu, Georgescu, Dueholm,
+  Ramachandra, Nasrollahi, Khan, Moeslund, and Shah]{barbalau2023ssmtl}
+A.~Barbalau, R.~T. Ionescu, M.-I. Georgescu, J.~Dueholm, B.~Ramachandra,
+  K.~Nasrollahi, F.~S. Khan, T.~B. Moeslund, and M.~Shah.
+\newblock Ssmtl++: Revisiting self-supervised multi-task learning for video
+  anomaly detection.
+\newblock \emph{Computer Vision and Image Understanding}, 229:\penalty0 103656,
+  2023.
+\newblock \doi{10.1016/j.cviu.2023.103656}.
+
+\bibitem[Ben~Ammar et~al.(2025)Ben~Ammar, Mendoza, Belkhir, Manzanera, and
+  Franchi]{benammar2025foundation_transformer}
+M.~Ben~Ammar, A.~Mendoza, N.~Belkhir, A.~Manzanera, and G.~Franchi.
+\newblock Foundation models and transformers for anomaly detection: A survey.
+\newblock \emph{Information Fusion}, 126:\penalty0 103517, 2025.
+\newblock \doi{10.1016/j.inffus.2025.103517}.
+
+\bibitem[Bergmann et~al.(2019)Bergmann, Fauser, Sattlegger, and
+  Steger]{bergmann2019mvtec}
+P.~Bergmann, M.~Fauser, D.~Sattlegger, and C.~Steger.
+\newblock Mvtec ad--a comprehensive real-world dataset for unsupervised anomaly
+  detection.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pages 9592--9600, 2019.
+\newblock \doi{10.1109/CVPR.2019.00982}.
+
+\bibitem[Bertasius et~al.(2021)Bertasius, Wang, and
+  Torresani]{bertasius2021space}
+G.~Bertasius, H.~Wang, and L.~Torresani.
+\newblock Is space-time attention all you need for video understanding?
+\newblock In \emph{International Conference on Machine Learning}, pages
+  813--824, 2021.
+
+\bibitem[Boolzen et~al.(2026)Boolzen, Kuhn, Flegr, Rott, Stausberg, and
+  K{\"u}chemann]{boolzen2026evidence}
+C.~Boolzen, J.~Kuhn, S.~Flegr, E.-M. Rott, N.~Stausberg, and S.~K{\"u}chemann.
+\newblock Evidence of impact and interpretational limits of generative {AI} in
+  {STEM} education: a systematic review and meta-analysis on cognitive learning
+  outcomes.
+\newblock \emph{Artificial Intelligence Review}, 2026.
+\newblock \doi{10.1007/s10462-026-11665-9}.
+\newblock Article in Press.
+
+\bibitem[Byrt et~al.(1993)Byrt, Bishop, and Carlin]{byrt1993bias}
+T.~Byrt, J.~Bishop, and J.~B. Carlin.
+\newblock Bias, prevalence and kappa.
+\newblock \emph{Journal of Clinical Epidemiology}, 46\penalty0 (5):\penalty0
+  423--429, 1993.
+\newblock \doi{10.1016/0895-4356(93)90018-V}.
+
+\bibitem[Campbell et~al.(2020)Campbell, McKenzie, Sowden, Katikireddi, Brennan,
+  Ellis, Hartmann-Boyce, Ryan, Shepperd, Thomas, Welch, and
+  Thomson]{campbell2020swim}
+M.~Campbell, J.~E. McKenzie, A.~Sowden, S.~V. Katikireddi, S.~E. Brennan,
+  S.~Ellis, J.~Hartmann-Boyce, R.~Ryan, S.~Shepperd, J.~Thomas, V.~Welch, and
+  H.~Thomson.
+\newblock Synthesis without meta-analysis ({SWiM}) in systematic reviews:
+  reporting guideline.
+\newblock \emph{BMJ}, 368:\penalty0 l6890, 2020.
+\newblock \doi{10.1136/bmj.l6890}.
+
+\bibitem[Cao et~al.(2023)Cao, Lu, Wang, and Zhang]{cao2023nwpu}
+C.~Cao, Y.~Lu, P.~Wang, and Y.~Zhang.
+\newblock A new comprehensive benchmark for semi-supervised video anomaly
+  detection and anticipation.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pages 20392--20401, 2023.
+\newblock \doi{10.1109/CVPR52729.2023.01953}.
+
+\bibitem[Carreira and Zisserman(2017)]{carreira2017quo}
+J.~Carreira and A.~Zisserman.
+\newblock Quo vadis, action recognition? a new model and the kinetics dataset.
+\newblock In \emph{IEEE Conference on Computer Vision and Pattern Recognition},
+  pages 6299--6308, 2017.
+\newblock \doi{10.1109/CVPR.2017.502}.
+
+\bibitem[Cazzolato et~al.(2017)Cazzolato, Avalhais, Chino, Ramos, de~Souza,
+  Rodrigues-Jr, and Traina]{cazzolato2017fismo}
+M.~T. Cazzolato, L.~P.~S. Avalhais, D.~Y.~T. Chino, J.~S. Ramos, J.~A.
+  de~Souza, J.~F. Rodrigues-Jr, and A.~J.~M. Traina.
+\newblock {FiSmo}: A compilation of datasets from emergency situations for fire
+  and smoke analysis.
+\newblock In \emph{Proceedings of Satellite Events of the 32nd Brazilian
+  Symposium on Databases (SBBD) -- Dataset Showcase Workshop}, pages 213--223,
+  Uberl\^{a}ndia, Brazil, 2017. SBC.
+
+\bibitem[Chandrakala et~al.(2023)Chandrakala, Deepak, and
+  Revathy]{chandrakala2023thematic}
+S.~Chandrakala, K.~Deepak, and G.~Revathy.
+\newblock Anomaly detection in surveillance videos: A thematic taxonomy of deep
+  models, review and performance analysis.
+\newblock \emph{Artificial Intelligence Review}, 56\penalty0 (4):\penalty0
+  3319--3368, 2023.
+\newblock \doi{10.1007/s10462-022-10258-6}.
+
+\bibitem[Chang et~al.(2023)Chang, Ren, Xu, Li, Chen, and
+  Hauptmann]{chang2021comprehensive}
+X.~Chang, P.~Ren, P.~Xu, Z.~Li, X.~Chen, and A.~Hauptmann.
+\newblock A comprehensive survey of scene graphs: Generation and application.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 45\penalty0 (1):\penalty0 1--26, 2023.
+\newblock \doi{10.1109/TPAMI.2021.3137605}.
+
+\bibitem[Chang et~al.(2022)Chang, Tu, Xie, Luo, Zhang, Sui, and
+  Yuan]{chang2022video}
+Y.~Chang, Z.~Tu, W.~Xie, B.~Luo, S.~Zhang, H.~Sui, and J.~Yuan.
+\newblock Video anomaly detection with spatio-temporal dissociation.
+\newblock \emph{Pattern Recognition}, 122:\penalty0 108213, 2022.
+\newblock \doi{10.1016/j.patcog.2021.108213}.
+
+\bibitem[Chen et~al.(2022)Chen, Xie, Lin, Yao, Jiang, Zhang, Qu, Qiao, Ren, and
+  Ma]{chen2022comprehensive}
+C.~Chen, Y.~Xie, S.~Lin, A.~Yao, G.~Jiang, W.~Zhang, Y.~Qu, R.~Qiao, B.~Ren,
+  and L.~Ma.
+\newblock Comprehensive regularization in a bi-directional predictive network
+  for video anomaly detection.
+\newblock \emph{Proceedings of the AAAI Conference on Artificial Intelligence},
+  36\penalty0 (1):\penalty0 230--238, 2022.
+\newblock \doi{10.1609/aaai.v36i1.19898}.
+
+\bibitem[Chen et~al.(2018{\natexlab{a}})Chen, Zhu, Papandreou, Schroff, and
+  Adam]{chen2018encoder}
+L.-C. Chen, Y.~Zhu, G.~Papandreou, F.~Schroff, and H.~Adam.
+\newblock Encoder-decoder with atrous separable convolution for semantic image
+  segmentation.
+\newblock In \emph{European Conference on Computer Vision}, pages 801--818,
+  2018{\natexlab{a}}.
+\newblock \doi{10.1007/978-3-030-01234-2_49}.
+
+\bibitem[Chen et~al.(2018{\natexlab{b}})Chen, Du, and Ng]{chen2018scenegraphs}
+N.~F.~Y. Chen, Z.~Du, and K.~H. Ng.
+\newblock Scene graphs for interpretable video anomaly classification.
+\newblock In \emph{NeurIPS Workshop on Visually Grounded Interaction and
+  Language (ViGIL)}, 2018{\natexlab{b}}.
+
+\bibitem[Chen et~al.(2023{\natexlab{a}})Chen, Ma, Yew, Hur, and
+  Khoo]{chen2024tevad}
+W.~Chen, K.~T. Ma, Z.~J. Yew, M.~Hur, and D.~A.-A. Khoo.
+\newblock {TEVAD}: Improved video anomaly detection with captions.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition Workshops}, pages 5549--5559, 2023{\natexlab{a}}.
+\newblock \doi{10.1109/CVPRW59228.2023.00587}.
+
+\bibitem[Chen et~al.(2023{\natexlab{b}})Chen, Liu, Zhang, Fok, Qi, and
+  Wu]{chen2023mgfn}
+Y.~Chen, Z.~Liu, B.~Zhang, W.~Fok, X.~Qi, and Y.-C. Wu.
+\newblock Mgfn: Magnitude-contrastive glance-and-focus network for
+  weakly-supervised video anomaly detection.
+\newblock In \emph{AAAI Conference on Artificial Intelligence},
+  2023{\natexlab{b}}.
+\newblock \doi{10.1609/aaai.v37i1.25112}.
+
+\bibitem[Chen et~al.(2024)Chen, Wu, Wang, Su, Chen, Xing, Zhong, Zhang, Zhu,
+  Lu, Li, Luo, Lu, Qiao, and Dai]{chen2024internvl}
+Z.~Chen, J.~Wu, W.~Wang, W.~Su, G.~Chen, S.~Xing, M.~Zhong, Q.~Zhang, X.~Zhu,
+  L.~Lu, B.~Li, P.~Luo, T.~Lu, Y.~Qiao, and J.~Dai.
+\newblock {InternVL}: Scaling up vision foundation models and aligning for
+  generic visual-linguistic tasks.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pages 24185--24198, 2024.
+
+\bibitem[Cheng et~al.(2024)Cheng, Chen, Wang, Li, Xian, and
+  Yu]{wang2022deep_fire}
+G.~Cheng, X.~Chen, C.~Wang, X.~Li, B.~Xian, and H.~Yu.
+\newblock Visual fire detection using deep learning: A survey.
+\newblock \emph{Neurocomputing}, 596:\penalty0 127975, 2024.
+\newblock \doi{10.1016/j.neucom.2024.127975}.
+
+\bibitem[Cheng et~al.(2026)Cheng, Lin, Chen, Yang, and Lai]{cheng2026vader}
+Y.~Cheng, Y.-H. Lin, M.-H. Chen, F.-E. Yang, and S.-H. Lai.
+\newblock {VADER}: Towards causal video anomaly understanding with
+  relation-aware large language models.
+\newblock In \emph{IEEE/CVF Winter Conference on Applications of Computer
+  Vision}, pages 7301--7311, March 2026.
+
+\bibitem[Chino et~al.(2015)Chino, Avalhais, Rodrigues~Jr, and
+  Traina]{chino2015bowfire}
+D.~Y. Chino, L.~P. Avalhais, J.~F. Rodrigues~Jr, and A.~J. Traina.
+\newblock Bowfire: Detection of fire in still images by integrating pixel color
+  and texture analysis.
+\newblock In \emph{Brazilian Symposium on Computer Graphics and Image
+  Processing}, 2015.
+\newblock \doi{10.1109/SIBGRAPI.2015.19}.
+
+\bibitem[Cho et~al.(2014)Cho, Van~Merri{\"e}nboer, Gulcehre, Bahdanau,
+  Bougares, Schwenk, and Bengio]{cho2014learning}
+K.~Cho, B.~Van~Merri{\"e}nboer, C.~Gulcehre, D.~Bahdanau, F.~Bougares,
+  H.~Schwenk, and Y.~Bengio.
+\newblock Learning phrase representations using rnn encoder-decoder for
+  statistical machine translation.
+\newblock \emph{arXiv preprint arXiv:1406.1078}, 2014.
+
+\bibitem[Cho et~al.(2023)Cho, Kim, Hwang, Park, Lee, and Lee]{cho2023look}
+M.~Cho, M.~Kim, S.~Hwang, C.~Park, K.~Lee, and S.~Lee.
+\newblock Look around for anomalies: Weakly-supervised anomaly detection via
+  context-motion relational learning.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pages 12137--12146, 2023.
+\newblock \doi{10.1109/CVPR52729.2023.01168}.
+
+\bibitem[Chong and Tay(2017)]{chong2017abnormal}
+Y.~S. Chong and Y.~H. Tay.
+\newblock Abnormal event detection in videos using spatiotemporal autoencoder.
+\newblock In \emph{International Symposium on Neural Networks}, pages 189--196.
+  Springer, 2017.
+\newblock \doi{10.1007/978-3-319-59081-3_23}.
+
+\bibitem[Chu et~al.(2026)Chu, Japar, and Lim]{chu2026reba}
+C.~Chu, N.~Japar, and C.~K. Lim.
+\newblock {REBA}: Residual mixture-of-experts and bidirectional video-text
+  alignment for better fine-grained weakly supervised video anomaly detection.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition (Findings)}, pages 8280--8290, June 2026.
+
+\bibitem[Cong et~al.(2023)Cong, Yang, and Rosenhahn]{cong2023reltr}
+Y.~Cong, M.~Y. Yang, and B.~Rosenhahn.
+\newblock Reltr: Relation transformer for scene graph generation.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 45\penalty0 (9):\penalty0 11169--11183, 2023.
+\newblock \doi{10.1109/TPAMI.2023.3268066}.
+
+\bibitem[Dai et~al.(2026)Dai, Li, Liu, Yang, and Qiao]{dai2026lavida}
+Z.~Dai, K.~Li, J.~Liu, J.~Yang, and Y.~Qiao.
+\newblock No need for real anomaly: {MLLM} empowered zero-shot video anomaly
+  detection.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pages 35648--35658, 2026.
+
+\bibitem[Dalal and Triggs(2005)]{dalal2005histograms}
+N.~Dalal and B.~Triggs.
+\newblock Histograms of oriented gradients for human detection.
+\newblock In \emph{IEEE Conference on Computer Vision and Pattern Recognition},
+  volume~1, pages 886--893, 2005.
+\newblock \doi{10.1109/CVPR.2005.177}.
+
+\bibitem[Danesh~Pazho et~al.(2023)Danesh~Pazho, Alinezhad~Noghre,
+  Rahimi~Ardabili, Neff, and Tabkhi]{pazho2023chad}
+A.~Danesh~Pazho, G.~Alinezhad~Noghre, B.~Rahimi~Ardabili, C.~Neff, and
+  H.~Tabkhi.
+\newblock Chad: Charlotte anomaly dataset.
+\newblock In \emph{Scandinavian Conference on Image Analysis}, pages 50--66.
+  Springer, 2023.
+\newblock \doi{10.1007/978-3-031-31435-3_4}.
+
+\bibitem[de~Ven{\^a}ncio et~al.(2022)de~Ven{\^a}ncio, Lisboa, and
+  Barbosa]{de2022dfire}
+P.~V. A.~B. de~Ven{\^a}ncio, A.~C. Lisboa, and A.~V. Barbosa.
+\newblock An automatic fire detection system based on deep convolutional neural
+  networks for low-power, resource-constrained devices.
+\newblock \emph{Neural Computing and Applications}, 34\penalty0 (18):\penalty0
+  15349--15368, 2022.
+\newblock \doi{10.1007/s00521-022-07467-z}.
+
+\bibitem[Doshi and Yilmaz(2020)]{doshi2020continual}
+K.~Doshi and Y.~Yilmaz.
+\newblock Continual learning for anomaly detection in surveillance videos.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition Workshops}, pages 254--255, 2020.
+\newblock \doi{10.1109/CVPRW50498.2020.00135}.
+
+\bibitem[Dosovitskiy et~al.(2021)Dosovitskiy, Beyer, Kolesnikov, Weissenborn,
+  Zhai, Unterthiner, Dehghani, Minderer, Heigold, Gelly, Uszkoreit, and
+  Houlsby]{dosovitskiy2020image}
+A.~Dosovitskiy, L.~Beyer, A.~Kolesnikov, D.~Weissenborn, X.~Zhai,
+  T.~Unterthiner, M.~Dehghani, M.~Minderer, G.~Heigold, S.~Gelly, J.~Uszkoreit,
+  and N.~Houlsby.
+\newblock An image is worth 16x16 words: Transformers for image recognition at
+  scale.
+\newblock In \emph{International Conference on Learning Representations}, 2021.
+
+\bibitem[Elhanashi et~al.(2025)Elhanashi, Essahraui, Dini, and
+  Saponara]{gaur2025early_fire_smoke}
+A.~Elhanashi, S.~Essahraui, P.~Dini, and S.~Saponara.
+\newblock Early fire and smoke detection using deep learning: A comprehensive
+  review of models, datasets, and challenges.
+\newblock \emph{Applied Sciences}, 15\penalty0 (18):\penalty0 10255, 2025.
+\newblock \doi{10.3390/app151810255}.
+
+\bibitem[Erregue et~al.(2026)Erregue, Nasrollahi, and
+  Escalera]{erregue2026prismvau}
+I.~Erregue, K.~Nasrollahi, and S.~Escalera.
+\newblock {PrismVAU}: Prompt-refined inference system for multimodal video
+  anomaly understanding.
+\newblock In \emph{IEEE/CVF Winter Conference on Applications of Computer
+  Vision Workshops}, pages 55--65, March 2026.
+
+\bibitem[{European Parliament and Council of the European
+  Union}(2024)]{eu2024aiact}
+{European Parliament and Council of the European Union}.
+\newblock Regulation (eu) 2024/1689 of 13 june 2024 laying down harmonised
+  rules on artificial intelligence (artificial intelligence act).
+\newblock Official Journal of the European Union, L 2024/1689. CELEX
+  32024R1689, 2024.
+\newblock URL \url{https://eur-lex.europa.eu/eli/reg/2024/1689/oj}.
+
+\bibitem[Feng et~al.(2021{\natexlab{a}})Feng, Hong, and Zheng]{feng2021mist}
+J.-C. Feng, F.-T. Hong, and W.-S. Zheng.
+\newblock Mist: Multiple instance self-training framework for video anomaly
+  detection.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pages 14009--14018, 2021{\natexlab{a}}.
+\newblock \doi{10.1109/CVPR46437.2021.01379}.
+
+\bibitem[Feng et~al.(2021{\natexlab{b}})Feng, Song, Chen, Chen, Ni, and
+  Chen]{feng2021ct}
+X.~Feng, D.~Song, Y.~Chen, Z.~Chen, J.~Ni, and H.~Chen.
+\newblock Convolutional transformer based dual discriminator generative
+  adversarial networks for video anomaly detection.
+\newblock In \emph{ACM International Conference on Multimedia}, pages
+  5546--5554. ACM, 2021{\natexlab{b}}.
+\newblock \doi{10.1145/3474085.3475693}.
+
+\bibitem[Foggia et~al.(2015)Foggia, Saggese, and Vento]{foggia2015fire}
+P.~Foggia, A.~Saggese, and M.~Vento.
+\newblock Real-time fire detection for video surveillance applications using a
+  combination of experts based on color, shape, and motion.
+\newblock \emph{IEEE Transactions on Circuits and Systems for Video
+  Technology}, 25\penalty0 (9):\penalty0 1545--1556, 2015.
+\newblock \doi{10.1109/TCSVT.2015.2392531}.
+
+\bibitem[Gao et~al.(2024)Gao, Huang, Chen, Jiang, Zhou, and
+  Gao]{gao2024twostage}
+S.~Gao, G.~Huang, X.~Chen, H.~Jiang, L.~Zhou, and X.~Gao.
+\newblock Two-stage deep learning-based video image recognition of early fires
+  in heritage buildings.
+\newblock \emph{Engineering Applications of Artificial Intelligence},
+  129:\penalty0 107598, 2024.
+\newblock \doi{10.1016/j.engappai.2023.107598}.
+
+\bibitem[Garcez and Lamb(2023)]{garcez2023neurosymbolic}
+A.~d. Garcez and L.~C. Lamb.
+\newblock Neurosymbolic {AI}: The 3rd wave.
+\newblock \emph{Artificial Intelligence Review}, 56:\penalty0 12387--12406,
+  2023.
+\newblock \doi{10.1007/s10462-023-10448-w}.
+
+\bibitem[Georgescu et~al.(2021)Georgescu, Barbalau, Ionescu, Khan, Popescu, and
+  Shah]{georgescu2021anomaly}
+M.-I. Georgescu, A.~Barbalau, R.~T. Ionescu, F.~S. Khan, M.~Popescu, and
+  M.~Shah.
+\newblock Anomaly detection in video via self-supervised and multi-task
+  learning.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pages 12742--12752, 2021.
+\newblock \doi{10.1109/CVPR46437.2021.01255}.
+
+\bibitem[Gong et~al.(2019)Gong, Liu, Le, Saha, Mansour, Venkatesh, and van~den
+  Hengel]{gong2019memorizing}
+D.~Gong, L.~Liu, V.~Le, B.~Saha, M.~R. Mansour, S.~Venkatesh, and A.~van~den
+  Hengel.
+\newblock Memorizing normality to detect anomaly: Memory-augmented deep
+  autoencoder for unsupervised anomaly detection.
+\newblock In \emph{IEEE/CVF International Conference on Computer Vision}, pages
+  1705--1714, 2019.
+\newblock \doi{10.1109/ICCV.2019.00179}.
+
+\bibitem[Goodfellow et~al.(2014)Goodfellow, Pouget-Abadie, Mirza, Xu,
+  Warde-Farley, Ozair, Courville, and Bengio]{goodfellow2014generative}
+I.~Goodfellow, J.~Pouget-Abadie, M.~Mirza, B.~Xu, D.~Warde-Farley, S.~Ozair,
+  A.~Courville, and Y.~Bengio.
+\newblock Generative adversarial nets.
+\newblock In \emph{Advances in Neural Information Processing Systems}, pages
+  2672--2680, 2014.
+
+\bibitem[Gu and Dao(2023)]{gu2023mamba}
+A.~Gu and T.~Dao.
+\newblock Mamba: Linear-time sequence modeling with selective state spaces.
+\newblock \emph{arXiv preprint arXiv:2312.00752}, 2023.
+
+\bibitem[Gu et~al.(2026)Gu, Li, Wang, and Ak{\c{s}}it]{gu2026tvau}
+J.~Gu, K.~Li, H.~Wang, and K.~Ak{\c{s}}it.
+\newblock Text-guided fine-grained video anomaly understanding.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition Workshops}, pages 1251--1261, June 2026.
+
+\bibitem[Guan et~al.(2022)Guan, Miao, Mu, Sun, Ye, and Gao]{guan2022improved}
+Z.~Guan, X.~Miao, Y.~Mu, Q.~Sun, Q.~Ye, and D.~Gao.
+\newblock Forest fire segmentation from aerial imagery data using an improved
+  instance segmentation model.
+\newblock \emph{Remote Sensing}, 14\penalty0 (13):\penalty0 3159, 2022.
+\newblock \doi{10.3390/rs14133159}.
+
+\bibitem[Gwet(2008)]{gwet2008ac1}
+K.~L. Gwet.
+\newblock Computing inter-rater reliability and its variance in the presence of
+  high agreement.
+\newblock \emph{British Journal of Mathematical and Statistical Psychology},
+  61\penalty0 (1):\penalty0 29--48, 2008.
+\newblock \doi{10.1348/000711006X126600}.
+
+\bibitem[Hao et~al.(2022)Hao, Li, Wang, Wang, and Gao]{wang2024stenet}
+Y.~Hao, J.~Li, N.~Wang, X.~Wang, and X.~Gao.
+\newblock Spatiotemporal consistency-enhanced network for video anomaly
+  detection.
+\newblock \emph{Pattern Recognition}, 121:\penalty0 108232, 2022.
+\newblock \doi{10.1016/j.patcog.2021.108232}.
+
+\bibitem[Hasan et~al.(2016)Hasan, Choi, Neumann, Roy-Chowdhury, and
+  Davis]{hasan2016learning}
+M.~Hasan, J.~Choi, J.~Neumann, A.~K. Roy-Chowdhury, and L.~S. Davis.
+\newblock Learning temporal regularity in video sequences.
+\newblock In \emph{IEEE Conference on Computer Vision and Pattern Recognition},
+  pages 733--742, 2016.
+\newblock \doi{10.1109/CVPR.2016.86}.
+
+\bibitem[Hashimoto et~al.(2026)Hashimoto, Konishi, Kaichi, Matsumoto, and
+  Kurokawa]{hashimoto2026cade}
+S.~Hashimoto, T.~Konishi, T.~Kaichi, K.~Matsumoto, and M.~Kurokawa.
+\newblock {CADE}: Continual weakly-supervised video anomaly detection with
+  ensembles.
+\newblock In \emph{IEEE/CVF Winter Conference on Applications of Computer
+  Vision}, pages 708--717, March 2026.
+
+\bibitem[He et~al.(2016)He, Zhang, Ren, and Sun]{he2016deep}
+K.~He, X.~Zhang, S.~Ren, and J.~Sun.
+\newblock Deep residual learning for image recognition.
+\newblock In \emph{IEEE Conference on Computer Vision and Pattern Recognition},
+  pages 770--778, 2016.
+\newblock \doi{10.1109/CVPR.2016.90}.
+
+\bibitem[He et~al.(2017)He, Gkioxari, Doll{\'a}r, and Girshick]{he2017mask}
+K.~He, G.~Gkioxari, P.~Doll{\'a}r, and R.~Girshick.
+\newblock Mask r-cnn.
+\newblock In \emph{IEEE International Conference on Computer Vision}, pages
+  2961--2969, 2017.
+\newblock \doi{10.1109/ICCV.2017.322}.
+
+\bibitem[Hirschorn and Avidan(2023)]{hirschorn2023normalizing}
+O.~Hirschorn and S.~Avidan.
+\newblock Normalizing flows for human pose anomaly detection.
+\newblock In \emph{IEEE/CVF International Conference on Computer Vision}, pages
+  13545--13555, 2023.
+\newblock \doi{10.1109/ICCV51070.2023.01246}.
+
+\bibitem[Ho et~al.(2020)Ho, Jain, and Abbeel]{ho2020denoising}
+J.~Ho, A.~Jain, and P.~Abbeel.
+\newblock Denoising diffusion probabilistic models.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~33, pages 6840--6851, 2020.
+
+\bibitem[Hochreiter and Schmidhuber(1997)]{hochreiter1997long}
+S.~Hochreiter and J.~Schmidhuber.
+\newblock Long short-term memory.
+\newblock \emph{Neural Computation}, 9\penalty0 (8):\penalty0 1735--1780, 1997.
+\newblock \doi{10.1162/neco.1997.9.8.1735}.
+
+\bibitem[Horn and Schunck(1981)]{horn1981determining}
+B.~K. Horn and B.~G. Schunck.
+\newblock Determining optical flow.
+\newblock \emph{Artificial Intelligence}, 17\penalty0 (1-3):\penalty0 185--203,
+  1981.
+\newblock \doi{10.1016/0004-3702(81)90024-2}.
+
+\bibitem[Huang et~al.(2023)Huang, Wen, Xu, Jiang, Yang, Wang, and
+  Zhang]{huang2022self}
+C.~Huang, J.~Wen, Y.~Xu, Q.~Jiang, J.~Yang, Y.~Wang, and D.~Zhang.
+\newblock Self-supervised attentive generative adversarial networks for video
+  anomaly detection.
+\newblock \emph{IEEE Transactions on Neural Networks and Learning Systems},
+  34\penalty0 (11):\penalty0 9389--9403, 2023.
+\newblock \doi{10.1109/TNNLS.2022.3159538}.
+
+\bibitem[Huang et~al.(2024)Huang, Liu, Zhang, Wu, Wen, Jiang, and
+  Xu]{wu2022self}
+C.~Huang, C.~Liu, Z.~Zhang, Z.~Wu, J.~Wen, Q.~Jiang, and Y.~Xu.
+\newblock Weakly supervised video anomaly detection via self-guided temporal
+  discriminative transformer.
+\newblock \emph{IEEE Transactions on Cybernetics}, 54\penalty0 (5):\penalty0
+  3197--3210, 2024.
+\newblock \doi{10.1109/TCYB.2022.3227044}.
+
+\bibitem[Huang et~al.(2022)Huang, Liu, Wang, Yuan, and Chen]{chen2022fire}
+L.~Huang, G.~Liu, Y.~Wang, H.~Yuan, and T.~Chen.
+\newblock Fire detection in video surveillances using convolutional neural
+  networks and wavelet transform.
+\newblock \emph{Engineering Applications of Artificial Intelligence},
+  110:\penalty0 104737, 2022.
+\newblock \doi{10.1016/j.engappai.2022.104737}.
+
+\bibitem[Jadon et~al.(2019)Jadon, Omama, Varshney, Ansari, and
+  Sharma]{jadon2019firenet}
+A.~Jadon, M.~Omama, A.~Varshney, M.~S. Ansari, and R.~Sharma.
+\newblock {FireNet}: A specialized lightweight fire and smoke detection model
+  for real-time iot applications.
+\newblock \emph{arXiv preprint arXiv:1905.11922}, 2019.
+\newblock \doi{10.48550/arXiv.1905.11922}.
+
+\bibitem[Ji et~al.(2020)Ji, Krishna, Fei-Fei, and Niebles]{ji2020action}
+J.~Ji, R.~Krishna, L.~Fei-Fei, and J.~C. Niebles.
+\newblock Action genome: Actions as compositions of spatio-temporal scene
+  graphs.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pages 10236--10247, 2020.
+\newblock \doi{10.1109/CVPR42600.2020.01025}.
+
+\bibitem[Kingma and Welling(2013)]{kingma2013auto}
+D.~P. Kingma and M.~Welling.
+\newblock Auto-encoding variational bayes.
+\newblock \emph{arXiv preprint arXiv:1312.6114}, 2013.
+
+\bibitem[Kitchenham and Charters(2007)]{kitchenham2007guidelines}
+B.~Kitchenham and S.~Charters.
+\newblock Guidelines for performing systematic literature reviews in software
+  engineering.
+\newblock Technical Report EBSE-2007-01, Keele University and University of
+  Durham, 2007.
+
+\bibitem[Kitchenham et~al.(2009)Kitchenham, Brereton, Budgen, Turner, Bailey,
+  and Linkman]{kitchenham2009systematic}
+B.~Kitchenham, O.~P. Brereton, D.~Budgen, M.~Turner, J.~Bailey, and S.~Linkman.
+\newblock Systematic literature reviews in software engineering---a systematic
+  literature review.
+\newblock \emph{Information and Software Technology}, 51\penalty0 (1):\penalty0
+  7--15, 2009.
+\newblock \doi{10.1016/j.infsof.2008.09.009}.
+
+\bibitem[Landis and Koch(1977)]{landis1977measurement}
+J.~R. Landis and G.~G. Koch.
+\newblock The measurement of observer agreement for categorical data.
+\newblock \emph{Biometrics}, 33\penalty0 (1):\penalty0 159--174, 1977.
+\newblock \doi{10.2307/2529310}.
+
+\bibitem[LeCun et~al.(2015)LeCun, Bengio, and Hinton]{lecun2015deep}
+Y.~LeCun, Y.~Bengio, and G.~Hinton.
+\newblock Deep learning.
+\newblock \emph{Nature}, 521\penalty0 (7553):\penalty0 436--444, 2015.
+\newblock \doi{10.1038/nature14539}.
+
+\bibitem[Lee et~al.(2020)Lee, Kim, and Ro]{lee2019bman}
+S.~Lee, H.~G. Kim, and Y.~M. Ro.
+\newblock Bman: Bidirectional multi-scale aggregation networks for abnormal
+  event detection.
+\newblock \emph{IEEE Transactions on Image Processing}, 29:\penalty0
+  2395--2408, 2020.
+\newblock \doi{10.1109/TIP.2019.2948286}.
+
+\bibitem[Li et~al.(2022)Li, Liu, and Jiao]{li2022self}
+S.~Li, F.~Liu, and L.~Jiao.
+\newblock Self-training multi-sequence learning with transformer for weakly
+  supervised video anomaly detection.
+\newblock \emph{Proceedings of the AAAI Conference on Artificial Intelligence},
+  36\penalty0 (2):\penalty0 1395--1403, 2022.
+\newblock \doi{10.1609/aaai.v36i2.20028}.
+
+\bibitem[Li et~al.(2015)Li, Chang, Wang, Ni, Hong, and Yan]{li2015crowded}
+T.~Li, H.~Chang, M.~Wang, B.~Ni, R.~Hong, and S.~Yan.
+\newblock Crowded scene analysis: A survey.
+\newblock \emph{IEEE Transactions on Circuits and Systems for Video
+  Technology}, 25\penalty0 (3):\penalty0 367--386, 2015.
+\newblock \doi{10.1109/TCSVT.2014.2358029}.
+
+\bibitem[Liang et~al.(2023)Liang, Jafari, Luo, Chen, Cao, and
+  Li]{liang2023vfloodnet}
+Y.~Liang, N.~Jafari, X.~Luo, Q.~Chen, Y.~Cao, and X.~Li.
+\newblock V-floodnet: A video segmentation system for urban flood detection and
+  quantification.
+\newblock \emph{Environmental Modelling \& Software}, 160:\penalty0 105586,
+  2023.
+\newblock \doi{10.1016/j.envsoft.2022.105586}.
+
+\bibitem[Lin et~al.(2014)Lin, Maire, Belongie, Hays, Perona, Ramanan,
+  Doll{\'a}r, and Zitnick]{lin2014microsoft}
+T.-Y. Lin, M.~Maire, S.~Belongie, J.~Hays, P.~Perona, D.~Ramanan,
+  P.~Doll{\'a}r, and C.~L. Zitnick.
+\newblock Microsoft coco: Common objects in context.
+\newblock In \emph{European Conference on Computer Vision}, pages 740--755,
+  2014.
+\newblock \doi{10.1007/978-3-319-10602-1_48}.
+
+\bibitem[Liu et~al.(2025)Liu, Liu, Lin, Li, Cao, Sun, Hu, Song, Boukerche, and
+  Leung]{song2024networking_vad}
+J.~Liu, Y.~Liu, J.~Lin, J.~Li, L.~Cao, P.~Sun, B.~Hu, L.~Song, A.~Boukerche,
+  and V.~C.~M. Leung.
+\newblock Networking systems for video anomaly detection: A tutorial and
+  survey.
+\newblock \emph{ACM Computing Surveys}, 57\penalty0 (10):\penalty0 1--37, 2025.
+\newblock \doi{10.1145/3729222}.
+
+\bibitem[Liu et~al.(2016)Liu, Anguelov, Erhan, Szegedy, Reed, Fu, and
+  Berg]{liu2016ssd}
+W.~Liu, D.~Anguelov, D.~Erhan, C.~Szegedy, S.~Reed, C.-Y. Fu, and A.~C. Berg.
+\newblock Ssd: Single shot multibox detector.
+\newblock In \emph{European Conference on Computer Vision}, pages 21--37, 2016.
+\newblock \doi{10.1007/978-3-319-46448-0_2}.
+
+\bibitem[Liu et~al.(2018)Liu, Luo, Lian, and Gao]{liu2018future}
+W.~Liu, W.~Luo, D.~Lian, and S.~Gao.
+\newblock Future frame prediction for anomaly detection--a new baseline.
+\newblock In \emph{IEEE Conference on Computer Vision and Pattern Recognition},
+  pages 6536--6545, 2018.
+\newblock \doi{10.1109/CVPR.2018.00684}.
+
+\bibitem[Liu et~al.(2021{\natexlab{a}})Liu, Lin, Cao, Hu, Wei, Zhang, Lin, and
+  Guo]{liu2021swin}
+Z.~Liu, Y.~Lin, Y.~Cao, H.~Hu, Y.~Wei, Z.~Zhang, S.~Lin, and B.~Guo.
+\newblock Swin transformer: Hierarchical vision transformer using shifted
+  windows.
+\newblock In \emph{IEEE/CVF International Conference on Computer Vision}, pages
+  10012--10022, 2021{\natexlab{a}}.
+\newblock \doi{10.1109/ICCV48922.2021.00986}.
+
+\bibitem[Liu et~al.(2021{\natexlab{b}})Liu, Nie, Long, Zhang, and
+  Li]{liu2021hybrid}
+Z.~Liu, Y.~Nie, C.~Long, Q.~Zhang, and G.~Li.
+\newblock A hybrid video anomaly detection framework via memory-augmented flow
+  reconstruction and flow-guided frame prediction.
+\newblock In \emph{IEEE/CVF International Conference on Computer Vision}, pages
+  13588--13597, 2021{\natexlab{b}}.
+\newblock \doi{10.1109/ICCV48922.2021.01333}.
+
+\bibitem[Liu et~al.(2022)Liu, Ning, Cao, Wei, Zhang, Lin, and Hu]{liu2022video}
+Z.~Liu, J.~Ning, Y.~Cao, Y.~Wei, Z.~Zhang, S.~Lin, and H.~Hu.
+\newblock Video swin transformer.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pages 3202--3211, 2022.
+\newblock \doi{10.1109/CVPR52688.2022.00320}.
+
+\bibitem[Lopez-Fuentes et~al.(2018)Lopez-Fuentes, van~de Weijer,
+  Gonz{\'a}lez-Hidalgo, Skinnemoen, and Bagdanov]{lopez2018emergency}
+L.~Lopez-Fuentes, J.~van~de Weijer, M.~Gonz{\'a}lez-Hidalgo, H.~Skinnemoen, and
+  A.~D. Bagdanov.
+\newblock Review on computer vision techniques in emergency situations.
+\newblock \emph{Multimedia Tools and Applications}, 77\penalty0 (13):\penalty0
+  17069--17107, 2018.
+\newblock \doi{10.1007/s11042-017-5276-7}.
+
+\bibitem[Lu et~al.(2013)Lu, Shi, and Jia]{lu2013abnormal}
+C.~Lu, J.~Shi, and J.~Jia.
+\newblock Abnormal event detection at 150 fps in matlab.
+\newblock In \emph{IEEE International Conference on Computer Vision}, pages
+  2720--2727, 2013.
+\newblock \doi{10.1109/ICCV.2013.338}.
+
+\bibitem[Lu et~al.(2020)Lu, Yu, Reddy, and Wang]{lu2020few}
+Y.~Lu, F.~Yu, M.~K.~K. Reddy, and Y.~Wang.
+\newblock Few-shot scene-adaptive anomaly detection.
+\newblock In \emph{European Conference on Computer Vision}, pages 125--141.
+  Springer, 2020.
+\newblock \doi{10.1007/978-3-030-58558-7_8}.
+
+\bibitem[Luna et~al.(2018)Luna, San~Miguel, Ortego, and
+  Mart{\'\i}nez]{luna2018abandoned}
+E.~Luna, J.~San~Miguel, D.~Ortego, and J.~Mart{\'\i}nez.
+\newblock Abandoned object detection in video-surveillance: Survey and
+  comparison.
+\newblock \emph{Sensors}, 18\penalty0 (12):\penalty0 4290, 2018.
+\newblock \doi{10.3390/s18124290}.
+
+\bibitem[Luo et~al.(2017{\natexlab{a}})Luo, Liu, and Gao]{luo2017remembering}
+W.~Luo, W.~Liu, and S.~Gao.
+\newblock Remembering history with convolutional lstm for anomaly detection.
+\newblock In \emph{IEEE International Conference on Multimedia and Expo}, pages
+  439--444, 2017{\natexlab{a}}.
+\newblock \doi{10.1109/ICME.2017.8019325}.
+
+\bibitem[Luo et~al.(2017{\natexlab{b}})Luo, Liu, and Gao]{luo2017revisit}
+W.~Luo, W.~Liu, and S.~Gao.
+\newblock A revisit of sparse coding based anomaly detection in stacked rnn
+  framework.
+\newblock In \emph{IEEE International Conference on Computer Vision}, pages
+  341--349, 2017{\natexlab{b}}.
+\newblock \doi{10.1109/ICCV.2017.45}.
+
+\bibitem[Lyu et~al.(2025)Lyu, Zhao, Hu, Huang, Chen, and Du]{lyu2025vadmamba}
+J.~Lyu, M.~Zhao, J.~Hu, X.~Huang, Y.~Chen, and S.~Du.
+\newblock {VADMamba}: Exploring state space models for fast video anomaly
+  detection.
+\newblock In \emph{2025 IEEE International Conference on Multimedia and Expo
+  (ICME)}, pages 1--6. IEEE, 2025.
+\newblock \doi{10.1109/ICME59968.2025.11209020}.
+
+\bibitem[Mahadevan et~al.(2010)Mahadevan, Li, Bhatt, and
+  Vasconcelos]{mahadevan2010anomaly}
+V.~Mahadevan, W.~Li, V.~Bhatt, and N.~Vasconcelos.
+\newblock Anomaly detection in crowded scenes.
+\newblock In \emph{IEEE Conference on Computer Vision and Pattern Recognition},
+  pages 1975--1981, 2010.
+\newblock \doi{10.1109/CVPR.2010.5539872}.
+
+\bibitem[Manhaeve et~al.(2018)Manhaeve, Dumancic, Kimmig, Demeester, and
+  De~Raedt]{manhaeve2018deepproblog}
+R.~Manhaeve, S.~Dumancic, A.~Kimmig, T.~Demeester, and L.~De~Raedt.
+\newblock Deepproblog: Neural probabilistic logic programming.
+\newblock \emph{Advances in Neural Information Processing Systems}, 31, 2018.
+
+\bibitem[Mantini and Shah(2017)]{mantini2017signal}
+P.~Mantini and S.~K. Shah.
+\newblock A signal detection theory approach for camera tamper detection.
+\newblock In \emph{14th IEEE International Conference on Advanced Video and
+  Signal Based Surveillance (AVSS)}, pages 1--6, 2017.
+\newblock \doi{10.1109/AVSS.2017.8078496}.
+
+\bibitem[Mantini and Shah(2019)]{mantini2019uhctd}
+P.~Mantini and S.~K. Shah.
+\newblock {UHCTD}: A comprehensive dataset for camera tampering detection.
+\newblock In \emph{16th IEEE International Conference on Advanced Video and
+  Signal Based Surveillance (AVSS)}, pages 1--8, 2019.
+\newblock \doi{10.1109/AVSS.2019.8909856}.
+
+\bibitem[Mantini and Shah(2023)]{mantini2023feature_survey}
+P.~Mantini and S.~K. Shah.
+\newblock A survey of feature types and their contributions for camera
+  tampering detection.
+\newblock \emph{arXiv preprint arXiv:2310.07886}, 2023.
+
+\bibitem[Mantini et~al.(2020)Mantini, Li, and Shah]{doshi2022adoc}
+P.~Mantini, Z.~Li, and S.~K. Shah.
+\newblock A day on campus: An anomaly detection dataset for events in a single
+  camera.
+\newblock In \emph{Computer Vision -- ACCV 2020}, volume 12627 of \emph{Lecture
+  Notes in Computer Science}, pages 619--635. Springer, 2020.
+\newblock \doi{10.1007/978-3-030-69544-6_37}.
+
+\bibitem[Mao et~al.(2019)Mao, Gan, Kohli, Tenenbaum, and Wu]{mao2019neuro}
+J.~Mao, C.~Gan, P.~Kohli, J.~B. Tenenbaum, and J.~Wu.
+\newblock The neuro-symbolic concept learner: Interpreting scenes, words, and
+  sentences from natural supervision.
+\newblock In \emph{International Conference on Learning Representations}, 2019.
+
+\bibitem[Mehran et~al.(2009)Mehran, Oyama, and Shah]{mehran2009abnormal}
+R.~Mehran, A.~Oyama, and M.~Shah.
+\newblock Abnormal crowd behavior detection using social force model.
+\newblock In \emph{IEEE Conference on Computer Vision and Pattern Recognition},
+  pages 935--942, 2009.
+\newblock \doi{10.1109/CVPR.2009.5206641}.
+
+\bibitem[Mittal et~al.(2012)Mittal, Moorthy, and Bovik]{mittal2012brisque}
+A.~Mittal, A.~K. Moorthy, and A.~C. Bovik.
+\newblock No-reference image quality assessment in the spatial domain.
+\newblock \emph{IEEE Transactions on Image Processing}, 21\penalty0
+  (12):\penalty0 4695--4708, 2012.
+\newblock \doi{10.1109/TIP.2012.2214050}.
+
+\bibitem[Mittal et~al.(2013)Mittal, Soundararajan, and Bovik]{mittal2013niqe}
+A.~Mittal, R.~Soundararajan, and A.~C. Bovik.
+\newblock Making a ``completely blind'' image quality analyzer.
+\newblock \emph{IEEE Signal Processing Letters}, 20\penalty0 (3):\penalty0
+  209--212, 2013.
+\newblock \doi{10.1109/LSP.2012.2227726}.
+
+\bibitem[Morais et~al.(2019)Morais, Le, Tran, Saha, Mansour, and
+  Venkatesh]{morais2019learning}
+R.~Morais, V.~Le, T.~Tran, B.~Saha, M.~R. Mansour, and S.~Venkatesh.
+\newblock Learning regularity in skeleton trajectories for in-the-wild action
+  detection.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pages 11804--11813, 2019.
+\newblock \doi{10.1109/CVPR.2019.01227}.
+
+\bibitem[Muhammad et~al.(2019)Muhammad, Ahmad, and Baik]{muhammad2019efficient}
+K.~Muhammad, J.~Ahmad, and S.~W. Baik.
+\newblock Efficient deep cnn-based fire detection and localization in video
+  surveillance applications.
+\newblock \emph{IEEE Transactions on Systems, Man, and Cybernetics: Systems},
+  49\penalty0 (7):\penalty0 1419--1434, 2019.
+\newblock \doi{10.1109/TSMC.2018.2830099}.
+
+\bibitem[Nayak et~al.(2021)Nayak, Pati, and Das]{nayak2021comprehensive}
+R.~Nayak, U.~C. Pati, and S.~K. Das.
+\newblock A comprehensive review on deep learning-based methods for video
+  anomaly detection.
+\newblock \emph{Image and Vision Computing}, 106:\penalty0 104078, 2021.
+\newblock \doi{10.1016/j.imavis.2020.104078}.
+
+\bibitem[Nguyen and Meunier(2019)]{nguyen2019anomaly}
+T.-N. Nguyen and J.~Meunier.
+\newblock Anomaly detection in video sequence with appearance-motion
+  correspondence.
+\newblock In \emph{IEEE/CVF International Conference on Computer Vision}, pages
+  1273--1283, 2019.
+\newblock \doi{10.1109/ICCV.2019.00136}.
+
+\bibitem[Niu et~al.(2023)Niu, Wang, Xu, Yang, Zhou, and Yang]{niu2023improved}
+K.~Niu, C.~Wang, J.~Xu, C.~Yang, X.~Zhou, and X.~Yang.
+\newblock An improved yolov5-based infrared uav fire detection method.
+\newblock \emph{Remote Sensing}, 15\penalty0 (19):\penalty0 4694, 2023.
+\newblock \doi{10.3390/rs15194694}.
+
+\bibitem[Nogas et~al.(2020)Nogas, Khan, and Mihailidis]{nogas2020deepfall}
+J.~Nogas, S.~S. Khan, and A.~Mihailidis.
+\newblock Deepfall: Non-invasive fall detection with deep spatio-temporal
+  convolutional autoencoders.
+\newblock \emph{Journal of Healthcare Informatics Research}, 4:\penalty0
+  50--70, 2020.
+\newblock \doi{10.1007/s41666-019-00061-4}.
+
+\bibitem[{OpenAI}(2023)]{achiam2023gpt}
+{OpenAI}.
+\newblock {GPT-4} technical report.
+\newblock Technical report, OpenAI, 2023.
+
+\bibitem[Page et~al.(2021)Page, McKenzie, Bossuyt, Boutron, Hoffmann, Mulrow,
+  Shamseer, Tetzlaff, Akl, Brennan, et~al.]{page2021prisma}
+M.~J. Page, J.~E. McKenzie, P.~M. Bossuyt, I.~Boutron, T.~C. Hoffmann, C.~D.
+  Mulrow, L.~Shamseer, J.~M. Tetzlaff, E.~A. Akl, S.~E. Brennan, et~al.
+\newblock The {PRISMA} 2020 statement: an updated guideline for reporting
+  systematic reviews.
+\newblock \emph{BMJ}, 372:\penalty0 n71, 2021.
+\newblock \doi{10.1136/bmj.n71}.
+
+\bibitem[Park and Lee(2024)]{park2024wildfire}
+G.~Park and Y.~Lee.
+\newblock Wildfire smoke detection enhanced by image augmentation with
+  stylegan2-ada for yolov8 and rt-detr.
+\newblock \emph{Fire}, 7\penalty0 (10):\penalty0 369, 2024.
+\newblock \doi{10.3390/fire7100369}.
+
+\bibitem[Park et~al.(2020)Park, Noh, and Ham]{park2020learning}
+H.~Park, J.~Noh, and B.~Ham.
+\newblock Learning memory-guided normality for anomaly detection.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pages 14372--14381, 2020.
+\newblock \doi{10.1109/CVPR42600.2020.01438}.
+
+\bibitem[Patrikar and Parate(2022)]{patrikar2022anomaly}
+D.~R. Patrikar and M.~R. Parate.
+\newblock Anomaly detection using edge computing in video surveillance system:
+  Review.
+\newblock \emph{International Journal of Multimedia Information Retrieval},
+  11\penalty0 (2):\penalty0 85--110, 2022.
+\newblock \doi{10.1007/s13735-022-00227-8}.
+
+\bibitem[Pu et~al.(2024)Pu, Wu, Yang, and Wang]{zhang2024pel4vad}
+Y.~Pu, X.~Wu, L.~Yang, and S.~Wang.
+\newblock Learning prompt-enhanced context features for weakly-supervised video
+  anomaly detection.
+\newblock \emph{IEEE Transactions on Image Processing}, 33:\penalty0
+  4923--4936, 2024.
+\newblock \doi{10.1109/TIP.2024.3451935}.
+\newblock URL \url{https://doi.org/10.1109/TIP.2024.3451935}.
+
+\bibitem[Radford et~al.(2016)Radford, Metz, and
+  Chintala]{radford2015unsupervised}
+A.~Radford, L.~Metz, and S.~Chintala.
+\newblock Unsupervised representation learning with deep convolutional
+  generative adversarial networks.
+\newblock In \emph{International Conference on Learning Representations}, 2016.
+
+\bibitem[Radford et~al.(2021)Radford, Kim, Hallacy, Ramesh, Goh, Agarwal,
+  Sastry, Askell, Mishkin, Clark, Krueger, and Sutskever]{radford2021learning}
+A.~Radford, J.~W. Kim, C.~Hallacy, A.~Ramesh, G.~Goh, S.~Agarwal, G.~Sastry,
+  A.~Askell, P.~Mishkin, J.~Clark, G.~Krueger, and I.~Sutskever.
+\newblock Learning transferable visual models from natural language
+  supervision.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  8748--8763, 2021.
+
+\bibitem[Ramachandra and Jones(2020)]{ramachandra2020street}
+B.~Ramachandra and M.~Jones.
+\newblock Street scene: A new dataset and evaluation protocol for video anomaly
+  detection.
+\newblock In \emph{IEEE/CVF Winter Conference on Applications of Computer
+  Vision}, pages 2569--2578, 2020.
+\newblock \doi{10.1109/WACV45572.2020.9093457}.
+
+\bibitem[Ramachandra et~al.(2020)Ramachandra, Jones, and
+  Vatsavai]{ramachandra2020survey}
+B.~Ramachandra, M.~J. Jones, and R.~R. Vatsavai.
+\newblock A survey of single-scene video anomaly detection.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 44\penalty0 (5):\penalty0 2293--2312, 2020.
+\newblock \doi{10.1109/TPAMI.2020.3040591}.
+
+\bibitem[Ramzan et~al.(2019)Ramzan, Abid, Khan, Awan, Ismail, Ahmed, Ilyas, and
+  Mahmood]{ramzan2019review}
+M.~Ramzan, A.~Abid, H.~U. Khan, S.~M. Awan, A.~Ismail, M.~Ahmed, M.~Ilyas, and
+  A.~Mahmood.
+\newblock A review on state-of-the-art violence detection techniques.
+\newblock \emph{IEEE Access}, 7:\penalty0 107560--107575, 2019.
+\newblock \doi{10.1109/ACCESS.2019.2932114}.
+
+\bibitem[Rashvand et~al.(2026)Rashvand, Yao, Pazho, Ardabili, and
+  Tabkhi]{rashvand2026frames}
+N.~Rashvand, S.~Yao, A.~D. Pazho, B.~R. Ardabili, and H.~Tabkhi.
+\newblock From frames to events: Rethinking evaluation in human-centric video
+  anomaly detection.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition Workshops}, pages 5389--5398, 2026.
+
+\bibitem[Ravanbakhsh et~al.(2017)Ravanbakhsh, Nabi, Sangineto, Marcenaro,
+  Regazzoni, and Sebe]{ravanbakhsh2017abnormal}
+M.~Ravanbakhsh, M.~Nabi, E.~Sangineto, L.~Marcenaro, C.~Regazzoni, and N.~Sebe.
+\newblock Abnormal event detection in videos using generative adversarial nets.
+\newblock In \emph{IEEE International Conference on Image Processing}, pages
+  1577--1581, 2017.
+\newblock \doi{10.1109/ICIP.2017.8296547}.
+
+\bibitem[Redmon et~al.(2016)Redmon, Divvala, Girshick, and
+  Farhadi]{redmon2016you}
+J.~Redmon, S.~Divvala, R.~Girshick, and A.~Farhadi.
+\newblock You only look once: Unified, real-time object detection.
+\newblock In \emph{IEEE Conference on Computer Vision and Pattern Recognition},
+  pages 779--788, 2016.
+\newblock \doi{10.1109/CVPR.2016.91}.
+
+\bibitem[Ren et~al.(2025)Ren, Tang, Jia, Xu, Fayek, Li, Ma, Xu, and
+  Xia]{ren2025foundation_anomaly}
+J.~Ren, T.~Tang, H.~Jia, Z.~Xu, H.~Fayek, X.~Li, S.~Ma, X.~Xu, and F.~Xia.
+\newblock Foundation models for anomaly detection: Vision and challenges.
+\newblock \emph{AI Magazine}, 46\penalty0 (4):\penalty0 e70045, 2025.
+\newblock \doi{10.1002/aaai.70045}.
+
+\bibitem[Ren et~al.(2015)Ren, He, Girshick, and Sun]{ren2015faster}
+S.~Ren, K.~He, R.~Girshick, and J.~Sun.
+\newblock Faster r-cnn: Towards real-time object detection with region proposal
+  networks.
+\newblock In \emph{Advances in Neural Information Processing Systems}, pages
+  91--99, 2015.
+
+\bibitem[Rethlefsen et~al.(2021)Rethlefsen, Kirtley, Waffenschmidt, Ayala,
+  Moher, Page, and Koffel]{rethlefsen2021prismas}
+M.~L. Rethlefsen, S.~Kirtley, S.~Waffenschmidt, A.~P. Ayala, D.~Moher, M.~J.
+  Page, and J.~B. Koffel.
+\newblock {PRISMA-S}: an extension to the {PRISMA} statement for reporting
+  literature searches in systematic reviews.
+\newblock \emph{Systematic Reviews}, 10\penalty0 (1):\penalty0 39, 2021.
+\newblock \doi{10.1186/s13643-020-01542-z}.
+
+\bibitem[Rezaee et~al.(2024)Rezaee, Rezakhani, Khosravi, and
+  Moghimi]{rezaee2021crowd_realtime}
+K.~Rezaee, S.~M. Rezakhani, M.~R. Khosravi, and M.~K. Moghimi.
+\newblock A survey on deep learning-based real-time crowd anomaly detection for
+  secure distributed video surveillance.
+\newblock \emph{Personal and Ubiquitous Computing}, 28\penalty0 (1):\penalty0
+  135--151, 2024.
+\newblock \doi{10.1007/s00779-021-01586-5}.
+\newblock First published online 2021.
+
+\bibitem[Ribnick et~al.(2006)Ribnick, Atev, Masoud, Papanikolopoulos, and
+  Voyles]{ribnick2006realtime}
+E.~Ribnick, S.~Atev, O.~Masoud, N.~Papanikolopoulos, and R.~Voyles.
+\newblock Real-time detection of camera tampering.
+\newblock In \emph{IEEE International Conference on Video and Signal Based
+  Surveillance (AVSS)}, pages 10--15, 2006.
+\newblock \doi{10.1109/AVSS.2006.94}.
+
+\bibitem[Rombach et~al.(2022)Rombach, Blattmann, Lorenz, Esser, and
+  Ommer]{rombach2022high}
+R.~Rombach, A.~Blattmann, D.~Lorenz, P.~Esser, and B.~Ommer.
+\newblock High-resolution image synthesis with latent diffusion models.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pages 10684--10695, 2022.
+\newblock \doi{10.1109/CVPR52688.2022.01042}.
+
+\bibitem[Ronneberger et~al.(2015)Ronneberger, Fischer, and
+  Brox]{ronneberger2015unet}
+O.~Ronneberger, P.~Fischer, and T.~Brox.
+\newblock U-net: Convolutional networks for biomedical image segmentation.
+\newblock In \emph{International Conference on Medical Image Computing and
+  Computer-Assisted Intervention}, pages 234--241, 2015.
+\newblock \doi{10.1007/978-3-319-24574-4_28}.
+
+\bibitem[Sabokrou et~al.(2018)Sabokrou, Khalooei, Fathy, and
+  Adeli]{sabokrou2018adversarially}
+M.~Sabokrou, M.~Khalooei, M.~Fathy, and E.~Adeli.
+\newblock Adversarially learned one-class classifier for novelty detection.
+\newblock In \emph{IEEE Conference on Computer Vision and Pattern Recognition},
+  pages 3379--3388, 2018.
+\newblock \doi{10.1109/CVPR.2018.00356}.
+
+\bibitem[Saleh et~al.(2024)Saleh, Zulkifley, Harun, Gaudreault, Davison, and
+  Spraggon]{saleh2024forest_fire}
+A.~Saleh, M.~A. Zulkifley, H.~H. Harun, F.~Gaudreault, I.~Davison, and
+  M.~Spraggon.
+\newblock Forest fire surveillance systems: A review of deep learning methods.
+\newblock \emph{Heliyon}, 10\penalty0 (1):\penalty0 e23127, 2024.
+\newblock \doi{10.1016/j.heliyon.2023.e23127}.
+
+\bibitem[Salehi et~al.(2021)Salehi, Sadjadi, Baselizadeh, Rohban, and
+  Rabiee]{salehi2021multiresolution}
+M.~Salehi, N.~Sadjadi, S.~Baselizadeh, M.~H. Rohban, and H.~R. Rabiee.
+\newblock Multiresolution knowledge distillation for anomaly detection.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pages 14902--14912, 2021.
+\newblock \doi{10.1109/CVPR46437.2021.01466}.
+
+\bibitem[Santhosh et~al.(2020)Santhosh, Dogra, and Roy]{santhosh2020traffic}
+K.~K. Santhosh, D.~P. Dogra, and P.~P. Roy.
+\newblock Anomaly detection in road traffic using visual surveillance: A
+  survey.
+\newblock \emph{ACM Computing Surveys}, 53\penalty0 (6):\penalty0 1--26, 2020.
+\newblock \doi{10.1145/3417989}.
+
+\bibitem[Sarker et~al.(2021)Sarker, Zhou, Eberhart, and
+  Hitzler]{hitzler2022neurosymbolic}
+M.~K. Sarker, L.~Zhou, A.~Eberhart, and P.~Hitzler.
+\newblock Neuro-symbolic artificial intelligence: Current trends.
+\newblock \emph{AI Communications}, 34\penalty0 (3):\penalty0 197--209, 2021.
+\newblock \doi{10.3233/AIC-210084}.
+
+\bibitem[Shamsoshoara et~al.(2021)Shamsoshoara, Afghah, Razi, Zheng, Ful{\'e},
+  and Blasch]{shamsoshoara2021aerial}
+A.~Shamsoshoara, F.~Afghah, A.~Razi, L.~Zheng, P.~Z. Ful{\'e}, and E.~Blasch.
+\newblock Aerial imagery pile burn detection using deep learning: The flame
+  dataset.
+\newblock \emph{Computer Networks}, 193:\penalty0 108001, 2021.
+\newblock \doi{10.1016/j.comnet.2021.108001}.
+
+\bibitem[Sharif et~al.(2022)Sharif, Jiao, and Omlin]{sharif2022deep_crowd}
+M.~H. Sharif, L.~Jiao, and C.~W. Omlin.
+\newblock Deep crowd anomaly detection: State-of-the-art, challenges, and
+  future research directions.
+\newblock \emph{arXiv preprint arXiv:2210.13927}, 2022.
+
+\bibitem[Shi et~al.(2015)Shi, Chen, Wang, Yeung, Wong, and
+  Woo]{shi2015convolutional}
+X.~Shi, Z.~Chen, H.~Wang, D.-Y. Yeung, W.-K. Wong, and W.-c. Woo.
+\newblock Convolutional lstm network: A machine learning approach for
+  precipitation nowcasting.
+\newblock In \emph{Advances in Neural Information Processing Systems}, pages
+  802--810, 2015.
+
+\bibitem[Simonyan and Zisserman(2015)]{simonyan2014very}
+K.~Simonyan and A.~Zisserman.
+\newblock Very deep convolutional networks for large-scale image recognition.
+\newblock In \emph{International Conference on Learning Representations}, 2015.
+
+\bibitem[Song et~al.(2021)Song, Sohl-Dickstein, Kingma, Kumar, Ermon, and
+  Poole]{song2020score}
+Y.~Song, J.~Sohl-Dickstein, D.~P. Kingma, A.~Kumar, S.~Ermon, and B.~Poole.
+\newblock Score-based generative modeling through stochastic differential
+  equations.
+\newblock In \emph{International Conference on Learning Representations}, 2021.
+
+\bibitem[Sreenu and Saleem~Durai(2019)]{sreenu2019intelligent}
+G.~Sreenu and M.~A. Saleem~Durai.
+\newblock Intelligent video surveillance: A review through deep learning
+  techniques for crowd analysis.
+\newblock \emph{Journal of Big Data}, 6\penalty0 (1):\penalty0 48, 2019.
+\newblock \doi{10.1186/s40537-019-0212-5}.
+
+\bibitem[Stauffer and Grimson(1999)]{stauffer1999adaptive}
+C.~Stauffer and W.~E.~L. Grimson.
+\newblock Adaptive background mixture models for real-time tracking.
+\newblock In \emph{IEEE Conference on Computer Vision and Pattern Recognition},
+  volume~2, pages 246--252, 1999.
+\newblock \doi{10.1109/CVPR.1999.784637}.
+
+\bibitem[Sultani et~al.(2018)Sultani, Chen, and Shah]{sultani2018real}
+W.~Sultani, C.~Chen, and M.~Shah.
+\newblock Real-world anomaly detection in surveillance videos.
+\newblock In \emph{IEEE Conference on Computer Vision and Pattern Recognition},
+  pages 6479--6488, 2018.
+\newblock \doi{10.1109/CVPR.2018.00678}.
+
+\bibitem[Sun et~al.(2026)Sun, Chen, Wu, Gao, Yang, Su, and
+  Wang]{sun2026memoryexperts}
+B.~Sun, J.~Chen, Z.~Wu, F.~Gao, F.~Yang, L.~Su, and Y.~Wang.
+\newblock Joint learning of general and diverse patterns with mixture of memory
+  experts for weakly-supervised video anomaly detection.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pages 35638--35647, 2026.
+
+\bibitem[Sun and Gong(2023)]{sun2023hierarchical}
+S.~Sun and X.~Gong.
+\newblock Hierarchical semantic contrast for scene-aware video anomaly
+  detection.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, 2023.
+\newblock \doi{10.1109/CVPR52729.2023.02188}.
+
+\bibitem[Tang et~al.(2024)Tang, Lu, Wu, Xu, Ma, Fang, Guo, Lu, Chen, and
+  Chen]{tang2024hawk}
+J.~Tang, H.~Lu, R.~Wu, X.~Xu, K.~Ma, C.~Fang, B.~Guo, J.~Lu, Q.~Chen, and Y.-C.
+  Chen.
+\newblock {HAWK}: Learning to understand open-world video anomalies.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~37, pages 139751--139785, 2024.
+
+\bibitem[Tian et~al.(2021)Tian, Pang, Chen, Singh, Verjans, and
+  Carneiro]{tian2021weakly}
+Y.~Tian, G.~Pang, Y.~Chen, R.~Singh, J.~W. Verjans, and G.~Carneiro.
+\newblock Weakly-supervised video anomaly detection with robust temporal
+  feature magnitude learning.
+\newblock In \emph{IEEE/CVF International Conference on Computer Vision}, pages
+  4975--4986, 2021.
+\newblock \doi{10.1109/ICCV48922.2021.00493}.
+
+\bibitem[Tran et~al.(2015)Tran, Bourdev, Fergus, Torresani, and
+  Paluri]{tran2015learning}
+D.~Tran, L.~Bourdev, R.~Fergus, L.~Torresani, and M.~Paluri.
+\newblock Learning spatiotemporal features with 3d convolutional networks.
+\newblock In \emph{IEEE International Conference on Computer Vision}, pages
+  4489--4497, 2015.
+\newblock \doi{10.1109/ICCV.2015.510}.
+
+\bibitem[Tran et~al.(2022)Tran, Vu, Vo, Nguyen, and
+  Nguyen]{tran2024anomaly_images_videos}
+T.~M. Tran, T.~N. Vu, N.~D. Vo, T.~V. Nguyen, and K.~Nguyen.
+\newblock Anomaly analysis in images and videos: A comprehensive review.
+\newblock \emph{ACM Computing Surveys}, 55\penalty0 (7):\penalty0 1--37, 2022.
+\newblock \doi{10.1145/3544014}.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
+  Kaiser, and Polosukhin]{vaswani2017attention}
+A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
+  {\L}.~Kaiser, and I.~Polosukhin.
+\newblock Attention is all you need.
+\newblock In \emph{Advances in Neural Information Processing Systems}, pages
+  5998--6008, 2017.
+
+\bibitem[Wang et~al.(2021)Wang, Han, Ding, and Huang]{wang2021student}
+G.~Wang, S.~Han, E.~Ding, and D.~Huang.
+\newblock Student-teacher feature pyramid matching for anomaly detection.
+\newblock In \emph{British Machine Vision Conference}, 2021.
+\newblock \doi{10.5244/C.35.349}.
+
+\bibitem[Wang et~al.(2022)Wang, Wang, Qin, Zhang, Bao, and
+  Huang]{wang2022video_jigsaw}
+G.~Wang, Y.~Wang, J.~Qin, D.~Zhang, X.~Bao, and D.~Huang.
+\newblock Video anomaly detection by solving decoupled spatio-temporal jigsaw
+  puzzles.
+\newblock In \emph{Computer Vision -- ECCV 2022}, Lecture Notes in Computer
+  Science. Springer, 2022.
+\newblock \doi{10.1007/978-3-031-20080-9_29}.
+
+\bibitem[Wang et~al.(2024)Wang, Yue, Jiang, Yu, Tuo, and Li]{wang2024fasdd}
+M.~Wang, P.~Yue, L.~Jiang, D.~Yu, T.~Tuo, and J.~Li.
+\newblock An open flame and smoke detection dataset for deep learning in remote
+  sensing based fire detection.
+\newblock \emph{Geo-spatial Information Science}, 28\penalty0 (2):\penalty0
+  511--526, 2024.
+\newblock \doi{10.1080/10095020.2024.2347922}.
+
+\bibitem[Wang and Zhao(2026)]{wang2026lasvad}
+Y.~Wang and S.~Zhao.
+\newblock Weakly supervised video anomaly detection with anomaly-connected
+  components and intention reasoning.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pages 28545--28556, 2026.
+
+\bibitem[Wu and Liu(2021)]{wu2021causal}
+P.~Wu and J.~Liu.
+\newblock Learning causal temporal relation and feature discrimination for
+  anomaly detection.
+\newblock \emph{IEEE Transactions on Image Processing}, 30:\penalty0
+  3513--3527, 2021.
+\newblock \doi{10.1109/TIP.2021.3062192}.
+
+\bibitem[Wu et~al.(2020)Wu, Liu, Shi, Sun, Shao, Wu, and Yang]{wu2020not}
+P.~Wu, J.~Liu, Y.~Shi, Y.~Sun, F.~Shao, Z.~Wu, and Z.~Yang.
+\newblock Not only look, but also listen: Learning multimodal violence
+  detection under weak supervision.
+\newblock In \emph{European Conference on Computer Vision}, pages 322--339,
+  2020.
+\newblock \doi{10.1007/978-3-030-58577-8_20}.
+
+\bibitem[Wu et~al.(2024)Wu, Zhou, Pang, Zhou, Yan, Wang, and
+  Zhang]{wu2024vadclip}
+P.~Wu, X.~Zhou, G.~Pang, L.~Zhou, Q.~Yan, P.~Wang, and Y.~Zhang.
+\newblock {VadCLIP}: Adapting vision--language models for weakly supervised
+  video anomaly detection.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}, volume~38, pages 6074--6082, 2024.
+\newblock \doi{10.1609/aaai.v38i6.28423}.
+
+\bibitem[Wu et~al.(2026)Wu, Pan, Yan, Pang, Yan, Wang, and
+  Zhang]{wu2024deep_review}
+P.~Wu, C.~Pan, Y.~Yan, G.~Pang, Q.~Yan, P.~Wang, and Y.~Zhang.
+\newblock Deep learning for video anomaly detection: A review.
+\newblock \emph{IEEE Transactions on Neural Networks and Learning Systems},
+  37\penalty0 (7):\penalty0 3010--3030, 2026.
+\newblock \doi{10.1109/TNNLS.2025.3647892}.
+
+\bibitem[Wyatt et~al.(2022)Wyatt, Leach, Sherborne, and
+  Breckon]{wyatt2022anoddpm}
+J.~Wyatt, A.~Leach, S.~M. Sherborne, and T.~P. Breckon.
+\newblock Anoddpm: Anomaly detection with denoising diffusion probabilistic
+  models using simplex noise.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition Workshops}, pages 650--656, 2022.
+\newblock \doi{10.1109/CVPRW56347.2022.00080}.
+
+\bibitem[Xu et~al.(2026)Xu, Wang, Zhang, Tao, Li, and Jing]{xu2026tlma}
+R.~Xu, R.~Wang, Y.~Zhang, T.~Tao, X.~Li, and L.~Jing.
+\newblock {TLMA}: Mitigating the impact of weakly labeled information for video
+  anomaly detection.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pages 35597--35606, 2026.
+
+\bibitem[Yan et~al.(2023)Yan, Zhang, Liu, Pang, and Wang]{yan2023feature}
+C.~Yan, S.~Zhang, Y.~Liu, G.~Pang, and W.~Wang.
+\newblock Feature prediction diffusion model for video anomaly detection.
+\newblock In \emph{IEEE/CVF International Conference on Computer Vision}, pages
+  5527--5537, 2023.
+\newblock \doi{10.1109/ICCV51070.2023.00509}.
+
+\bibitem[Yang et~al.(2024)Yang, Lee, Dariush, Cao, and Lo]{yang2024follow}
+Y.~Yang, K.~Lee, B.~Dariush, Y.~Cao, and S.-Y. Lo.
+\newblock Follow the rules: Reasoning for video anomaly detection with large
+  language models.
+\newblock In \emph{Computer Vision -- ECCV 2024}, volume 15139 of \emph{Lecture
+  Notes in Computer Science}, pages 304--322. Springer, 2024.
+\newblock \doi{10.1007/978-3-031-73004-7_18}.
+
+\bibitem[Yao et~al.(2026)Yao, Danesh~Pazho, Rashvand, and
+  Tabkhi]{yao2026realitycheck}
+S.~Yao, A.~Danesh~Pazho, N.~Rashvand, and H.~Tabkhi.
+\newblock Are multimodal {LLM}s ready for surveillance? a reality check on
+  zero-shot anomaly detection in the wild.
+\newblock \emph{arXiv preprint arXiv:2603.04727}, 2026.
+
+\bibitem[Yao et~al.(2019)Yao, Xu, Wang, Crandall, and
+  Atkins]{yao2019unsupervised}
+Y.~Yao, M.~Xu, Y.~Wang, D.~J. Crandall, and E.~M. Atkins.
+\newblock Unsupervised traffic accident detection in first-person videos.
+\newblock In \emph{IEEE/RSJ International Conference on Intelligent Robots and
+  Systems (IROS)}, pages 273--280, 2019.
+\newblock \doi{10.1109/IROS40897.2019.8967556}.
+
+\bibitem[Ye et~al.(2019)Ye, Peng, Gan, Wu, and Qiao]{ye2019anopcn}
+M.~Ye, X.~Peng, W.~Gan, W.~Wu, and Y.~Qiao.
+\newblock {AnoPCN}: Video anomaly detection via deep predictive coding network.
+\newblock In \emph{ACM International Conference on Multimedia}, pages
+  1805--1813, 2019.
+\newblock \doi{10.1145/3343031.3350899}.
+
+\bibitem[Yuan et~al.(2021)Yuan, Cai, Zhou, Wang, and
+  Chen]{yuan2021transanomaly}
+H.~Yuan, Z.~Cai, H.~Zhou, Y.~Wang, and X.~Chen.
+\newblock Transanomaly: Video anomaly detection using video vision transformer.
+\newblock \emph{IEEE Access}, 9:\penalty0 123977--123986, 2021.
+\newblock \doi{10.1109/ACCESS.2021.3109102}.
+
+\bibitem[Yun et~al.(2025)Yun, Masukawa, Na, and Imani]{yun2025missiongnn}
+S.~Yun, R.~Masukawa, M.~Na, and M.~Imani.
+\newblock Missiongnn: Hierarchical multimodal gnn-based weakly supervised video
+  anomaly recognition with mission-specific knowledge graph generation.
+\newblock In \emph{IEEE/CVF Winter Conference on Applications of Computer
+  Vision}, pages 4736--4745. IEEE, 2025.
+\newblock \doi{10.1109/WACV61041.2025.00464}.
+
+\bibitem[Zanella et~al.(2024)Zanella, Menapace, Mancini, Wang, and
+  Ricci]{zanella2024harnessing}
+L.~Zanella, W.~Menapace, M.~Mancini, Y.~Wang, and E.~Ricci.
+\newblock Harnessing large language models for training-free video anomaly
+  detection.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, 2024.
+\newblock \doi{10.1109/CVPR52733.2024.01753}.
+
+\bibitem[Zhang et~al.(2023)Zhang, Li, and Bing]{zhang2023video}
+H.~Zhang, X.~Li, and L.~Bing.
+\newblock Video-llama: An instruction-tuned audio-visual language model for
+  video understanding.
+\newblock \emph{arXiv preprint arXiv:2306.02858}, 2023.
+
+\bibitem[Zhang et~al.(2026)Zhang, Zhu, Ren, Sun, Qi, Zhuang, Wang, Zhang, Liao,
+  and Wang]{zhang2026finevad}
+M.~Zhang, Y.~Zhu, P.~Ren, H.~Sun, Q.~Qi, Z.~Zhuang, H.~Wang, L.~Zhang, J.~Liao,
+  and J.~Wang.
+\newblock Fine-{VAD}: Towards fine-grained video anomaly detection via
+  progressive cross-granularity learning.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pages 35514--35523, 2026.
+
+\bibitem[Zhao et~al.(2026)Zhao, Wang, Guo, Xu, Cai, Lin, Zhang, and
+  Yuan]{zhao2026denoising}
+Y.~Zhao, Y.~Wang, W.~Guo, S.~Xu, X.~Cai, X.~Lin, Y.~Zhang, and X.~Yuan.
+\newblock Learning from noisy supervision: A denoising-debiasing framework for
+  weakly supervised video anomaly detection.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pages 21326--21335, 2026.
+
+\bibitem[Zheng et~al.(2026)Zheng, Han, Zeng, Zhu, and Chen]{zheng2026lco}
+H.~Zheng, N.~Han, Y.~Zeng, H.~Zhu, and H.~Chen.
+\newblock Logical consistency optimization for few-shot weakly supervised video
+  anomaly detection.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition (Findings)}, pages 9045--9054, June 2026.
+
+\bibitem[Zhong et~al.(2019)Zhong, Li, Kong, Liu, Li, and Li]{zhong2019graph}
+J.-X. Zhong, N.~Li, W.~Kong, S.~Liu, T.~H. Li, and G.~Li.
+\newblock Graph convolutional label noise cleaner: Train a plug-and-play action
+  classifier for anomaly detection.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pages 1237--1246, 2019.
+\newblock \doi{10.1109/CVPR.2019.00133}.
+
+\bibitem[Zhou et~al.(2023)Zhou, Yu, and Yang]{zhou2023dmu}
+H.~Zhou, J.~Yu, and W.~Yang.
+\newblock Dual memory units with uncertainty regulation for weakly supervised
+  video anomaly detection.
+\newblock \emph{Proceedings of the AAAI Conference on Artificial Intelligence},
+  37\penalty0 (3):\penalty0 3769--3777, 2023.
+\newblock \doi{10.1609/aaai.v37i3.25489}.
+\newblock URL \url{https://doi.org/10.1609/aaai.v37i3.25489}.
+
+\bibitem[Zhu et~al.(2026{\natexlab{a}})Zhu, Fan, Han, Shi, Deng, and
+  Chen]{zhu2026generative}
+J.~Zhu, Y.~Fan, G.~Han, X.~Shi, F.~Deng, and J.~Chen.
+\newblock Generative anomaly detection: a comprehensive review of modeling
+  principles, advances, and future opportunities.
+\newblock \emph{Artificial Intelligence Review}, 2026{\natexlab{a}}.
+\newblock \doi{10.1007/s10462-026-11591-w}.
+\newblock Article in Press.
+
+\bibitem[Zhu et~al.(2017)Zhu, Park, Isola, and Efros]{zhu2017unpaired}
+J.-Y. Zhu, T.~Park, P.~Isola, and A.~A. Efros.
+\newblock Unpaired image-to-image translation using cycle-consistent
+  adversarial networks.
+\newblock In \emph{IEEE International Conference on Computer Vision}, pages
+  2223--2232, 2017.
+\newblock \doi{10.1109/ICCV.2017.244}.
+
+\bibitem[Zhu et~al.(2026{\natexlab{b}})Zhu, Zhang, Sun, Ren, Chu, Xu, Tan,
+  Wang, Qi, and Wang]{zhu2026alertclip}
+Y.~Zhu, M.~Zhang, H.~Sun, P.~Ren, X.~Chu, C.~Xu, H.~Tan, J.~Wang, Q.~Qi, and
+  J.~Wang.
+\newblock Alert-{CLIP}: Abnormality-aware latent-enhanced representation tuning
+  of {CLIP} for video anomaly detection.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, pages 35545--35554, 2026{\natexlab{b}}.
+
+\bibitem[Zou et~al.(2026)Zou, Tian, Wesemann, Waschkowski, Yang, and
+  Zhang]{zou2026askhint}
+S.~Zou, X.~Tian, L.~Wesemann, F.~Waschkowski, Z.~Yang, and J.~Zhang.
+\newblock Unlocking vision-language models for video anomaly detection via
+  fine-grained prompting.
+\newblock In \emph{IEEE/CVF Winter Conference on Applications of Computer
+  Vision}, pages 4223--4233, 2026.
+
+\end{thebibliography}

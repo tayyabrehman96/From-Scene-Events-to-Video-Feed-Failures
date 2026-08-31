@@ -1,0 +1,8 @@
+mechanism,tier1_person_scene,tier2_fire_smoke,tier3_camera_feed,source_figure,note
+Implicit temporal (3D conv/RNN),High,Moderate,Low,figure_reasoning_tier_heatmap.png,Transcribed from the deposited figure. Manuscript caption describes a mechanism-cue-validation matrix; the image is a relative-suitability heatmap.
+Temporal attention (Transformer),High,Moderate,Low,figure_reasoning_tier_heatmap.png,
+Causal temporal convolution,High,Low,Moderate,figure_reasoning_tier_heatmap.png,
+Spatio-temporal graphs,High,Low,Low,figure_reasoning_tier_heatmap.png,
+Scene graphs + symbolic rules,High,Low,Moderate,figure_reasoning_tier_heatmap.png,
+LLM rule induction,Moderate,Low,Low,figure_reasoning_tier_heatmap.png,
+Temporal logic (LTL/STL),Moderate,Low,High,figure_reasoning_tier_heatmap.png,

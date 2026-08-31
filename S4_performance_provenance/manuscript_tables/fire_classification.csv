@@ -1,0 +1,5 @@
+year,study,citation_key,architecture,evaluation_corpus,metric,value,task,primary_tier,note,manuscript_table
+2015,Foggia et al.,foggia2015fire,Multi-expert CNN,Surveillance videos,accuracy,93.5,classification,2,Early real-time video fire classifier; corpus-specific protocol,tab:sota_fire_classification
+2019,Muhammad et al.,muhammad2019efficient,Fine-tuned SqueezeNet,Custom CCTV,accuracy,94.5,classification,2,Lightweight surveillance-oriented model,tab:sota_fire_classification
+2019,FireNet,jadon2019firenet,Compact CNN,FireNet,accuracy,95.2,classification,2,Preprint-only; not used for SOTA claims,tab:sota_fire_classification
+2022,Huang / Chen et al.,chen2022fire,Wavelet + CNN,Benchmark image and video sets,accuracy,96.8,classification,2,Spectral features reduce some fire-like false alarms,tab:sota_fire_classification

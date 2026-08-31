@@ -1,0 +1,24 @@
+slot,label,n,verification_status
+id_ieee,IEEE Xplore,3214,working_author_review
+id_acm,ACM Digital Library,1987,working_author_review
+id_scopus,Scopus,4568,working_author_review
+id_wos,Web of Science,3511,working_author_review
+id_scholar,Google Scholar (supplementary),2142,working_author_review
+id_other,Citation tracking + 2026 proceedings,1060,working_author_review
+N1,Total identified,16482,working_author_review
+dup,Duplicates removed,2128,working_author_review
+oor,Out-of-range date,166,working_author_review
+lang,Non-English,113,working_author_review
+type,Ineligible document type,170,working_author_review
+N2,Title/abstract screened,13905,working_author_review
+ta_ex,Title/abstract excluded,12958,working_author_review
+N3,Full texts sought,947,working_author_review
+not_ret,Not retrieved,44,working_author_review
+N4,Full text assessed,903,working_author_review
+EC1,EC1 excluded,35,working_author_review
+EC2,EC2 excluded,51,working_author_review
+EC3,EC3 excluded,93,working_author_review
+EC4,EC4 excluded,78,working_author_review
+EC5,EC5 excluded,30,working_author_review
+N5,Studies included,616,working_author_review
+S3_core,Core studies in S3,132,working_author_review

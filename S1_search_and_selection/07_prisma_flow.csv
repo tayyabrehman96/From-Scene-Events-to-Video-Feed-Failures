@@ -1,0 +1,28 @@
+stage,item,n,formula,verification_status
+identification,IEEE Xplore,3214,working identification count,working_author_review
+identification,ACM Digital Library,1987,working identification count,working_author_review
+identification,Scopus,4568,working identification count,working_author_review
+identification,Web of Science Core Collection,3511,working identification count,working_author_review
+identification,Google Scholar (supplementary),2142,working identification count,working_author_review
+identification,Citation tracking + 2026 proceedings,1060,working identification count,working_author_review
+identification,N1_total_identified,16482,sum of source rows,working_author_review
+removed_before_screening,duplicates,2128,working value,working_author_review
+removed_before_screening,out_of_range_date,166,working value,working_author_review
+removed_before_screening,non_english,113,working value,working_author_review
+removed_before_screening,ineligible_document_type,170,working value,working_author_review
+removed_before_screening,removed_total,2577,2128+166+113+170,working_author_review
+screening,N2_title_abstract_screened,13905,N1 - removed_total,working_author_review
+screening,title_abstract_excluded,12958,working value,working_author_review
+screening,N3_full_texts_sought,947,N2 - title_abstract_excluded,working_author_review
+eligibility,reports_not_retrieved,44,working value,working_author_review
+eligibility,N4_full_text_assessed,903,N3 - not_retrieved,working_author_review
+eligibility,full_text_excluded_EC1,35,working value; see 06_eligibility_inclusion_exclusion.csv,working_author_review
+eligibility,full_text_excluded_EC2,51,working value; see 06_eligibility_inclusion_exclusion.csv,working_author_review
+eligibility,full_text_excluded_EC3,93,working value; see 06_eligibility_inclusion_exclusion.csv,working_author_review
+eligibility,full_text_excluded_EC4,78,working value; see 06_eligibility_inclusion_exclusion.csv,working_author_review
+eligibility,full_text_excluded_EC5,30,working value; see 06_eligibility_inclusion_exclusion.csv,working_author_review
+included,N5_studies_included,616,N4 - sum(EC1..EC5),working_author_review
+included,core_studies_S3,132,working core-primary subset,working_author_review
+included,tier1_behavioural_primary,441,primary-tier allocation; T1+T2+T3 must equal N5,working_author_review
+included,tier2_hazard_primary,122,primary-tier allocation,working_author_review
+included,tier3_feed_integrity_primary,53,primary-tier allocation,working_author_review

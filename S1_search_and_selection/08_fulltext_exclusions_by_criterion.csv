@@ -1,0 +1,6 @@
+criterion_id,n_excluded,criterion_text,verification_status
+EC1,35,Non-English publication or inaccessible full text.,working_author_review
+EC2,51,Duplicate / superseded conference version.,working_author_review
+EC3,93,No surveillance transfer.,working_author_review
+EC4,78,No quantitative evaluation / inadequate data description.,working_author_review
+EC5,30,Review paper used only for positioning.,working_author_review

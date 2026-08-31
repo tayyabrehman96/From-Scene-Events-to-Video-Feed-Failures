@@ -1,0 +1,6 @@
+year,study,citation_key,method,faults,corpus,real_or_synthetic,latency_far,limitation,primary_tier,manuscript_table
+2006,Ribnick et al.,ribnick2006realtime,Low-level CV + DSP,"Spray, displacement",Custom,Real demonstrations,Real-time; FAR not standardized,Small study-specific collection,3,tab:sota_camera
+2017,Mantini and Shah,mantini2017signal,Signal-detection and time-series features,"Occlusion, displacement, defocus",Custom,Mixed,EER and decision delay in the study protocol,Camera-specific baseline assumptions,3,tab:sota_camera
+2019,Mantini and Shah (UHCTD),mantini2019uhctd,CNN and feature baselines with UHCTD,"Covered, defocused, moved",UHCTD,Synthetic faults on real feeds,Protocol-specific,Two-camera benchmark; limited gradual faults,3,tab:sota_camera
+2020,ADOC,doshi2022adoc,Online anomaly detection,Scene + camera tampering,Campus video,Mixed,Online protocol,Small mixed-tier corpus,3,tab:sota_camera
+2023,Mantini and Shah (feature survey),mantini2023feature_survey,Multi-feature time-series analysis,Multiple tampering types,Real surveillance,Mixed,Study-specific,No common false-alarm-rate standard,3,tab:sota_camera

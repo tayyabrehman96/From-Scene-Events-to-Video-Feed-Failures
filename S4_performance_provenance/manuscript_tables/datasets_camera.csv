@@ -1,0 +1,4 @@
+dataset,citation_key,year,videos,anomaly_events,resolution,anomaly_types,public,primary_tier
+Ribnick et al. corpus,ribnick2006realtime,2006,40+,30+,640x480,"Spray, physical displacement",Partial,3
+UHCTD,mantini2019uhctd,2019,288 h (2 cams),Synthetic,NR,"Covered, defocused, moved",Yes,3
+ADOC,doshi2022adoc,2020,18,Mixed,VGA,Camera tampering + scene anomalies,Yes,1+3

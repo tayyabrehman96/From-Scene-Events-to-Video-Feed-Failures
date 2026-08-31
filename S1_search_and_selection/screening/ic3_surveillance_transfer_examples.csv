@@ -1,0 +1,4 @@
+decision,example,criterion,source
+included,A fixed-camera traffic-monitoring fire detector whose sensing conditions match CCTV,IC3,sec:study_selection
+excluded,An industrial-inspection method (MVTec-style) with no surveillance-transfer argument,EC3,sec:study_selection
+excluded,A medical video-anomaly method with no surveillance transfer,EC3,sec:study_selection

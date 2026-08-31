@@ -1,0 +1,14 @@
+column,required,description,allowed_values
+record_id,yes,Stable unique ID,string
+source,yes,Database or supplementary source,IEEE|ACM|Scopus|WoS|Scholar|citation_tracking|proceedings
+query_family_id,yes,QF1–QF4 or mixed,QF1|QF2|QF3|QF4|mixed
+title,yes,Record title,string
+authors,yes,Author string,string
+year,yes,Publication year,integer or NR
+doi,no,DOI if present,string
+stage,yes,Last completed PRISMA stage,identified|removed_before_screening|title_abstract|full_text|included
+decision,yes,Consensus decision,include|exclude|not_retrieved
+exclusion_criterion,if exclude,Single primary exclusion code,EC1|EC2|EC3|EC4|EC5|duplicate|out_of_range|non_english|ineligible_type
+primary_tier,if include,Principal evaluation tier,1|2|3
+multi_category_flag,if include,Spans more than one tier,yes|no
+publication_category,yes,Venue class,journal|main_conference|findings|workshop|preprint

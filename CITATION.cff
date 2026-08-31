@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: "From Scene Events to Video-Feed Failures: replication package (Supplementary S1–S5)"
+message: If you use this replication package, please cite the accompanying systematic review.
+type: dataset
+authors:
+  - family-names: Rehman
+    given-names: Tayyab
+repository-code: https://github.com/tayyabrehman96/From-Scene-Events-to-Video-Feed-Failures
+license: CC-BY-4.0
+date-released: "2026-08-31"
+keywords:
+  - systematic review
+  - video anomaly detection
+  - surveillance
+  - PRISMA
+  - reproducibility

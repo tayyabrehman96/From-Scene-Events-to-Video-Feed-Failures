@@ -1,0 +1,10 @@
+figure_file,manuscript_label,kind,source_data_file,notes
+figure2a_anomaly_category_refined.png,fig:tax_a / fig:taxonomy_tree panel a,data,S4_performance_provenance/figure_source_data/fig2a_anomaly_tier_counts.csv,Working primary-tier counts 441 / 122 / 53 summing to N5=616
+figure2a_anomaly_category_revised.png,superseded working copy of panel a,data,S4_performance_provenance/figure_source_data/fig2a_anomaly_tier_counts.csv,Byte-identical working copy retained for audit; prefer the refined filename in the manuscript
+figure_reasoning_tier_heatmap.png,fig:temporal_validation,data,S4_performance_provenance/figure_source_data/fig_temporal_reasoning_suitability.csv,Transcribed High/Moderate/Low cells from the deposited PNG
+(TikZ in main.tex),fig:prisma,data,S4_performance_provenance/figure_source_data/fig_prisma_flow.csv,PRISMA flow is drawn in TikZ from the working counts
+framework_diagram.png,fig:framework,schematic,,Conceptual diagram; no numerical source table
+methods_overview.png,fig:methods_overview,schematic,,Conceptual diagram; no numerical source table
+foundation_model_diagram.png,fig:foundation_model_diagram,schematic,,Conceptual diagram; no numerical source table
+Protocol Comparability Decision Tree.png,fig:comparability_tree,schematic,,Decision procedure; no numerical source table
+Deployment-oriented modular surveillance architecture.png,fig:modular_deployment,schematic,,Proposed architecture; no numerical source table

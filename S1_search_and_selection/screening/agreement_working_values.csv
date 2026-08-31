@@ -1,0 +1,17 @@
+stage,statistic,value,notes,verification_status
+title_abstract,cohen_kappa,0.754,"working 2x2: both include=700, A-only=200, B-only=217, both exclude=12788, N=13905",working_author_review
+title_abstract,kappa_95ci,"[0.731, 0.777]",working CI,working_author_review
+title_abstract,disagreements,417,200+217,working_author_review
+title_abstract,raw_agreement_pct,97.0,(700+12788)/13905,working_author_review
+title_abstract,pabak,0.940,2*raw_agreement-1,working_author_review
+title_abstract,gwet_ac1,0.966,working AC1 from proposed marginals,working_author_review
+full_text,cohen_kappa,0.877,"working 2x2: both include=580, A-only=26, B-only=23, both exclude=274, N=903",working_author_review
+full_text,kappa_95ci,"[0.843, 0.909]",working CI,working_author_review
+full_text,disagreements,49,26+23,working_author_review
+full_text,raw_agreement_pct,94.6,(580+274)/903,working_author_review
+full_text,pabak,0.891,2*raw_agreement-1,working_author_review
+full_text,gwet_ac1,0.903,working AC1 from proposed marginals,working_author_review
+appraisal,n_rated_items,660,132 core studies x 5 dimensions,working_author_review
+appraisal,observed_agreement_pct,91.2,working 602/660 agree,working_author_review
+appraisal,cohen_kappa_unweighted,0.867,working 3x3 L/S/H table,working_author_review
+appraisal,kappa_95ci,"[0.832, 0.898]",working CI,working_author_review

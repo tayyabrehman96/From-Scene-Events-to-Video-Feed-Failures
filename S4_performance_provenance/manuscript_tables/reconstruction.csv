@@ -1,0 +1,8 @@
+method,year,citation_key,training_regime,ped2_auc,avenue_auc,shtech_auc,ucf_crime_auc,xd_violence_ap,representation,scoring_mechanism,manuscript_table,canonical_for_s4
+Conv-AE,2016,hasan2016learning,Normal-only,85.0,80.0,60.9,,,ConvAE,Reconstruction,tab:reconstruction_methods,no
+Stacked RNN,2017,luo2017revisit,Unsupervised,92.2,81.7,68.0,,,AE + sparse coding,Reconstruction,tab:reconstruction_methods,no
+ConvLSTM-AE,2017,chong2017abnormal,Unsupervised,88.1,77.0,,,,ConvLSTM-AE,Reconstruction,tab:reconstruction_methods,no
+MemAE,2019,gong2019memorizing,Unsupervised,94.1,83.3,71.2,,,AE + memory,Reconstruction,tab:reconstruction_methods,no
+AnoPCN,2019,ye2019anopcn,Unsupervised,96.8,86.2,73.6,,,AE + prediction,Reconstruction,tab:reconstruction_methods,no
+MNAD,2020,park2020learning,Unsupervised,97.0,88.5,70.5,,,AE + memory + pred.,Reconstruction,tab:reconstruction_methods,no
+FPDM,2023,yan2023feature,Unsupervised,,90.1,78.6,,,Feature Diffusion,Prediction/reconstruction,tab:reconstruction_methods,no

@@ -1,0 +1,6 @@
+event_id,event,date,description,verification_status
+EF1,Coverage start,2010-01-01,"Lower bound of the eligible publication window (IC5), with pre-2010 seminal exceptions.",transcribed_from_manuscript
+EF2,Initial search,2025-04,First execution of the four query families across fielded databases plus Scholar.,transcribed_from_manuscript
+EF3,Update search,2026-06,Update search including official WACV 2026 and CVPR 2026 proceedings.,transcribed_from_manuscript
+EF4,Evidence freeze,2026-06-30,Hard freeze. No later record is eligible as quantitative benchmark evidence.,transcribed_from_manuscript
+EF5,Coverage end,2026-06-30,Upper bound of the eligible publication window (IC5).,transcribed_from_manuscript

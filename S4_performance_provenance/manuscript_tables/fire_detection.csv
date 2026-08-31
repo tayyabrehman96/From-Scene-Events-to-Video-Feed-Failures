@@ -1,0 +1,5 @@
+year,study,citation_key,architecture,evaluation_corpus,metric,value,task,primary_tier,note,manuscript_table
+2022,Guan et al.,guan2022improved,Mask R-CNN variant,FLAME,mIoU,82.3,segmentation,2,Aerial fire masks; not comparable with detection mAP,tab:sota_fire_detection
+2023,Niu et al.,niu2023improved,YOLOv5 + infrared,UAV infrared corpus,mAP,89.2,detection,2,Modality-specific UAV setting,tab:sota_fire_detection
+2024,Park and Lee,park2024wildfire,YOLOv8 and RT-DETR with augmentation,Wildfire corpus,mAP,91.0,detection,2,Reported best configuration; split and IoU threshold are study-specific,tab:sota_fire_detection
+2024,Gao et al.,gao2024twostage,Two-stage deep model,Heritage buildings,F1,93.1,detection and classification,2,Domain-specific indoor early-fire setting,tab:sota_fire_detection

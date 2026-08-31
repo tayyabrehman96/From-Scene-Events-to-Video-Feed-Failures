@@ -1,0 +1,13 @@
+dataset,citation_key,year,train,test,scenes,n_categories,annotation,resolution,primary_anomaly_types,primary_tier
+UCSD Ped1,mahadevan2010anomaly,2010,34,36,1,3,Frame + pixel,158x238,"Non-pedestrian entities (bikes, carts)",1
+UCSD Ped2,mahadevan2010anomaly,2010,16,12,1,3,Frame + pixel,240x360,"Non-pedestrian entities (bikes, skaters)",1
+UMN,mehran2009abnormal,2009,,11,3,1,Frame,320x240,Crowd panic and escape,1
+CUHK Avenue,lu2013abnormal,2013,16,21,1,5,Frame + pixel,360x640,"Running, throwing, loitering",1
+ShanghaiTech,luo2017revisit,2017,330,107,13,11,Frame,Various,"Chasing, brawling, cycling",1
+UCF-Crime,sultani2018real,2018,1610,290,Many,13,Video-level,Various,13 real-world crime categories,1
+Street Scene,ramachandra2020street,2020,46,35,1,17,Frame + bbox,1280x720,"Jaywalking, loitering, vehicle anomalies",1
+XD-Violence,wu2020not,2020,3954,800,Many,6,Video-level,Various,Violence with audio track,1
+ADOC,doshi2022adoc,2020,,18,1,5,Frame,VGA,Campus anomalies + camera tampering,1+3
+UBnormal,acsintoae2022ubnormal,2022,268,211,29,22,Frame + pixel,720x1080,Synthetic scenes with pixel masks,1
+NWPU Campus,cao2023nwpu,2023,305,148,43,28,Frame + bbox,1080p,Large-scale campus multi-scene,1
+CHAD,pazho2023chad,2023,,,4,6,Frame + bbox,HD,High-resolution multi-view,1
