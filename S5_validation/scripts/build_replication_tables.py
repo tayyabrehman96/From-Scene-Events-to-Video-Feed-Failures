@@ -24,7 +24,7 @@ S4F = S4 / "figure_source_data"
 S4T = S4 / "manuscript_tables"
 S5 = ROOT / "S5_validation"
 
-PACKAGE_VERSION = "0.3.1"
+PACKAGE_VERSION = "0.3.2"
 AS_OF = date(2026, 8, 31).isoformat()
 STATUS_PROVISIONAL = "provisional_author_verification_required"
 # Compatibility name used throughout the table builders; values are provisional.
@@ -1700,17 +1700,17 @@ def figure_sources() -> None:
             },
             {
                 "figure_file": "litstudy_evidence_topic_landscape.png",
-                "manuscript_label": "fig:litstudy_topics panel a",
+                "manuscript_label": "fig:litstudy_landscape",
                 "kind": "data",
                 "source_data_file": "S5_validation/topic_model/document_topics.csv",
                 "notes": "Exploratory nonlinear map of 52 table-extracted S3 studies; not the provisional N5 set",
             },
             {
                 "figure_file": "litstudy_evidence_topic_clouds.png",
-                "manuscript_label": "fig:litstudy_topics panel b",
+                "manuscript_label": "fig:litstudy_terms",
                 "kind": "data",
                 "source_data_file": "S5_validation/topic_model/topic_terms.csv",
-                "notes": "Six NMF topics from titles and deposited S3 descriptors; no generated abstracts",
+                "notes": "Word clouds and ranked term-weight profiles for six NMF topics; no generated abstracts",
             },
             {
                 "figure_file": "framework_diagram.png",

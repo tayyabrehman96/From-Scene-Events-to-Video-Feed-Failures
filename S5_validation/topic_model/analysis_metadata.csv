@@ -9,4 +9,6 @@ random_seed,42
 minimum_document_frequency,2
 maximum_document_ratio,0.9
 embedding,LitStudy nonlinear 2D embedding
+maximum_reported_nonzero_terms_per_topic,15
+term_profile_display,word cloud plus eight ranked terms with within-topic weights normalized to the highest-weight term
 interpretive_limit,Exploratory map of the table-extracted subset; not the provisional 616-study included set and not prevalence evidence

@@ -5,7 +5,7 @@
 | | |
 | --- | --- |
 | **Repository** | https://github.com/tayyabrehman96/From-Scene-Events-to-Video-Feed-Failures |
-| **Package version** | 0.3.1 (2026-08-31) |
+| **Package version** | 0.3.2 (2026-08-31) |
 | **Evidence window** | January 2010 – 30 June 2026 (seminal pre-2010 exceptions under IC5) |
 | **Initial search / update / freeze** | April 2025 / June 2026 / **30 June 2026** |
 | **Licence** | Data and documentation: [CC BY 4.0](LICENSE). Scripts: MIT (same file). |
@@ -235,7 +235,7 @@ The generated S5 audit contains **43 result cells**, all **903 unordered pairs**
 
 ### LitStudy evidence map and optional metadata interoperability
 
-Figure `fig:litstudy_topics` in the article is generated from the **52 table-extracted S3 studies**, using each publication title plus deposited tier, training-regime, scoring, representation, modality, and dataset descriptors. No generated abstracts are used. Reproducible outputs are in [`S5_validation/topic_model/`](S5_validation/topic_model/):
+Figures `fig:litstudy_landscape` and `fig:litstudy_terms` in the article are generated from the **52 table-extracted S3 studies**, using each publication title plus deposited tier, training-regime, scoring, representation, modality, and dataset descriptors. The term figure combines topic clouds, ranked relative NMF weights, dominant-document counts, and soft topic-mass shares. No generated abstracts are used. Reproducible outputs are in [`S5_validation/topic_model/`](S5_validation/topic_model/):
 
 - `document_topics.csv`: dominant topic, all six topic weights, and two-dimensional coordinates per study;
 - `topic_terms.csv`: top weighted terms, document counts, and transparent author-readable labels;

@@ -3,8 +3,8 @@ figure2a_anomaly_category_refined.png,fig:tax_a / fig:taxonomy_tree panel a,data
 figure2a_anomaly_category_revised.png,superseded working copy of panel a,data,S4_performance_provenance/figure_source_data/fig2a_anomaly_tier_counts.csv,Byte-identical working copy retained for audit; prefer the refined filename in the manuscript
 figure_reasoning_tier_heatmap.png,fig:temporal_validation,data,S4_performance_provenance/figure_source_data/fig_temporal_reasoning_suitability.csv,Transcribed High/Moderate/Low cells from the deposited PNG
 (TikZ in main.tex),fig:prisma,data,S4_performance_provenance/figure_source_data/fig_prisma_flow.csv,PRISMA flow is drawn in TikZ from provisional counts
-litstudy_evidence_topic_landscape.png,fig:litstudy_topics panel a,data,S5_validation/topic_model/document_topics.csv,Exploratory nonlinear map of 52 table-extracted S3 studies; not the provisional N5 set
-litstudy_evidence_topic_clouds.png,fig:litstudy_topics panel b,data,S5_validation/topic_model/topic_terms.csv,Six NMF topics from titles and deposited S3 descriptors; no generated abstracts
+litstudy_evidence_topic_landscape.png,fig:litstudy_landscape,data,S5_validation/topic_model/document_topics.csv,Exploratory nonlinear map of 52 table-extracted S3 studies; not the provisional N5 set
+litstudy_evidence_topic_clouds.png,fig:litstudy_terms,data,S5_validation/topic_model/topic_terms.csv,Word clouds and ranked term-weight profiles for six NMF topics; no generated abstracts
 framework_diagram.png,fig:framework,schematic,,Conceptual diagram; no numerical source table
 methods_overview.png,fig:methods_overview,schematic,,Conceptual diagram; no numerical source table
 foundation_model_diagram.png,fig:foundation_model_diagram,schematic,,Conceptual diagram; no numerical source table

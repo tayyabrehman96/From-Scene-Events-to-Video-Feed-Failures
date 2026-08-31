@@ -173,7 +173,11 @@ def main() -> None:
 
     topic_rows = []
     for topic_id, label in enumerate(TOPIC_LABELS):
-        weighted_terms = model.best_token_weights_for_topic(topic_id, limit=10)
+        weighted_terms = [
+            (term, weight)
+            for term, weight in model.best_token_weights_for_topic(topic_id, limit=15)
+            if weight > 1e-8
+        ]
         members = int(np.sum(dominant == topic_id))
         topic_rows.append(
             {
@@ -214,6 +218,14 @@ def main() -> None:
             {"field": "minimum_document_frequency", "value": "2"},
             {"field": "maximum_document_ratio", "value": "0.9"},
             {"field": "embedding", "value": "LitStudy nonlinear 2D embedding"},
+            {"field": "maximum_reported_nonzero_terms_per_topic", "value": "15"},
+            {
+                "field": "term_profile_display",
+                "value": (
+                    "word cloud plus eight ranked terms with within-topic "
+                    "weights normalized to the highest-weight term"
+                ),
+            },
             {
                 "field": "interpretive_limit",
                 "value": (
@@ -266,9 +278,22 @@ def main() -> None:
     fig.savefig(MAP_PNG, dpi=300, bbox_inches="tight", facecolor="white")
     plt.close(fig)
 
-    fig, axes = plt.subplots(2, 3, figsize=(14, 7.4), constrained_layout=True)
-    for topic_id, ax in enumerate(axes.flat):
-        frequencies = {
+    fig = plt.figure(figsize=(14, 10.6), constrained_layout=True)
+    outer = fig.add_gridspec(3, 2, hspace=0.15, wspace=0.10)
+    for topic_id in range(NUM_TOPICS):
+        row, column = divmod(topic_id, 2)
+        panel = outer[row, column].subgridspec(
+            2,
+            2,
+            height_ratios=[0.16, 0.84],
+            width_ratios=[0.58, 0.42],
+            hspace=0.02,
+            wspace=0.04,
+        )
+        title_ax = fig.add_subplot(panel[0, :])
+        cloud_ax = fig.add_subplot(panel[1, 0])
+        rank_ax = fig.add_subplot(panel[1, 1])
+        raw_frequencies = {
             term.replace("_", " "): weight
             for term, weight in model.best_token_weights_for_topic(
                 topic_id, limit=50
@@ -276,24 +301,83 @@ def main() -> None:
             if not term.startswith("tier_")
             and term not in DISPLAY_FILTER_WORDS
         }
+        maximum = max(raw_frequencies.values())
+        frequencies = {
+            term: weight
+            for term, weight in raw_frequencies.items()
+            if weight >= maximum * 0.01
+        }
+        topic_mass = 100 * weights[:, topic_id].sum() / weights.sum()
+        members = int(np.sum(dominant == topic_id))
+        title_ax.text(
+            0.0,
+            0.55,
+            f"T{topic_id + 1}  {TOPIC_LABELS[topic_id]}",
+            fontsize=11,
+            fontweight="bold",
+            color=colors[topic_id],
+            va="center",
+        )
+        title_ax.text(
+            1.0,
+            0.55,
+            f"dominant documents: {members}  |  topic mass: {topic_mass:.1f}%",
+            fontsize=8.5,
+            color="#4a4a4a",
+            ha="right",
+            va="center",
+        )
+        title_ax.axhline(0.05, color=colors[topic_id], linewidth=1.2, alpha=0.75)
+        title_ax.axis("off")
+
+        rgb = tuple(int(channel * 255) for channel in colors[topic_id, :3])
         cloud = WordCloud(
-            width=1000,
-            height=430,
-            colormap="Blues",
-            max_font_size=66,
+            width=1100,
+            height=520,
+            max_words=28,
+            max_font_size=92,
+            min_font_size=9,
+            prefer_horizontal=0.92,
+            relative_scaling=0.45,
+            collocations=False,
             background_color="white",
             random_state=SEED,
+            color_func=lambda *args, **kwargs: (
+                f"rgb({rgb[0]},{rgb[1]},{rgb[2]})"
+            ),
         ).generate_from_frequencies(frequencies)
-        ax.imshow(cloud, interpolation="bilinear")
-        ax.set_title(
-            f"T{topic_id + 1}: {TOPIC_LABELS[topic_id]}",
-            fontsize=10,
-            fontweight="bold",
+        cloud_ax.imshow(cloud, interpolation="bilinear")
+        cloud_ax.axis("off")
+
+        ranked = sorted(frequencies.items(), key=lambda item: item[1], reverse=True)[:8]
+        labels = [term for term, _ in ranked][::-1]
+        relative_weights = [100 * value / maximum for _, value in ranked][::-1]
+        y = np.arange(len(labels))
+        rank_ax.barh(
+            y,
+            relative_weights,
+            color=colors[topic_id],
+            alpha=0.78,
+            height=0.62,
         )
-        ax.axis("off")
+        rank_ax.set_yticks(y, labels, fontsize=7.4)
+        rank_ax.set_xlim(0, 108)
+        rank_ax.set_xlabel("relative NMF weight", fontsize=7.2)
+        rank_ax.tick_params(axis="x", labelsize=6.8)
+        rank_ax.grid(axis="x", alpha=0.16, linewidth=0.5)
+        rank_ax.spines[["top", "right", "left"]].set_visible(False)
+        for ypos, value in zip(y, relative_weights):
+            rank_ax.text(
+                min(value + 2, 102),
+                ypos,
+                f"{value:.0f}",
+                va="center",
+                fontsize=6.6,
+                color="#333333",
+            )
     fig.suptitle(
-        "Top terms in the six title-and-descriptor NMF topics",
-        fontsize=14,
+        "Term structure of the six title-and-descriptor NMF topics",
+        fontsize=15,
         fontweight="bold",
     )
     fig.savefig(CLOUD_PNG, dpi=300, bbox_inches="tight", facecolor="white")
