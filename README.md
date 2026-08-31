@@ -1,11 +1,11 @@
 # From Scene Events to Video-Feed Failures
 
-**Versioned replication package (Supplementary Materials S1–S5)** for the systematic review of visual anomaly detection in surveillance, spanning behavioural and object-interaction events, physical hazards (fire and smoke), and camera / video-feed integrity failures.
+**Versioned replication package (Online Resources 1–5)** for the systematic review of visual anomaly detection in surveillance, spanning behavioural and object-interaction events, physical hazards (fire and smoke), and camera / video-feed integrity failures.
 
 | | |
 | --- | --- |
 | **Repository** | https://github.com/tayyabrehman96/From-Scene-Events-to-Video-Feed-Failures |
-| **Package version** | 0.3.2 (2026-08-31) |
+| **Package version** | 0.4.0 (2026-08-31) |
 | **Evidence window** | January 2010 – 30 June 2026 (seminal pre-2010 exceptions under IC5) |
 | **Initial search / update / freeze** | April 2025 / June 2026 / **30 June 2026** |
 | **Licence** | Data and documentation: [CC BY 4.0](LICENSE). Scripts: MIT (same file). |
@@ -76,12 +76,12 @@ Pooling is **not** performed: there is no common estimand across tiers or superv
 ├── README.md                          ← this description
 ├── LICENSE
 ├── CITATION.cff
-├── S1_search_and_selection/           ← Supplementary S1
-├── S2_citation_inventory/             ← Supplementary S2
-├── S3_extraction/                     ← Supplementary S3
-├── S4_performance_provenance/         ← Supplementary S4 (numbers and figures)
+├── S1_search_and_selection/           ← Online Resource 1
+├── S2_citation_inventory/             ← Online Resource 2
+├── S3_extraction/                     ← Online Resource 3
+├── S4_performance_provenance/         ← Online Resource 4 (numbers and figures)
 ├── datasets/                          ← S4 dataset audit (expanded)
-└── S5_validation/                     ← Supplementary S5
+└── S5_validation/                     ← Online Resource 5
 ```
 
 ### S1 — Search specification, freeze log, inclusion / exclusion
@@ -235,7 +235,7 @@ The generated S5 audit contains **43 result cells**, all **903 unordered pairs**
 
 ### LitStudy evidence map and optional metadata interoperability
 
-Figures `fig:litstudy_landscape` and `fig:litstudy_terms` in the article are generated from the **52 table-extracted S3 studies**, using each publication title plus deposited tier, training-regime, scoring, representation, modality, and dataset descriptors. The term figure combines topic clouds, ranked relative NMF weights, dominant-document counts, and soft topic-mass shares. No generated abstracts are used. Reproducible outputs are in [`S5_validation/topic_model/`](S5_validation/topic_model/):
+Figure `fig:litstudy_terms` in the article is generated from the **52 table-extracted S3 studies**, using each publication title plus deposited tier, training-regime, scoring, representation, modality, and dataset descriptors. The final term figure is a publication-style six-tile word-cloud grid (`Topic 1`–`Topic 6`) in a unified blue palette, where term size encodes within-topic NMF weight. No generated abstracts are used. Reproducible outputs are in [`S5_validation/topic_model/`](S5_validation/topic_model/):
 
 - `document_topics.csv`: dominant topic, all six topic weights, and two-dimensional coordinates per study;
 - `topic_terms.csv`: top weighted terms, document counts, and transparent author-readable labels;

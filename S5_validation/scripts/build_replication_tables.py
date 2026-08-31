@@ -24,7 +24,7 @@ S4F = S4 / "figure_source_data"
 S4T = S4 / "manuscript_tables"
 S5 = ROOT / "S5_validation"
 
-PACKAGE_VERSION = "0.3.2"
+PACKAGE_VERSION = "0.4.0"
 AS_OF = date(2026, 8, 31).isoformat()
 STATUS_PROVISIONAL = "provisional_author_verification_required"
 # Compatibility name used throughout the table builders; values are provisional.
@@ -1697,13 +1697,6 @@ def figure_sources() -> None:
                 "kind": "data",
                 "source_data_file": "S4_performance_provenance/figure_source_data/fig_prisma_flow.csv",
                 "notes": "PRISMA flow is drawn in TikZ from provisional counts",
-            },
-            {
-                "figure_file": "litstudy_evidence_topic_landscape.png",
-                "manuscript_label": "fig:litstudy_landscape",
-                "kind": "data",
-                "source_data_file": "S5_validation/topic_model/document_topics.csv",
-                "notes": "Exploratory nonlinear map of 52 table-extracted S3 studies; not the provisional N5 set",
             },
             {
                 "figure_file": "litstudy_evidence_topic_clouds.png",
