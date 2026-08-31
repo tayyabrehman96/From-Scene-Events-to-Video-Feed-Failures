@@ -15,3 +15,7 @@ S4,figure_source_data/fig2a_anomaly_tier_counts.csv,n_included_primary,integer,P
 S5,comparability/pairwise_comparability.csv,comparable_C3,boolean,"Agreement on benchmark, metric, supervision regime, and modality"
 S5,comparability/comparability_summary.csv,comparability_density,number,Direct edges divided by all unordered pairs
 S5,comparability/descriptive_regression_checks.csv,ols_slope_points_per_year,number,Descriptive OLS slope; not a methodological effect
+S5,topic_model/document_topics.csv,dominant_topic,integer,Highest-weight NMF topic for one of the 52 table-extracted S3 studies
+S5,topic_model/document_topics.csv,embedding_x,number,First nonlinear embedding coordinate; distance is not an effect size
+S5,topic_model/topic_terms.csv,top_terms,string,"Ten highest-weight tokens for the topic, semicolon separated"
+S5,topic_model/analysis_metadata.csv,value,string,Fixed LitStudy model settings and interpretive boundary

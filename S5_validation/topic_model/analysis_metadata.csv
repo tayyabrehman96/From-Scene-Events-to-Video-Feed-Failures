@@ -1,0 +1,12 @@
+field,value
+software,LitStudy 1.0.6
+model,non-negative matrix factorization
+input_scope,52 table-extracted S3 studies
+text_input,"bibliographic title plus deposited S3 tier, training, scoring, representation, modality, and dataset descriptors"
+abstracts_used,no
+num_topics,6
+random_seed,42
+minimum_document_frequency,2
+maximum_document_ratio,0.9
+embedding,LitStudy nonlinear 2D embedding
+interpretive_limit,Exploratory map of the table-extracted subset; not the provisional 616-study included set and not prevalence evidence

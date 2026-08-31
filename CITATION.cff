@@ -14,6 +14,7 @@ abstract: >-
   specifications and evidence-freeze log; bibliographic inventory; core
   consolidated performance evidence and aggregate appraisal results; numerical
   provenance; a complete 43-cell/903-pair protocol-comparability audit; a
+  reproducible LitStudy topic map of the 52 table-extracted studies; a
   21-corpus dataset audit with split, access, and composition fields; and
   validation scripts with checksums. Does not
   redistribute video datasets or manuscript LaTeX.

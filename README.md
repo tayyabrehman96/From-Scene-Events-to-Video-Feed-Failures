@@ -5,7 +5,7 @@
 | | |
 | --- | --- |
 | **Repository** | https://github.com/tayyabrehman96/From-Scene-Events-to-Video-Feed-Failures |
-| **Package version** | 0.2.1 (2026-08-31) |
+| **Package version** | 0.3.0 (2026-08-31) |
 | **Evidence window** | January 2010 – 30 June 2026 (seminal pre-2010 exceptions under IC5) |
 | **Initial search / update / freeze** | April 2025 / June 2026 / **30 June 2026** |
 | **Licence** | Data and documentation: [CC BY 4.0](LICENSE). Scripts: MIT (same file). |
@@ -24,7 +24,7 @@ A structured, citable deposit of the review’s *methods and evidence objects*, 
 | --- | --- |
 | Executable database search strings and freeze log (S1) | Manuscript `main.tex`, `.bib`, figure PNGs, or compiled PDF |
 | Eligibility (inclusion/exclusion) rules and PRISMA-stage counts (S1) | Raw RIS/CSV exports of the ~16k identification set (drop zone provided) |
-| Bibliographic inventory of 176 cited items (S2) | Third-party surveillance video, images, or pretrained weights |
+| Bibliographic inventory of 177 cited items (S2) | Third-party surveillance video, images, or pretrained weights |
 | A 43-cell consolidated evidence table and aggregate appraisal results (S3) | Independent screener decision sheets (schema provided; files not deposited) |
 | Principal-table and extended numerical provenance (S4) | Row-level D1–D5 appraisal ratings (aggregate results only) |
 | Dataset audit: 21 corpora, splits, access, composition, caveats | Retraining scripts for detection models |
@@ -132,7 +132,7 @@ Folder: [`S2_citation_inventory/`](S2_citation_inventory/)
 
 | File | Description |
 | --- | --- |
-| [`citation_inventory.csv`](S2_citation_inventory/citation_inventory.csv) | **176** cited items: key, type, year, authors, title, venue, DOI, and a heuristic `role_in_review` (primary study, dataset, positioning review, reporting standard, background) |
+| [`citation_inventory.csv`](S2_citation_inventory/citation_inventory.csv) | **177** cited items: key, type, year, authors, title, venue, DOI, and a heuristic `role_in_review` (primary study, dataset, review software, positioning review, reporting standard, background) |
 
 The inventory is the machine-readable bibliography. It is **not evidence for the proposed 616-study included set**. A complete N5 study ledger is required before the article's included-study claim and tier allocation can be verified.
 
@@ -208,6 +208,7 @@ Folder: [`S5_validation/`](S5_validation/)
 | [`scripts/build_replication_tables.py`](S5_validation/scripts/build_replication_tables.py) | Regenerates S1–S4 CSVs from the deposited table specifications |
 | [`scripts/build_dataset_audit.py`](S5_validation/scripts/build_dataset_audit.py) | Regenerates `datasets/` |
 | [`scripts/build_comparability_audit.py`](S5_validation/scripts/build_comparability_audit.py) | Regenerates the 43-cell, 903-pair comparability audit, sensitivity analysis, and descriptive regression checks |
+| [`scripts/build_litstudy_evidence_map.py`](S5_validation/scripts/build_litstudy_evidence_map.py) | Regenerates the six-topic LitStudy map and word clouds from 52 table-extracted S3 studies |
 | [`scripts/validate_package.py`](S5_validation/scripts/validate_package.py) | Required-file check, six PRISMA identities, duplicate keys, Figure 2a vs N5, dataset integrity, and 43/903/54 comparability assertions |
 | [`scripts/generate_checksums.py`](S5_validation/scripts/generate_checksums.py) | SHA-256 over package files (excludes local manuscript source) |
 | [`scripts/litstudy_metadata_audit.py`](S5_validation/scripts/litstudy_metadata_audit.py) | Optional CSV/RIS/BibTeX ingestion, identifier-aware union, and year/venue/deduplication summaries using LitStudy |
@@ -217,21 +218,36 @@ Folder: [`S5_validation/`](S5_validation/)
 | [`AMENDMENT_LOG.md`](S5_validation/AMENDMENT_LOG.md) | Dated changes |
 | [`audit_report.md`](S5_validation/audit_report.md) | Last automated audit |
 
-Python 3.10 or later; **standard library only**.
+Python 3.10 or later. Core table, audit, and validation scripts use the standard library; the LitStudy figure and metadata adapter require `S5_validation/requirements-litstudy.txt`.
 
 ```bash
 python S5_validation/scripts/build_replication_tables.py
 python S5_validation/scripts/build_dataset_audit.py
 python S5_validation/scripts/build_comparability_audit.py
+python S5_validation/scripts/build_litstudy_evidence_map.py
 python S5_validation/scripts/validate_package.py
 python S5_validation/scripts/generate_checksums.py
 ```
 
 The generated S5 audit contains **43 result cells**, all **903 unordered pairs**, and **54 directly comparable pairs** under the recorded C3 coordinates (6.0%; 19 classes; largest class 6). It also reproduces the manuscript's Ped2, UCF-Crime, and XD-Violence descriptive trend statistics.
 
-### Optional repository-only LitStudy interoperability
+### LitStudy evidence map and optional metadata interoperability
 
-The package can import deposited CSV, RIS, and BibTeX exports through
+Figure `fig:litstudy_topics` in the article is generated from the **52 table-extracted S3 studies**, using each publication title plus deposited tier, training-regime, scoring, representation, modality, and dataset descriptors. No generated abstracts are used. Reproducible outputs are in [`S5_validation/topic_model/`](S5_validation/topic_model/):
+
+- `document_topics.csv`: dominant topic, all six topic weights, and two-dimensional coordinates per study;
+- `topic_terms.csv`: top weighted terms, document counts, and transparent author-readable labels;
+- `analysis_metadata.csv`: fixed seed, NMF settings, text scope, and interpretive boundary.
+
+Run:
+
+```bash
+python S5_validation/scripts/build_litstudy_evidence_map.py
+```
+
+This visualization is explicitly exploratory. It represents neither the provisional 616-study set nor literature prevalence, and nonlinear distances are not effect sizes.
+
+Separately, the package can import future deposited CSV, RIS, and BibTeX exports through
 [LitStudy](https://github.com/NLeSC/litstudy), combine collections with its
 identifier-aware `DocumentSet` union, and generate descriptive year, venue,
 and duplicate-collapse summaries:
@@ -241,7 +257,7 @@ python -m pip install -r S5_validation/requirements-litstudy.txt
 python S5_validation/scripts/litstudy_metadata_audit.py
 ```
 
-This adapter is a **post hoc repository aid and is not cited as part of the updated manuscript methodology**. It does not infer
+The metadata adapter is a **post hoc repository aid distinct from the S3 evidence map**. It does not infer
 eligibility, replace the declared DOI/title-author-year deduplication ledger,
 or establish the proposed PRISMA counts. Topic models and bibliographic
 networks are also treated as exploratory because their completeness depends

@@ -8,6 +8,23 @@ networks; and exploratory topic modelling.
 
 ## Scope in this replication package
 
+### Reproducible S3 evidence map
+
+`scripts/build_litstudy_evidence_map.py` applies LitStudy's NMF and nonlinear
+embedding functions to the 52 studies in `S3_extraction/core_primary_evidence.csv`.
+The corpus combines bibliographic titles with deposited structured descriptors
+(tier, training regime, scoring mechanism, representation, modality, and
+datasets); no generated abstracts are used. It writes document-topic weights,
+embedding coordinates, topic terms, and fixed parameters to `topic_model/`,
+plus two local PNGs used by the manuscript.
+
+This is an exploratory visualization of the table-extracted evidence subset.
+It is not a topic model of the provisional 616-study set, and cluster size or
+distance must not be interpreted as literature prevalence, effect size, or
+study quality.
+
+### Optional raw-export metadata audit
+
 `scripts/litstudy_metadata_audit.py` uses only the metadata-ingestion and
 `DocumentSet` union capabilities to:
 

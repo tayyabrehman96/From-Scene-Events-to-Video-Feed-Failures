@@ -39,6 +39,9 @@ REQUIRED = [
     S5 / "comparability" / "comparability_summary.csv",
     S5 / "comparability" / "comparability_sensitivity.csv",
     S5 / "comparability" / "descriptive_regression_checks.csv",
+    S5 / "topic_model" / "document_topics.csv",
+    S5 / "topic_model" / "topic_terms.csv",
+    S5 / "topic_model" / "analysis_metadata.csv",
     S5 / "checksums.sha256",
     S5 / "AMENDMENT_LOG.md",
 ]
@@ -153,6 +156,18 @@ def main() -> int:
     ):
         errors.append("combined comparability summary does not match 19 classes / largest 6 / 6.0%")
 
+    topic_docs = read_csv(S5 / "topic_model" / "document_topics.csv")
+    topic_terms = read_csv(S5 / "topic_model" / "topic_terms.csv")
+    if len(topic_docs) != len(s3):
+        errors.append(
+            f"LitStudy topic map has {len(topic_docs)} documents; expected {len(s3)} extended S3 rows"
+        )
+    if len(topic_terms) != 6:
+        errors.append(f"LitStudy topic model has {len(topic_terms)} topics; expected 6")
+    topic_keys = {r["citation_key"] for r in topic_docs}
+    if topic_keys != s3_keys:
+        errors.append("LitStudy document-topic keys do not match extended S3 citation keys")
+
     datasets = read_csv(ROOT / "datasets" / "dataset_catalogue.csv")
     ds_ids = [r["dataset_id"] for r in datasets]
     if len(ds_ids) != len(set(ds_ids)):
@@ -189,6 +204,7 @@ def main() -> int:
     print("S3 rows:", len(s3))
     print("S4 rows:", len(s4))
     print("Comparability cells / pairs / C3 edges:", len(cells), len(pairs), direct_edges)
+    print("LitStudy topic documents / topics:", len(topic_docs), len(topic_terms))
     print("N1 / N5 / tiers:", p["N1_total_identified"], p["N5_studies_included"], tier_sum)
     if warnings:
         print("WARNINGS")

@@ -1,9 +1,9 @@
 # S5 audit report
 
-- Package version: 0.2.1
+- Package version: 0.3.0
 - Audit date: 2026-08-31
-- Files checksummed: 74
-- S2 citation inventory rows: 176
+- Files checksummed: 78
+- S2 citation inventory rows: 177
 - S3 core-evidence rows extracted from manuscript tables: 52
 - S4 provenance rows: 137
 
@@ -17,6 +17,7 @@ The validation script `scripts/validate_package.py` re-runs these tests:
 4. Every S4 `citation_key` with a numerical value exists in S2 or is flagged.
 5. Figure 2a counts sum to N5.
 6. The formal comparability audit contains 43 result cells, 903 pairwise rows, and 54 C3-comparable edges (6.0%; 19 classes; largest class 6).
+7. The LitStudy evidence map contains one document-topic row per extended S3 study and exactly six topics.
 
 ## Author-verification gaps (not failures of this deposit)
 
@@ -32,4 +33,5 @@ The validation script `scripts/validate_package.py` re-runs these tests:
 2. Re-execute the Boolean strings in `S1_search_and_selection/03_executable_search_strings.md` if checking search reproducibility.
 3. Treat `verification_status = provisional_author_verification_required` as an unsupported proposed value that must be replaced from original source records before submission.
 4. Use `S4_performance_provenance/principal_table_provenance.csv` for the 43 formal-analysis cells and `performance_provenance.csv` for the extended manuscript tables.
-5. Run `python S5_validation/scripts/validate_package.py`.
+5. Treat `S5_validation/topic_model/` as an exploratory visualization of 52 table-extracted studies, not as evidence about the provisional N5 corpus.
+6. Run `python S5_validation/scripts/validate_package.py`.
