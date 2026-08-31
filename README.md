@@ -5,7 +5,7 @@
 | | |
 | --- | --- |
 | **Repository** | https://github.com/tayyabrehman96/From-Scene-Events-to-Video-Feed-Failures |
-| **Package version** | 0.3.0 (2026-08-31) |
+| **Package version** | 0.3.1 (2026-08-31) |
 | **Evidence window** | January 2010 – 30 June 2026 (seminal pre-2010 exceptions under IC5) |
 | **Initial search / update / freeze** | April 2025 / June 2026 / **30 June 2026** |
 | **Licence** | Data and documentation: [CC BY 4.0](LICENSE). Scripts: MIT (same file). |
@@ -191,6 +191,8 @@ Academic catalogue of every benchmark or study-specific corpus **tabulated** in 
 | Axis | Breakdown |
 | --- | --- |
 | Primary tier | Behavioural 11 · Fire/smoke 7 · Feed integrity 3 |
+| Manuscript-table membership (overlapping) | Behavioural table 12 · Fire/smoke table 7 · Feed-integrity table 3; ADOC appears in two tables |
+| Tier-dedicated corpora | Behavioural 11 · Fire/smoke 7 · Feed integrity 1 |
 | Public access | Yes 20 · Partial 1 (Ribnick et al.) |
 | Composition | Real 14 · Mixed 5 · Synthetic 1 (UBnormal) · Synthetic faults on real feeds 1 (UHCTD) |
 | VAD split volume (numeric tier-1 rows, excluding UMN; CHAD remains NR) | Train 6,579 · Test 1,660 clips/videos |

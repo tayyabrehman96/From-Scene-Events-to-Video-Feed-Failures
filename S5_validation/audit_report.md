@@ -1,6 +1,6 @@
 # S5 audit report
 
-- Package version: 0.3.0
+- Package version: 0.3.1
 - Audit date: 2026-08-31
 - Files checksummed: 78
 - S2 citation inventory rows: 177

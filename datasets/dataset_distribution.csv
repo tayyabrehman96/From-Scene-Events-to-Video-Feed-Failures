@@ -5,6 +5,12 @@ primary_tier,2_fire_smoke,7,0.3333,
 primary_tier,3_feed_integrity,3,0.1429,Includes ADOC and UHCTD and Ribnick
 multi_tier_flag,yes,1,0.0476,ADOC only in this catalogue
 multi_tier_flag,no,20,0.9524,
+manuscript_table_membership,behavioral_table,12,0.5714,Tables 31/34 counting axis; includes multi-tier ADOC although its primary tier is 3
+manuscript_table_membership,fire_smoke_table,7,0.3333,Tables 32/34 counting axis
+manuscript_table_membership,feed_integrity_table,3,0.1429,Tables 33/34 counting axis; includes multi-tier ADOC
+tier_dedicated_corpora,behavioral,11,0.5238,Table 34; excludes multi-tier ADOC
+tier_dedicated_corpora,fire_smoke,7,0.3333,Table 34
+tier_dedicated_corpora,feed_integrity,1,0.0476,Table 34; only one corpus is dedicated rather than mixed/study-specific
 public_access,yes,20,0.9524,
 public_access,partial,1,0.0476,
 composition,mixed,5,0.2381,

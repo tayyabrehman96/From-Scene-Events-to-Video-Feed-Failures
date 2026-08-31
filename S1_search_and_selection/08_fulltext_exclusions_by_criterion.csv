@@ -1,6 +1,6 @@
 criterion_id,n_excluded,criterion_text,verification_status
 EC1,35,Non-English publication or inaccessible full text.,provisional_author_verification_required
-EC2,51,Duplicate / superseded conference version.,provisional_author_verification_required
+EC2,51,"Duplicate report, extended abstract, or a conference version superseded by a substantially overlapping journal extension.",provisional_author_verification_required
 EC3,93,No surveillance transfer.,provisional_author_verification_required
 EC4,78,No quantitative evaluation / inadequate data description.,provisional_author_verification_required
 EC5,30,Review paper used only for positioning.,provisional_author_verification_required

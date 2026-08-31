@@ -128,6 +128,13 @@ def main() -> int:
     missing_s4 = sorted({r["citation_key"] for r in s4} - set(keys))
     if missing_s4:
         warnings.append(f"S4 keys not in S2 bibliography: {missing_s4}")
+    canonical_s4 = [r for r in s4 if r["canonical_table"] == "yes"]
+    if len(canonical_s4) != 43:
+        errors.append(
+            f"extended S4 marks {len(canonical_s4)} rows canonical; expected the 43 principal-table cells"
+        )
+    if any("fire" in r["manuscript_table"] for r in canonical_s4):
+        errors.append("fire/hazard extended-table rows must not be marked canonical")
 
     cells = read_csv(S5 / "comparability" / "result_cells.csv")
     pairs = read_csv(S5 / "comparability" / "pairwise_comparability.csv")
@@ -181,6 +188,24 @@ def main() -> int:
     n_multi = sum(r.get("multi_tier_flag") == "yes" for r in datasets)
     if n_multi != 1:
         warnings.append(f"expected exactly one multi-tier corpus (ADOC); found {n_multi}")
+    distribution = read_csv(ROOT / "datasets" / "dataset_distribution.csv")
+    distribution_lookup = {
+        (r["axis"], r["level"]): int(r["n_corpora"])
+        for r in distribution
+    }
+    expected_table_counts = {
+        ("manuscript_table_membership", "behavioral_table"): 12,
+        ("manuscript_table_membership", "fire_smoke_table"): 7,
+        ("manuscript_table_membership", "feed_integrity_table"): 3,
+        ("tier_dedicated_corpora", "behavioral"): 11,
+        ("tier_dedicated_corpora", "fire_smoke"): 7,
+        ("tier_dedicated_corpora", "feed_integrity"): 1,
+    }
+    for key, expected in expected_table_counts.items():
+        if distribution_lookup.get(key) != expected:
+            errors.append(
+                f"dataset distribution {key}={distribution_lookup.get(key)}; expected {expected}"
+            )
     print("Dataset catalogue rows:", len(datasets))
 
     if len(s3) != int(p["core_studies_S3"]):

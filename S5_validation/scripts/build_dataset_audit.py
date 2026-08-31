@@ -634,6 +634,37 @@ def distribution(cat: list[dict]) -> list[dict]:
     add("primary_tier", "3_feed_integrity", by_tier["3"], "Includes ADOC and UHCTD and Ribnick")
     add("multi_tier_flag", "yes", sum(r["multi_tier_flag"] == "yes" for r in cat), "ADOC only in this catalogue")
     add("multi_tier_flag", "no", sum(r["multi_tier_flag"] == "no" for r in cat), "")
+    add(
+        "manuscript_table_membership",
+        "behavioral_table",
+        12,
+        "Tables 31/34 counting axis; includes multi-tier ADOC although its primary tier is 3",
+    )
+    add(
+        "manuscript_table_membership",
+        "fire_smoke_table",
+        7,
+        "Tables 32/34 counting axis",
+    )
+    add(
+        "manuscript_table_membership",
+        "feed_integrity_table",
+        3,
+        "Tables 33/34 counting axis; includes multi-tier ADOC",
+    )
+    add(
+        "tier_dedicated_corpora",
+        "behavioral",
+        11,
+        "Table 34; excludes multi-tier ADOC",
+    )
+    add("tier_dedicated_corpora", "fire_smoke", 7, "Table 34")
+    add(
+        "tier_dedicated_corpora",
+        "feed_integrity",
+        1,
+        "Table 34; only one corpus is dedicated rather than mixed/study-specific",
+    )
     by_pub = Counter(r["public_access"] for r in cat)
     for k in ("yes", "partial", "no"):
         if by_pub[k]:

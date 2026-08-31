@@ -24,7 +24,7 @@ S4F = S4 / "figure_source_data"
 S4T = S4 / "manuscript_tables"
 S5 = ROOT / "S5_validation"
 
-PACKAGE_VERSION = "0.3.0"
+PACKAGE_VERSION = "0.3.1"
 AS_OF = date(2026, 8, 31).isoformat()
 STATUS_PROVISIONAL = "provisional_author_verification_required"
 # Compatibility name used throughout the table builders; values are provisional.
@@ -665,7 +665,10 @@ def s1_tables() -> None:
                         },
                         {
                             "criterion_id": "EC2",
-                            "criterion_text": "Duplicate / superseded conference version.",
+                            "criterion_text": (
+                                "Duplicate report, extended abstract, or a conference version "
+                                "superseded by a substantially overlapping journal extension."
+                            ),
                         },
                         {
                             "criterion_id": "EC3",
@@ -1519,8 +1522,11 @@ def flatten_provenance(perf, fire_cls, fire_det) -> list[dict]:
             representation=r["architecture"],
             scoring_mechanism=r["task"],
             immediate_source=f"cited study {r['citation_key']}",
-            canonical_table="yes",
-            note=r["note"],
+            canonical_table="no",
+            note=(
+                f"Extended fire/hazard table; outside the 43-cell principal "
+                f"consolidated comparison. {r['note']}"
+            ).strip(),
         )
     return rows
 
