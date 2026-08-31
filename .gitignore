@@ -1,3 +1,14 @@
+# Manuscript source — keep locally, do not upload to the replication repo
+main.tex
+main.bbl
+main.pdf
+references.bib
+README_BEFORE_SUBMISSION.md
+PDF_PREFLIGHT.txt
+PRISMA_PROVISIONAL_NUMBERS_FOR_REVIEW.csv
+manuscript/
+*.png
+
 # LaTeX build artifacts
 *.aux
 *.log

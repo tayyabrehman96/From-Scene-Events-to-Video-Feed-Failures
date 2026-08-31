@@ -16,7 +16,7 @@ It is written for **researchers** who want to reuse the search specification, ta
 | **S4** | Performance-provenance table linking every reproduced numerical cell to its citation key; figure source CSVs; per-table CSV dumps | [`S4_performance_provenance/`](S4_performance_provenance/) |
 | **S5** | Validation and table-generation scripts, data dictionary, checksums, amendment log, audit report | [`S5_validation/`](S5_validation/) |
 
-Manuscript source, bibliography, and figure PNGs are in [`manuscript/`](manuscript/) (LaTeX at repository root is the compiling submission copy).
+This repository is the replication package only. Manuscript LaTeX, the `.bib` file, and figure PNGs are not included.
 
 ## Inclusion / exclusion CSVs
 
@@ -44,7 +44,7 @@ Schematic figures (framework, methods overview, foundation-model diagram, compar
 
 Every quantitative CSV has a `verification_status` (or equivalent) column:
 
-- `transcribed_from_manuscript` — copied from `main.tex` / `references.bib` / deposited figures
+- `transcribed_from_manuscript` — copied from the submitted manuscript tables and bibliography
 - `working_author_review` — internally consistent PRISMA / agreement / tier-allocation working values; **must be replaced from the original ledger before treating the manuscript as a finished systematic review**
 - `author_verification_required` — D1–D5 ratings and PDF page confirmation of transcribed numbers
 
@@ -59,7 +59,7 @@ python S5_validation/scripts/build_replication_tables.py
 python S5_validation/scripts/validate_package.py
 ```
 
-Expected validation outcome at this deposit: **PASS** with warnings that (i) S3 row count is the table-extracted core set, not yet 132 independently coded studies, (ii) D1–D5 ratings are still templates, and (iii) any citation keys used in tables but missing from the `.bib` file are listed.
+Expected validation outcome at this deposit: **PASS** with warnings that (i) S3 row count is the table-extracted core set, not yet 132 independently coded studies, and (ii) D1–D5 ratings are still templates.
 
 ## What this package does *not* do
 

@@ -29,6 +29,19 @@ AS_OF = date(2026, 8, 31).isoformat()
 STATUS_WORKING = "working_author_review"
 STATUS_TRANSCRIBED = "transcribed_from_manuscript"
 STATUS_PENDING = "author_verification_required"
+CHECKSUM_SKIP_DIRS = {".git", "__pycache__", "_github_clone", "manuscript"}
+CHECKSUM_SKIP_NAMES = {
+    "main.tex",
+    "main.bbl",
+    "main.pdf",
+    "references.bib",
+    "README_BEFORE_SUBMISSION.md",
+    "PDF_PREFLIGHT.txt",
+    "PRISMA_PROVISIONAL_NUMBERS_FOR_REVIEW.csv",
+    "checksums.sha256",
+    "audit_report.md",
+}
+CHECKSUM_SKIP_SUFFIXES = {".png"}
 
 
 def write_csv(path: Path, fieldnames: list[str], rows: list[dict]) -> None:
@@ -1725,15 +1738,22 @@ def sha256_file(path: Path) -> str:
     return h.hexdigest()
 
 
+def is_package_file(path: Path) -> bool:
+    if any(part in CHECKSUM_SKIP_DIRS for part in path.parts):
+        return False
+    if path.name in CHECKSUM_SKIP_NAMES:
+        return False
+    if path.suffix.lower() in CHECKSUM_SKIP_SUFFIXES:
+        return False
+    return True
+
+
 def write_checksums_and_audit(extra_notes: list[str]) -> None:
-    skip_parts = {".git", "__pycache__", "_github_clone"}
     files = []
     for p in ROOT.rglob("*"):
         if not p.is_file():
             continue
-        if any(part in skip_parts for part in p.parts):
-            continue
-        if p.name in {"checksums.sha256", "audit_report.md"}:
+        if not is_package_file(p):
             continue
         rel = p.relative_to(ROOT).as_posix()
         files.append((rel, sha256_file(p), p.stat().st_size))
@@ -1796,30 +1816,31 @@ The validation script `scripts/validate_package.py` re-runs these tests:
 
 def main() -> None:
     s1_tables()
-    bib = parse_bib(BIB)
-    write_csv(
-        S2 / "citation_inventory.csv",
-        [
-            "citation_key",
-            "entry_type",
-            "year",
-            "author",
-            "title",
-            "journal",
-            "booktitle",
-            "volume",
-            "number",
-            "pages",
-            "publisher",
-            "doi",
-            "url",
-            "role_in_review",
-            "verification_status",
-        ],
-        bib,
-    )
-    # Copy bib beside the inventory for reviewers who want the native file.
-    (S2 / "references.bib").write_text(BIB.read_text(encoding="utf-8"), encoding="utf-8")
+    if BIB.exists():
+        bib = parse_bib(BIB)
+        write_csv(
+            S2 / "citation_inventory.csv",
+            [
+                "citation_key",
+                "entry_type",
+                "year",
+                "author",
+                "title",
+                "journal",
+                "booktitle",
+                "volume",
+                "number",
+                "pages",
+                "publisher",
+                "doi",
+                "url",
+                "role_in_review",
+                "verification_status",
+            ],
+            bib,
+        )
+    else:
+        bib = list(csv.DictReader((S2 / "citation_inventory.csv").open(encoding="utf-8")))
 
     perf = performance_tables()
     fire_cls, fire_det, camera = fire_camera_tables()

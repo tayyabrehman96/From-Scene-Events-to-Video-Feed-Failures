@@ -7,7 +7,18 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "S5_validation" / "checksums.sha256"
-SKIP = {".git", "__pycache__", "_github_clone"}
+SKIP_DIRS = {".git", "__pycache__", "_github_clone", "manuscript"}
+SKIP_NAMES = {
+    "main.tex",
+    "main.bbl",
+    "main.pdf",
+    "references.bib",
+    "README_BEFORE_SUBMISSION.md",
+    "PDF_PREFLIGHT.txt",
+    "PRISMA_PROVISIONAL_NUMBERS_FOR_REVIEW.csv",
+    "checksums.sha256",
+}
+SKIP_SUFFIXES = {".png"}
 
 
 def sha256_file(path: Path) -> str:
@@ -23,9 +34,11 @@ def main() -> None:
     for p in ROOT.rglob("*"):
         if not p.is_file():
             continue
-        if any(part in SKIP for part in p.parts):
+        if any(part in SKIP_DIRS for part in p.parts):
             continue
-        if p.name == "checksums.sha256":
+        if p.name in SKIP_NAMES:
+            continue
+        if p.suffix.lower() in SKIP_SUFFIXES:
             continue
         files.append(p)
     lines = []
