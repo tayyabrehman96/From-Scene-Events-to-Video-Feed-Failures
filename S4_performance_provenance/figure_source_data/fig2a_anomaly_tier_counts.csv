@@ -1,4 +1,4 @@
 tier_id,tier_name,n_included_primary,share_of_N5,verification_status,note
-1,Behavioural / object interaction,441,0.7159,reported_review_result_not_independently_recomputable,Primary-tier assignment; multi-category studies counted once
-2,Physical hazard (fire/smoke),122,0.1981,reported_review_result_not_independently_recomputable,Primary-tier assignment; multi-category studies counted once
-3,Camera / video-feed integrity,53,0.086,reported_review_result_not_independently_recomputable,Primary-tier assignment; multi-category studies counted once
+1,Behavioural / object interaction,441,0.7159,provisional_author_verification_required,Primary-tier assignment; multi-category studies counted once
+2,Physical hazard (fire/smoke),122,0.1981,provisional_author_verification_required,Primary-tier assignment; multi-category studies counted once
+3,Camera / video-feed integrity,53,0.086,provisional_author_verification_required,Primary-tier assignment; multi-category studies counted once

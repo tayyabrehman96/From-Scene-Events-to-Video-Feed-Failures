@@ -5,12 +5,14 @@
 | | |
 | --- | --- |
 | **Repository** | https://github.com/tayyabrehman96/From-Scene-Events-to-Video-Feed-Failures |
-| **Package version** | 0.2.0 (2026-08-31) |
+| **Package version** | 0.2.1 (2026-08-31) |
 | **Evidence window** | January 2010 – 30 June 2026 (seminal pre-2010 exceptions under IC5) |
 | **Initial search / update / freeze** | April 2025 / June 2026 / **30 June 2026** |
 | **Licence** | Data and documentation: [CC BY 4.0](LICENSE). Scripts: MIT (same file). |
 
 This is the location named in the manuscript **Data availability** and **Code availability** statements. It is intended for **journal reviewers**, **information specialists checking PRISMA-S**, and **researchers** who need machine-readable tables, search strings, dataset metadata, and numerical provenance.
+
+> **Critical verification warning:** the PRISMA counts, 616-study total, 441/122/53 tier allocation, 132-study core total, and screening/appraisal agreement statistics originated as provisional estimates or internally consistent scenarios. The original exports, screening ledgers, included-study list, and rating matrices are absent. These values must not be represented as verified systematic-review results until the authors replace them from the source records.
 
 ---
 
@@ -106,7 +108,7 @@ Sources: IEEE Xplore, ACM Digital Library, Scopus, Web of Science Core Collectio
 | [`screening/`](S1_search_and_selection/screening/) | Stage counts, working agreement statistics, IC3 include/exclude examples |
 | [`raw_exports/`](S1_search_and_selection/raw_exports/) | Empty drop zone for publisher metadata exports (no PDFs) |
 
-**Reported PRISMA arithmetic** (all identities pass; values are not independently recomputable until the original ledger is deposited):
+**Provisional PRISMA arithmetic** (the identities pass, but arithmetic consistency does not verify the estimated inputs):
 
 | Slot | *n* | Formula |
 | --- | --- | --- |
@@ -120,7 +122,7 @@ Sources: IEEE Xplore, ACM Digital Library, Scopus, Web of Science Core Collectio
 | Full-text excluded | 287 | EC1 35 + EC2 51 + EC3 93 + EC4 78 + EC5 30 |
 | **N5 included** | **616** | N4 − 287 |
 | Primary-tier allocation | 441 / 122 / 53 | Must sum to N5 (multi-category studies counted once) |
-| Core appraisal set | 132 | Aggregate appraisal results are reported; the row-level matrix is not distributed |
+| Core appraisal set | 132 | Provisional estimate; source extraction and row-level matrix are not distributed |
 
 Deduplication is two automated passes plus manual residual review. Incremental eligible studies are not dropped merely because the contribution is small; conference/journal pairs are collapsed only when they report the same experiment.
 
@@ -132,7 +134,7 @@ Folder: [`S2_citation_inventory/`](S2_citation_inventory/)
 | --- | --- |
 | [`citation_inventory.csv`](S2_citation_inventory/citation_inventory.csv) | **176** cited items: key, type, year, authors, title, venue, DOI, and a heuristic `role_in_review` (primary study, dataset, positioning review, reporting standard, background) |
 
-The inventory is the machine-readable bibliography. It is **not** the list of 616 included studies (N5). The article bibliography is the smaller set of items cited in support of specific claims; N5 is every record that passed full-text eligibility. Those two quantities must not be conflated.
+The inventory is the machine-readable bibliography. It is **not evidence for the proposed 616-study included set**. A complete N5 study ledger is required before the article's included-study claim and tier allocation can be verified.
 
 Native BibTeX is omitted from this public repository by design (the replication package is data and scripts, not the manuscript source).
 
@@ -145,10 +147,10 @@ Folder: [`S3_extraction/`](S3_extraction/)
 | [`consolidated_performance_evidence.csv`](S3_extraction/consolidated_performance_evidence.csv) | The **43 result cells** in the two principal numerical tables, with benchmark, metric, value, supervision, modality, representation, scoring mechanism, and unavailable protocol coordinates marked `NR` |
 | [`core_primary_evidence.csv`](S3_extraction/core_primary_evidence.csv) | Extended **52-study** extraction of the manuscript's comparison and SOTA tables |
 | [`appraisal_instrument.csv`](S3_extraction/appraisal_instrument.csv) | Five diagnostic dimensions **D1–D5** (transparency, split integrity, metric validity, comparison fairness, external validity), with low- and high-concern anchors |
-| [`appraisal_aggregate.csv`](S3_extraction/appraisal_aggregate.csv) | Reported aggregate: 132 studies, 660 ratings, 91.2% agreement, κ = 0.867 (95% CI [0.832, 0.898]); explicitly marked not independently recomputable |
+| [`appraisal_aggregate.csv`](S3_extraction/appraisal_aggregate.csv) | Provisional scenario: 132 studies, 660 ratings, 91.2% agreement, κ = 0.867 (95% CI [0.832, 0.898]); not source-verified |
 | [`appraisal_ratings_template.csv`](S3_extraction/appraisal_ratings_template.csv) | Empty L / S / H grid for consensus ratings — **not filled with invented scores** |
 
-Ratings are **L** (low concern), **S** (some concerns), **H** (high concern). No composite quality score is computed. No study is excluded on the basis of a rating. The aggregate appraisal result is a review result; without the row-level matrix it cannot be independently recomputed from this repository.
+Ratings are **L** (low concern), **S** (some concerns), **H** (high concern). No composite quality score is computed. No study is excluded on the basis of a rating. The aggregate appraisal numbers are provisional and must be replaced from the original row-level matrices.
 
 ### S4 — Numerical provenance and figure source data
 
@@ -241,7 +243,7 @@ python S5_validation/scripts/litstudy_metadata_audit.py
 
 This adapter is a **post hoc repository aid and is not cited as part of the updated manuscript methodology**. It does not infer
 eligibility, replace the declared DOI/title-author-year deduplication ledger,
-or establish the reported PRISMA counts. Topic models and bibliographic
+or establish the proposed PRISMA counts. Topic models and bibliographic
 networks are also treated as exploratory because their completeness depends
 on abstract and reference-list coverage.
 
@@ -254,10 +256,10 @@ Every quantitative table uses one of:
 | Status | Meaning |
 | --- | --- |
 | `transcribed_from_manuscript` | Copied from the article’s tables, dataset section, or bibliography |
-| `reported_review_result_not_independently_recomputable` | Reported in the updated article, but the raw export, paired decision, or row-level rating matrix required for independent recomputation is not deposited |
+| `provisional_author_verification_required` | Proposed estimate or internally consistent scenario; must be replaced from original exports, ledgers, or rating matrices before being reported as a review result |
 | `author_verification_required` | D1–D5 consensus ratings; PDF page confirmation of transcribed numbers |
 
-This vocabulary matches the updated article's explicit boundary between distributed numerical analyses and review results whose record-level source files are not included.
+This vocabulary deliberately goes beyond a non-recomputability disclaimer: absent source records make these values unverified, not merely unavailable for independent recomputation.
 
 ---
 

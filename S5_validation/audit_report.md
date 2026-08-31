@@ -1,6 +1,6 @@
 # S5 audit report
 
-- Package version: 0.2.0
+- Package version: 0.2.1
 - Audit date: 2026-08-31
 - Files checksummed: 74
 - S2 citation inventory rows: 176
@@ -20,16 +20,16 @@ The validation script `scripts/validate_package.py` re-runs these tests:
 
 ## Author-verification gaps (not failures of this deposit)
 
-- The extended S3 table contains 52 unique studies, while the article reports a 132-study core evidence set; the complete source extraction is not deposited.
-- Row-level D1–D5 ratings are not fabricated; the article's aggregate appraisal results and an empty schema are provided.
+- The extended S3 table contains 52 unique studies; the proposed 132-study core total has no deposited source extraction and requires author verification.
+- The appraisal agreement aggregates originated from a provisional scenario; row-level D1–D5 ratings are absent and an empty schema is provided.
 - Raw database exports and both screeners' independent decision files are not in this deposit.
-- PRISMA identification, screening, and agreement numbers are manuscript-reported results but are not independently recomputable without the source records.
+- PRISMA identification, screening, tier-allocation, and agreement numbers are provisional estimates without deposited source records and must not be presented as verified review results.
 - S4 page_confirmation remains author_verification_required until each number is checked against the cited PDF.
 
 ## How a reviewer should use this package
 
 1. Read `README.md` and `S1_search_and_selection/AUTHOR_DEPOSIT_REQUIRED.md`.
 2. Re-execute the Boolean strings in `S1_search_and_selection/03_executable_search_strings.md` if checking search reproducibility.
-3. Treat `verification_status = reported_review_result_not_independently_recomputable` as a manuscript-reported aggregate whose source records are absent from this deposit.
+3. Treat `verification_status = provisional_author_verification_required` as an unsupported proposed value that must be replaced from original source records before submission.
 4. Use `S4_performance_provenance/principal_table_provenance.csv` for the 43 formal-analysis cells and `performance_provenance.csv` for the extended manuscript tables.
 5. Run `python S5_validation/scripts/validate_package.py`.

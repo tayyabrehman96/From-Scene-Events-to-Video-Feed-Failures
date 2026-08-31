@@ -1,6 +1,6 @@
 supplement,file,column,type,definition
 S1,07_prisma_flow.csv,n,integer,Count at a PRISMA slot
-S1,07_prisma_flow.csv,verification_status,enum,reported_review_result_not_independently_recomputable | transcribed_from_manuscript | author_verification_required
+S1,07_prisma_flow.csv,verification_status,enum,provisional_author_verification_required | transcribed_from_manuscript | author_verification_required
 S1,06_eligibility_inclusion_exclusion.csv,criterion_id,string,IC1–IC5 or EC1–EC5
 S2,citation_inventory.csv,citation_key,string,BibTeX key used in main.tex
 S2,citation_inventory.csv,role_in_review,enum,Heuristic role label from title/type; not a substitute for S3 coding

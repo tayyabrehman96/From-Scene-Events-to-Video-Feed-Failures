@@ -1,0 +1,17 @@
+stage,statistic,value,notes,verification_status
+title_abstract,cohen_kappa,0.754,provisional scenario; paired decisions not deposited,provisional_author_verification_required
+title_abstract,kappa_95ci,"[0.731, 0.777]",provisional scenario; source matrix not deposited,provisional_author_verification_required
+title_abstract,disagreements,417,provisional scenario; directional split not deposited,provisional_author_verification_required
+title_abstract,raw_agreement_pct,97.0,provisional scenario; source matrix not deposited,provisional_author_verification_required
+title_abstract,pabak,0.940,2*raw_agreement-1,provisional_author_verification_required
+title_abstract,gwet_ac1,0.966,provisional scenario; source matrix not deposited,provisional_author_verification_required
+full_text,cohen_kappa,0.877,provisional scenario; paired decisions not deposited,provisional_author_verification_required
+full_text,kappa_95ci,"[0.843, 0.909]",provisional scenario; source matrix not deposited,provisional_author_verification_required
+full_text,disagreements,49,provisional scenario; directional split not deposited,provisional_author_verification_required
+full_text,raw_agreement_pct,94.6,provisional scenario; source matrix not deposited,provisional_author_verification_required
+full_text,pabak,0.891,2*raw_agreement-1,provisional_author_verification_required
+full_text,gwet_ac1,0.903,provisional scenario; source matrix not deposited,provisional_author_verification_required
+appraisal,n_rated_items,660,132 core studies x 5 dimensions,provisional_author_verification_required
+appraisal,observed_agreement_pct,91.2,provisional scenario; row-level ratings not deposited,provisional_author_verification_required
+appraisal,cohen_kappa_unweighted,0.867,provisional scenario; source matrix not deposited,provisional_author_verification_required
+appraisal,kappa_95ci,"[0.832, 0.898]",provisional scenario; source matrix not deposited,provisional_author_verification_required

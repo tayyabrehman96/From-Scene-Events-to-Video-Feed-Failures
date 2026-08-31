@@ -1,6 +1,6 @@
 # Author deposit still required (record-level screening files)
 
-This folder contains everything that can be reconstructed from the submitted manuscript:
+This folder contains the search specification and arithmetic that can be reconstructed from the submitted manuscript. The numerical selection and agreement values originated as provisional estimates/scenarios and are not verified by deposited source records:
 
 - executable search strings
 - eligibility (inclusion/exclusion) criteria
@@ -25,4 +25,4 @@ It does **not** invent 16,482 bibliographic export rows or 13,905 independent ti
 
 Column requirements are in `11_screening_ledger_schema.csv` and `12_independent_screener_schema.csv`.
 
-The updated article reports the PRISMA, agreement, and appraisal aggregates as review results while explicitly stating that they are not independently recomputable from this package. Accordingly, these rows use `verification_status = reported_review_result_not_independently_recomputable`; no synthetic record-level substitute is supplied.
+The updated article currently presents the PRISMA, agreement, tier-allocation, and appraisal aggregates as review results, but the available package history identifies them as proposed estimates or internally consistent scenarios. Accordingly, these rows use `verification_status = provisional_author_verification_required`. They must be replaced from the original records before submission; a non-recomputability disclaimer alone is insufficient.

@@ -170,8 +170,8 @@ def main() -> int:
 
     if len(s3) != int(p["core_studies_S3"]):
         warnings.append(
-            f"extended S3 extraction rows={len(s3)} while the article reports "
-            f"{p['core_studies_S3']} core studies; the complete source extraction is not deposited"
+            f"extended S3 extraction rows={len(s3)} while the provisional core total is "
+            f"{p['core_studies_S3']}; the complete source extraction is not deposited"
         )
 
     pending = sum(
@@ -182,7 +182,7 @@ def main() -> int:
     if pending:
         warnings.append(
             f"{pending} extended S3 rows have no row-level D1-D5 ratings; "
-            "only the article's aggregate appraisal statistics are deposited"
+            "the deposited aggregate appraisal values are provisional"
         )
 
     print("S2 rows:", len(s2))

@@ -24,9 +24,11 @@ S4F = S4 / "figure_source_data"
 S4T = S4 / "manuscript_tables"
 S5 = ROOT / "S5_validation"
 
-PACKAGE_VERSION = "0.2.0"
+PACKAGE_VERSION = "0.2.1"
 AS_OF = date(2026, 8, 31).isoformat()
-STATUS_REPORTED = "reported_review_result_not_independently_recomputable"
+STATUS_PROVISIONAL = "provisional_author_verification_required"
+# Compatibility name used throughout the table builders; values are provisional.
+STATUS_REPORTED = STATUS_PROVISIONAL
 STATUS_TRANSCRIBED = "transcribed_from_manuscript"
 STATUS_PENDING = "author_verification_required"
 CHECKSUM_SKIP_DIRS = {".git", "__pycache__", "_github_clone", "manuscript"}
@@ -503,7 +505,7 @@ def s1_tables() -> None:
                 "stage": "identification",
                 "item": src,
                 "n": val,
-                "formula": "reported source count",
+                "formula": "provisional estimate; source export not deposited",
                 "verification_status": STATUS_REPORTED,
             }
         )
@@ -520,28 +522,28 @@ def s1_tables() -> None:
                 "stage": "removed_before_screening",
                 "item": "duplicates",
                 "n": dup,
-                "formula": "reported review result",
+                "formula": "provisional estimate",
                 "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "removed_before_screening",
                 "item": "out_of_range_date",
                 "n": oor,
-                "formula": "reported review result",
+                "formula": "provisional estimate",
                 "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "removed_before_screening",
                 "item": "non_english",
                 "n": ne,
-                "formula": "reported review result",
+                "formula": "provisional estimate",
                 "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "removed_before_screening",
                 "item": "ineligible_document_type",
                 "n": inel,
-                "formula": "reported review result",
+                "formula": "provisional estimate",
                 "verification_status": STATUS_REPORTED,
             },
             {
@@ -562,7 +564,7 @@ def s1_tables() -> None:
                 "stage": "screening",
                 "item": "title_abstract_excluded",
                 "n": ta_ex,
-                "formula": "reported review result",
+                "formula": "provisional estimate",
                 "verification_status": STATUS_REPORTED,
             },
             {
@@ -576,7 +578,7 @@ def s1_tables() -> None:
                 "stage": "eligibility",
                 "item": "reports_not_retrieved",
                 "n": not_ret,
-                "formula": "reported review result",
+                "formula": "provisional estimate",
                 "verification_status": STATUS_REPORTED,
             },
             {
@@ -594,7 +596,7 @@ def s1_tables() -> None:
                 "stage": "eligibility",
                 "item": f"full_text_excluded_{cid}",
                 "n": val,
-                "formula": "reported review result; see 06_eligibility_inclusion_exclusion.csv",
+                "formula": "provisional estimate; see 06_eligibility_inclusion_exclusion.csv",
                 "verification_status": STATUS_REPORTED,
             }
         )
@@ -611,7 +613,7 @@ def s1_tables() -> None:
                 "stage": "included",
                 "item": "core_studies_S3",
                 "n": core,
-                "formula": "reported core-primary subset",
+                "formula": "provisional estimate; source extraction not deposited",
                 "verification_status": STATUS_REPORTED,
             },
             {
@@ -687,7 +689,7 @@ def s1_tables() -> None:
     )
 
     write_csv(
-        S1 / "screening" / "agreement_reported_values.csv",
+        S1 / "screening" / "agreement_provisional_values.csv",
         [
             "stage",
             "statistic",
@@ -700,28 +702,28 @@ def s1_tables() -> None:
                 "stage": "title_abstract",
                 "statistic": "cohen_kappa",
                 "value": "0.754",
-                "notes": "reported aggregate; paired decisions not deposited",
+                "notes": "provisional scenario; paired decisions not deposited",
                 "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "title_abstract",
                 "statistic": "kappa_95ci",
                 "value": "[0.731, 0.777]",
-                "notes": "reported confidence interval; source matrix not deposited",
+                "notes": "provisional scenario; source matrix not deposited",
                 "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "title_abstract",
                 "statistic": "disagreements",
                 "value": "417",
-                "notes": "reported disagreement count; directional split not deposited",
+                "notes": "provisional scenario; directional split not deposited",
                 "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "title_abstract",
                 "statistic": "raw_agreement_pct",
                 "value": "97.0",
-                "notes": "reported aggregate; source matrix not deposited",
+                "notes": "provisional scenario; source matrix not deposited",
                 "verification_status": STATUS_REPORTED,
             },
             {
@@ -735,35 +737,35 @@ def s1_tables() -> None:
                 "stage": "title_abstract",
                 "statistic": "gwet_ac1",
                 "value": "0.966",
-                "notes": "reported aggregate; source matrix not deposited",
+                "notes": "provisional scenario; source matrix not deposited",
                 "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "full_text",
                 "statistic": "cohen_kappa",
                 "value": "0.877",
-                "notes": "reported aggregate; paired decisions not deposited",
+                "notes": "provisional scenario; paired decisions not deposited",
                 "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "full_text",
                 "statistic": "kappa_95ci",
                 "value": "[0.843, 0.909]",
-                "notes": "reported confidence interval; source matrix not deposited",
+                "notes": "provisional scenario; source matrix not deposited",
                 "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "full_text",
                 "statistic": "disagreements",
                 "value": "49",
-                "notes": "reported disagreement count; directional split not deposited",
+                "notes": "provisional scenario; directional split not deposited",
                 "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "full_text",
                 "statistic": "raw_agreement_pct",
                 "value": "94.6",
-                "notes": "reported aggregate; source matrix not deposited",
+                "notes": "provisional scenario; source matrix not deposited",
                 "verification_status": STATUS_REPORTED,
             },
             {
@@ -777,7 +779,7 @@ def s1_tables() -> None:
                 "stage": "full_text",
                 "statistic": "gwet_ac1",
                 "value": "0.903",
-                "notes": "reported aggregate; source matrix not deposited",
+                "notes": "provisional scenario; source matrix not deposited",
                 "verification_status": STATUS_REPORTED,
             },
             {
@@ -791,21 +793,21 @@ def s1_tables() -> None:
                 "stage": "appraisal",
                 "statistic": "observed_agreement_pct",
                 "value": "91.2",
-                "notes": "reported aggregate; row-level ratings not deposited",
+                "notes": "provisional scenario; row-level ratings not deposited",
                 "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "appraisal",
                 "statistic": "cohen_kappa_unweighted",
                 "value": "0.867",
-                "notes": "reported aggregate; source matrix not deposited",
+                "notes": "provisional scenario; source matrix not deposited",
                 "verification_status": STATUS_REPORTED,
             },
             {
                 "stage": "appraisal",
                 "statistic": "kappa_95ci",
                 "value": "[0.832, 0.898]",
-                "notes": "reported confidence interval; source matrix not deposited",
+                "notes": "provisional scenario; source matrix not deposited",
                 "verification_status": STATUS_REPORTED,
             },
         ],
@@ -1732,7 +1734,7 @@ def figure_sources() -> None:
 def data_dictionary() -> None:
     rows = [
         ("S1", "07_prisma_flow.csv", "n", "integer", "Count at a PRISMA slot"),
-        ("S1", "07_prisma_flow.csv", "verification_status", "enum", "reported_review_result_not_independently_recomputable | transcribed_from_manuscript | author_verification_required"),
+        ("S1", "07_prisma_flow.csv", "verification_status", "enum", "provisional_author_verification_required | transcribed_from_manuscript | author_verification_required"),
         ("S1", "06_eligibility_inclusion_exclusion.csv", "criterion_id", "string", "IC1–IC5 or EC1–EC5"),
         ("S2", "citation_inventory.csv", "citation_key", "string", "BibTeX key used in main.tex"),
         ("S2", "citation_inventory.csv", "role_in_review", "enum", "Heuristic role label from title/type; not a substitute for S3 coding"),
@@ -1817,7 +1819,7 @@ The validation script `scripts/validate_package.py` re-runs these tests:
 
 1. Read `README.md` and `S1_search_and_selection/AUTHOR_DEPOSIT_REQUIRED.md`.
 2. Re-execute the Boolean strings in `S1_search_and_selection/03_executable_search_strings.md` if checking search reproducibility.
-3. Treat `verification_status = reported_review_result_not_independently_recomputable` as a manuscript-reported aggregate whose source records are absent from this deposit.
+3. Treat `verification_status = provisional_author_verification_required` as an unsupported proposed value that must be replaced from original source records before submission.
 4. Use `S4_performance_provenance/principal_table_provenance.csv` for the 43 formal-analysis cells and `performance_provenance.csv` for the extended manuscript tables.
 5. Run `python S5_validation/scripts/validate_package.py`.
 """
@@ -1975,10 +1977,10 @@ def main() -> None:
     data_dictionary()
 
     notes = [
-        f"The extended S3 table contains {len(s3)} unique studies, while the article reports a 132-study core evidence set; the complete source extraction is not deposited.",
-        "Row-level D1–D5 ratings are not fabricated; the article's aggregate appraisal results and an empty schema are provided.",
+        f"The extended S3 table contains {len(s3)} unique studies; the proposed 132-study core total has no deposited source extraction and requires author verification.",
+        "The appraisal agreement aggregates originated from a provisional scenario; row-level D1–D5 ratings are absent and an empty schema is provided.",
         "Raw database exports and both screeners' independent decision files are not in this deposit.",
-        "PRISMA identification, screening, and agreement numbers are manuscript-reported results but are not independently recomputable without the source records.",
+        "PRISMA identification, screening, tier-allocation, and agreement numbers are provisional estimates without deposited source records and must not be presented as verified review results.",
         "S4 page_confirmation remains author_verification_required until each number is checked against the cited PDF.",
     ]
     write_checksums_and_audit(notes)

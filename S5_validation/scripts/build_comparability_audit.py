@@ -236,31 +236,31 @@ def appraisal_aggregate() -> list[dict]:
         {
             "statistic": "core_primary_studies",
             "value": "132",
-            "basis": "reported review result",
+            "basis": "provisional estimate; source extraction not deposited",
             "recomputable_from_package": "no",
         },
         {
             "statistic": "rated_items",
             "value": "660",
-            "basis": "132 studies x 5 dimensions",
+            "basis": "provisional 132-study total x 5 dimensions",
             "recomputable_from_package": "no",
         },
         {
             "statistic": "observed_agreement_pct",
             "value": "91.2",
-            "basis": "reported aggregate",
+            "basis": "provisional agreement scenario; source matrix not deposited",
             "recomputable_from_package": "no",
         },
         {
             "statistic": "unweighted_cohen_kappa",
             "value": "0.867",
-            "basis": "reported aggregate",
+            "basis": "provisional agreement scenario; source matrix not deposited",
             "recomputable_from_package": "no",
         },
         {
             "statistic": "kappa_95ci",
             "value": "[0.832, 0.898]",
-            "basis": "reported aggregate",
+            "basis": "provisional agreement scenario; source matrix not deposited",
             "recomputable_from_package": "no",
         },
         {
